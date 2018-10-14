@@ -10,6 +10,6 @@ function connect(){
 
     //Authenticate
     $cluster->authenticate($authenticator);
-    $bucket = $cluster->openBucket("bucket-name");
+    $bucket = $cluster->openBucket("medikamentenwecker");
 }
 ?>
