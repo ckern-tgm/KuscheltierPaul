@@ -15,7 +15,6 @@
 		<!--Remodal-->
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css">
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css">
-		
 	</head>
 	<body>
 		<!--Remodal-->
@@ -37,10 +36,16 @@
 		<div class="navbar navbarTwo">
 			  <a href="index.html"><img src="Bilder/home.png" alt="Startseite"><span>Startseite</span></a>
 			  <a href="medikamente_index.html" class="choosen"><img src="Bilder/pille.png" alt="Medikamente erinnern"><span>Medikamente erinnern</span></a>
-			  <a href="#"><img src="Bilder/kalender.png" alt="Terminplanung"><span>Terminplanung</span></a>
+			  <a href="termine_index.html"><img src="Bilder/kalender.png" alt="Terminplanung"><span>Terminplanung</span></a>
 			  <a href="#"><img src="Bilder/book.png" alt="Bücher vorlesen"><span>Bücher vorlesen</span></a>
 			  <a href="#"><img src="Bilder/help.png" alt="Notfallsignal"><span>Notfallsignal</span></a>
 		</div>
+		
+		<ol class="breadcrumb">
+			<li><a href="index.html">Startseite</a></li>
+			<li><a href="medikamente_index.html">Aktuelle Medikamente</a></li>
+			<li class="active">Medikament hinzufügen</li>
+		</ol>
 		
 		<div>
 			<h1>Medikament hinzufügen</h1>
@@ -77,14 +82,14 @@
 				<label for="name" class="headlabel">Medikamentenname:</label>
 				<input type="text" class="form-control form-control-lg" id="name" placeholder="Medikamentenname" required />
 				<small id="nameHelp" class="form-text text-muted">
-					Bitte geben Sie den Namen von ihrem Medikament ein, dieser darf nicht länger als 100 Zeichen sein.
+					Bitte geben Sie den Namen von ihrem Medikament ein. Beispiel: "Parkemed"
 				</small>
 			</div>
 			<div class="form-group">
 				<label for="zeit" class="headlabel">Uhrzeit:</label>
 				<input type="time" class="form-control form-control-lg" id="zeit" placeholder="Uhrzeit" required />
 				<small id="zeitHelp" class="form-text text-muted">
-					Bitte geben Sie die Uhrzeit ein, an dem Sie ihr Medikament nehmen wollen.
+					Bitte geben Sie die Uhrzeit ein, an dem Sie ihr Medikament nehmen wollen. Beispiel "08:00"
 				</small>
 			</div>
 			<label for="tage" class="headlabel">Einnahmetage:</label>
@@ -113,9 +118,19 @@
 				<label for="anz" class="headlabel">Medikamentenanzahl:</label>
 				<input type="number" class="form-control form-control-lg" id="anz" value="0.5" step="0.5" min="0.5" max="10" required />
 				<small id="anzHelp" class="form-text text-muted">
-					Bitte wählen Sie aus, wie viele Tabletten oder Becher Sie nehmen wollen.
+					Bitte wählen Sie aus, wie viele Tabletten oder Becher Sie nehmen wollen. Beispiel: "1"
 				</small>
 			</div>
+			
+			<br />
+			
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+					25%
+				</div>
+			</div>
+			
+			<br />
 			
 			<div class="form-group">
 				<div class="form-group col-md-6">

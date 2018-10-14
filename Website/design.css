@@ -59,6 +59,11 @@ input[type=number]{
 	font-size: 2vw;
 	text-align: center;
 }
+input[type=date]{
+	height: 60px;
+	font-size: 2vw;
+	text-align: center;
+}
 small{
 	font-size: 18px;
 }

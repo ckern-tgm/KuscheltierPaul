@@ -1,0 +1,131 @@
+<html lang="de">
+	<head>
+		<title>Termin hinzufügen</title>
+		<!--Bootstrap-->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+		<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+		<!--UTF8-->
+		<meta charset="utf-8"/>
+		<!--CSS-->
+		<link href="design.css" rel="stylesheet">
+		<!--JQuery-->
+		<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<!--Icon-->
+		<link rel="icon" type="image/png" href="Bilder/Logo.png">
+		<!--Remodal-->
+		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css">
+		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css">
+	</head>
+	<body>
+		<!--Remodal-->
+		<script src="scripts/Remodal-1.1.1/dist/remodal.min.js"></script>
+		<!--Bootstrap-->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<div class="navbar navbarOne">
+			<div class="navbar-header">
+				<img src="Bilder/logo_klein.png" class="logo">
+				<a href="index.html" class="titel">Kuscheltier Paul</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<!-- thumbnail image wrapped in a link -->
+				<li><a href="#img1"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
+			</ul>
+		</div>
+		
+		<div class="navbar navbarTwo">
+			  <a href="index.html"><img src="Bilder/home.png" alt="Startseite"><span>Startseite</span></a>
+			  <a href="medikamente_index.html"><img src="Bilder/pille.png" alt="Medikamente erinnern"><span>Medikamente erinnern</span></a>
+			  <a href="termine_index.html" class="choosen"><img src="Bilder/kalender.png" alt="Terminplanung"><span>Terminplanung</span></a>
+			  <a href="#"><img src="Bilder/book.png" alt="Bücher vorlesen"><span>Bücher vorlesen</span></a>
+			  <a href="#"><img src="Bilder/help.png" alt="Notfallsignal"><span>Notfallsignal</span></a>
+		</div>
+		
+		<ol class="breadcrumb">
+			<li><a href="index.html">Startseite</a></li>
+			<li><a href="termine_index.html">Aktuelle Termine</a></li>
+			<li class="active">Termin hinzufügen</li>
+		</ol>
+		
+		<div>
+			<h1>Termin hinzufügen</h1>
+		</div>
+		
+		<!-- lightbox container hidden with CSS -->
+		<a href="#_" class="lightbox" id="img1">
+			<img src="Bilder/kalender.png">
+		</a>
+		
+		<br />
+		
+		<!-- Hinzufügen Alert -->
+		<div class="remodal" data-remodal-id="modalHinz">
+			<button data-remodal-action="close" class="remodal-close"></button>
+			<h1 style="background-color: transparent; color: green; text-align: center;">Hinzufügen erfolgreich!</h1>
+			<br />
+			<br />
+			<button data-remodal-action="confirm" class="remodal-confirm" onclick="location.href='termine_index.html';">OK</button>
+		</div>
+		
+		<!-- Abbrechen Alert -->
+		<div class="remodal" data-remodal-id="modalAbr">
+			<button data-remodal-action="close" class="remodal-close"></button>
+			<h1 style="background-color: transparent; color: red; text-align: center;">Hinzufügen abgebrochen!</h1>
+			<br />
+			<br />
+			<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='termine_index.html';">OK</button>
+		</div>
+		
+		<form>
+			<br />
+			<div class="form-group">
+				<label for="name" class="headlabel">Terminname:</label>
+				<input type="text" class="form-control form-control-lg" id="name" placeholder="Terminname" required />
+				<small id="nameHelp" class="form-text text-muted">
+					Bitte geben Sie den Namen von ihrem Termim ein. Beispiel: "Zahnarzt"
+				</small>
+			</div>
+			<div class="form-group">
+				<label for="datum" class="headlabel">Datum:</label>
+				<input type="date" class="form-control form-control-lg" id="datum" placeholder="Datum" required />
+				<small id="datumHelp" class="form-text text-muted">
+					Bitte geben Sie das Datum ihres Termines ein. Beispiel: "01.01.2020"
+				</small>
+			</div>
+			<div class="form-group">
+				<label for="zeit" class="headlabel">Uhrzeit:</label>
+				<input type="time" class="form-control form-control-lg" id="zeit" placeholder="Uhrzeit" required />
+				<small id="zeitHelp" class="form-text text-muted">
+					Bitte geben Sie die Uhrzeit ihres Termines ein. Beispiel: "08:00"
+				</small>
+			</div>
+			<div class="form-group">
+				<label for="ort" class="headlabel">Ort:</label>
+				<input type="text" class="form-control form-control-lg" id="ort" placeholder="Ort" required />
+				<small id="ortHelp" class="form-text text-muted">
+					Bitte geben Sie den Ort von ihrem Termin ein. Beispiel: "Wien"
+				</small>
+			</div>
+			<div class="form-group">
+				<label for="hinw" class="headlabel">Hinweis:</label>
+				<input type="text" class="form-control form-control-lg" id="hinw" placeholder="Hinweis" />
+				<small id="hinwHelp" class="form-text text-muted">
+					Hier können sie einen Hinweis zu ihrem Termin hinzufügen. Beispiel: "E-Card nicht vergessen."
+				</small>
+			</div>
+			
+			<div class="form-group">
+				<div class="form-group col-md-6">
+					<a href="#modalHinz"><button type="button" class="btn btn-info btn-lg btn-block" onclick="">Hinzufügen</button></a>
+				</div>
+				<div class="form-group col-md-6">
+					<a href="#modalAbr"><button type="button" class="btn btn-info btn-lg btn-block" onclick="">Abbrechen</button></a>
+				</div>
+			</div>
+		</form>
+		
+		<br />
+		<br />
+		
+	</body>
+</html>
