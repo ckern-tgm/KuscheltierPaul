@@ -76,6 +76,15 @@ label {
 	-moz-user-select: none;
 	-ms-user-select: none;
 }
+.progress{
+	height: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.progress-bar-text{
+	font-size: 20px;
+	margin-top: 8px;
+}
 
 .headlabel{
 	font-family: Gill Sans, sans-serif;
@@ -207,6 +216,14 @@ label {
 }
 .choosen span {
 	/*color: black;*/
+}
+
+.breadcrumb{
+	margin-top: -20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius:0px;
+	background-color: white;
 }
 
 .thumbnail {
