@@ -114,7 +114,7 @@ label {
 }
 .btn.btn-info{
 	width: 60%;
-	font-size: 4vw; /*Responsive Buttontext*/
+	font-size: 3vw; /*Responsive Buttontext*/
 	color: black;
 	background: #A1DAF7;
 	text-align: center;
@@ -131,7 +131,7 @@ label {
 .table {
 	font-size: 250%;
 	font-size: 2.5vw;
-	background-color:#b8bdc0;
+	background-color: white;
 }
 .tablehead{
 	background-color: #A1DAF7;
@@ -207,10 +207,11 @@ label {
 .navbarTwo a:hover {
 	background-color: #203B45;
 	color: white;
+	fill: white;
 }
-.navbarTwo a img {
+/*.navbarTwo a img {
 	height: 40px;
-}
+}*/
 .choosen{
 	background-color: #A1DAF7;
 }
