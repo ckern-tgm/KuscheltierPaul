@@ -30,7 +30,7 @@ h1{
 }
 
 form{
-	background-color: white;
+	background-color: #eeeeee;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-left: 40px;
@@ -78,22 +78,22 @@ label {
 	-moz-user-select: none;
 	-ms-user-select: none;
 }
-input:invalid {
-	background-color: #ffdddd;
-}
 form:invalid {
 	border: 10px solid #ffdddd;
-}
-input:valid {
-	background-color: #ddffdd;
 }
 form:valid {
 	border: 10px solid #ddffdd;
 }
 input:required {
-	border-color: #800000;
-	border-width: 3px;
+	border-width: 5px;
 }
+input:invalid {
+	border-color: #ffdddd;
+}
+input:valid {
+	border-color: #ddffdd;
+}
+
 .progress{
 	height: 40px;
 	margin-left: 20px;
