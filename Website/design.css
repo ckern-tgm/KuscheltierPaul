@@ -139,6 +139,24 @@ input:valid {
 	margin:0px auto;
 	margin-top: 20px;
 }
+.btn.btn-success{
+	width: 60%;
+	font-size: 3vw; /*Responsive Buttontext*/
+	color: white;
+	text-align: center;
+	margin:0px auto;
+	margin-top: 40px;
+}
+.btn.btn-warning{
+	width: 60%;
+	font-size: 3vw; /*Responsive Buttontext*/
+	color: white;
+	background: #d04440;
+	border-color: #d04440;
+	text-align: center;
+	margin:0px auto;
+	margin-top: 40px;
+}
 
 
 .alert{
