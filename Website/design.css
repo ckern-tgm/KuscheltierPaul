@@ -122,6 +122,7 @@ label {
 	margin-top: 20px;
 }
 
+
 .alert{
 	width: calc(100% - 80px);
 	margin-left: 40px;
@@ -134,7 +135,9 @@ label {
 	background-color: white;
 }
 .tablehead{
-	background-color: #A1DAF7;
+	/*background-color: #A1DAF7;*/
+	background-color: #203B45;
+	color: white;
 }
 .table-responsive{
 	width: calc(100% - 80px);
@@ -144,12 +147,12 @@ label {
     border: 1px solid gainsboro; 
     border-collapse: collapse; 
 }
-.table-wrapper-scroll-y {
+/*.table-wrapper-scroll-y {
 	display: block;
 	max-height: 400px;
 	overflow-y: auto;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
-}
+}*/
 
 .navbarOne {
 	margin-top: 0px;
