@@ -1,5 +1,4 @@
 body{
-	/*background-color:#b8bdc0;*/
 	background-image:url(Bilder/kuscheltier.jpeg);
 	background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -8,7 +7,6 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #000;
 	text-align: center;
 }
 
@@ -30,6 +28,8 @@ h1{
 	padding-right: 10px;
 }
 
+
+/** Formular: **/
 form{
 	background-color: #eeeeee;
 	margin-left: 10px;
@@ -75,14 +75,25 @@ input[type=date]{
 small{
 	font-size: 18px;
 }
-/*Label nicht makierbar machen*/
 label {
+	/*Label nicht makierbar machen:*/
 	user-select: none;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
+}
+.headlabel{
+	font-family: Gill Sans, sans-serif;
+	font-size: 2.5vw;
+	text-decoration: underline;
+}
+.form-check-label{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	font-size: 1.5vw;
 }
 form:invalid {
 	border: 10px solid #ffdddd;
@@ -99,7 +110,7 @@ input:invalid {
 input:valid {
 	border-color: #ddffdd;
 }
-
+/*Progressbar:*/
 .progress{
 	height: 40px;
 	margin-left: 20px;
@@ -110,28 +121,8 @@ input:valid {
 	margin-top: 8px;
 }
 
-.headlabel{
-	font-family: Gill Sans, sans-serif;
-	font-size: 2.5vw;
-	text-decoration: underline;
-}
 
-.form-check-label{
-	padding-left: 10px;
-	padding-right: 30px;
-	padding-top: 10px;
-	font-size: 1.5vw;
-}
-
-.logo {
-	max-width: 40%;
-	width: 60px;
-	text-align: center;
-	margin-top: 20px;
-	margin-left: 40px;
-	float: left;
-}
-
+/** Buttons: **/
 .btn.btn-danger{
 	font-size: 100%;
 	border-radius: 10px;
@@ -141,7 +132,6 @@ input:valid {
 	font-size: 3vw; /*Responsive Buttontext*/
 	color: black;
 	background: #A1DAF7;
-	text-align: center;
 	margin:0px auto;
 	margin-top: 20px;
 	border-radius: 20px;
@@ -165,16 +155,20 @@ input:valid {
 	margin-top: 40px;
 }
 
-
+/* ??? */
 .alert{
 	width: calc(100% - 80px);
 	margin-left: 40px;
 	margin-right: 40px;
 	font-size: 2.5vw;
 }
+
+
+/** Tabelle: **/
 .table {
 	background-color: white;
 	text-align: center;
+	margin-bottom: 0px;
 }
 .table * {
 	font-size: 250%;
@@ -182,7 +176,6 @@ input:valid {
 	text-align: center;
 }
 .tablehead{
-	/*background-color: #A1DAF7;*/
 	background-color: #203B45;
 	color: white;
 	text-align: center;
@@ -195,6 +188,7 @@ input:valid {
     border: 1px solid gainsboro; 
     border-collapse: collapse; 
 }
+/*Tabelle scrollbar:*/
 /*.table-wrapper-scroll-y {
 	display: block;
 	max-height: 400px;
@@ -202,8 +196,9 @@ input:valid {
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 }*/
 
+
+/** Obere Menüleiste: **/
 .navbarOne {
-	margin-top: 0px;
 	margin-bottom: 0px;
 	border-radius:0px;
 	height: 100px;
@@ -229,14 +224,21 @@ input:valid {
 	color: black;
 	border-radius: 20px;
 }
+.logo {
+	max-width: 40%;
+	width: 60px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 40px;
+	float: left;
+}
 
 
+/** Untere Menüleiste: **/
 .navbarTwo {
 	width: 100%;
 	margin-top: 0px;
 	background-color: white;
-	text-align: center;
-	border-radius: 0px;
 	border: 5px solid #000;
 }
 .navbarTwo a {
@@ -257,24 +259,19 @@ input:valid {
 .navbarTwo a span {
 	margin-left: 5px;
 }
-/* Navbar links on mouse-over */
 .navbarTwo a:hover {
 	background-color: #203B45;
 	color: white;
 	fill: white;
 	border-radius: 20px;
 }
-/*.navbarTwo a img {
-	height: 40px;
-}*/
 .choosen{
 	background-color: #A1DAF7;
 	border-radius: 20px;
 }
-.choosen span {
-	/*color: black;*/
-}
 
+
+/*Aktuelle Position:*/
 .breadcrumb{
 	margin-top: -20px;
 	margin-left: 5px;
@@ -293,6 +290,8 @@ footer{
 	padding: 2em;
 }
 
+
+/** Hilfe **/
 .thumbnail {
 	max-width: 40%;
 	width: 150px;
@@ -302,10 +301,8 @@ footer{
 	margin-top: -140px;
 	float: right;
 }
-/** LIGHTBOX MARKUP **/
 .lightbox {
-	/** Default lightbox to hidden */
-	display: none;
+	display: none; /* Default lightbox to hidden */
 
 	/** Position and style */
 	position: fixed;
@@ -324,11 +321,8 @@ footer{
 	margin-top: 2%;
 }
 .lightbox:target {
-	/** Remove default browser outline */
-	outline: none;
-
-	/** Unhide lightbox **/
-	display: block;
+	outline: none; /* Remove default browser outline */
+	display: block; /* Unhide lightbox */
 }
 
 
