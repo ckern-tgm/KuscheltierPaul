@@ -55,25 +55,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 }
 ?>
 <html lang="de">
-
-<head>
-	<title>Medikament hinzufügen</title>
-	<!--Bootstrap-->
-	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
-	<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
-	<!--UTF8-->
-	<meta charset="utf-8" />
-	<!--CSS-->
-	<link href="design.css" rel="stylesheet">
-	<!--JQuery-->
-	<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
-	<!--Icon-->
-	<link rel="icon" type="image/png" href="Bilder/Logo.png">
-	<!--Remodal-->
-	<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css">
-	<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css">
-</head>
-
+	<head>
+		<title>Medikament hinzufügen</title>
+		<!--Bootstrap-->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+		<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+		<!--UTF8-->
+		<meta charset="utf-8" />
+		<!--JQuery-->
+		<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<!--Icon-->
+		<link rel="icon" type="image/png" href="Bilder/Logo.png">
+		<!--Remodal-->
+		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css">
+		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css">
+		<!--CSS-->
+		<link href="design.css" rel="stylesheet" />
+	</head>
 <body>
 	<!--Remodal-->
 	<script src="scripts/Remodal-1.1.1/dist/remodal.min.js"></script>
@@ -139,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 	<div>
 		<h1>
 			<svg xmlns="http://www.w3.org/2000/svg" alt="Medikament hinzufügen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V9z" /></svg>
-			Medikament hinzufügen
+			<a href="#scroll" style="color: white;">Medikament hinzufügen</a>
 		</h1>
 	</div>
 
@@ -168,7 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 		<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='medikamente_index.php';">OK</button>
 	</div>
 
-	<form method="post">
+	<form method="post" id="scroll">
 		<br />
 		<div class="form-group">
 			<label for="name" class="headlabel">Medikamentenname:</label>
@@ -245,10 +243,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 			</div>
 		</div>
 	</form>
-
+	
 	<br />
 	<br />
-
+	<br />
+	<br />
+	<br />
+	
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<p class="text-xs-center">&copy; Copyright 2018 - KuscheltierPaul.  All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!--Smooth Scroll-->
+	<script src="scripts/smoothScroll.js" type="text/javascript"></script>
 </body>
-
 </html>

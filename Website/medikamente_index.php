@@ -90,7 +90,7 @@
 			<h1 style="background-color: transparent; color: red; text-align: center;">Wirklich löschen?</h1>
 			<p>Wollen Sie das Medikament xxx wirklich löschen?</p>
 			<br />
-			<button data-remodal-action="confirm" class="remodal-confirm">Ja</button>
+			<button data-remodal-action="confirm" class="remodal-confirm" style="text-decoration:underline;">Ja</button>
 			<button data-remodal-action="cancel" class="remodal-cancel">Nein</button>
 		</div>
 		
