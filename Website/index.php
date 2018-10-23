@@ -94,7 +94,7 @@
 		</video>-->
 		
 		<div class="embed-responsive embed-responsive-16by9" style="margin-left: 40px; margin-right: 40px;">
-			<iframe class="embed-responsive-item" src="Video/Teaser.mp4" allowfullscreen></iframe>
+			<iframe class="embed-responsive-item" src="Video/Teaser.mp4" allowfullscreen ></iframe>
 		</div>
 		
 		<br />
