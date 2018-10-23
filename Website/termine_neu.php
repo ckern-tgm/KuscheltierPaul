@@ -106,35 +106,35 @@
 				<label for="name" class="headlabel">Terminname:</label>
 				<input type="text" class="form-control form-control-lg" id="name" placeholder="Terminname" required />
 				<small id="nameHelp" class="form-text text-muted">
-					Bitte geben Sie den Namen von ihrem Termim ein. Beispiel: "Zahnarzt"
+					Bitte geben Sie den <b>Namen</b> von ihrem Termim ein. Beispiel: "Zahnarzt"
 				</small>
 			</div>
 			<div class="form-group">
 				<label for="datum" class="headlabel">Datum:</label>
 				<input type="date" class="form-control form-control-lg" id="datum" placeholder="Datum" required />
 				<small id="datumHelp" class="form-text text-muted">
-					Bitte geben Sie das Datum ihres Termines ein. Beispiel: "01.01.2020"
+					Bitte geben Sie das <b>Datum</b> ihres Termines ein. Beispiel: "01.01.2020"
 				</small>
 			</div>
 			<div class="form-group">
 				<label for="zeit" class="headlabel">Uhrzeit:</label>
 				<input type="time" class="form-control form-control-lg" id="zeit" placeholder="Uhrzeit" required />
 				<small id="zeitHelp" class="form-text text-muted">
-					Bitte geben Sie die Uhrzeit ihres Termines ein. Beispiel: "08:00"
+					Bitte geben Sie die <b>Uhrzeit</b> ihres Termines ein. Beispiel: "08:00"
 				</small>
 			</div>
 			<div class="form-group">
 				<label for="ort" class="headlabel">Ort:</label>
 				<input type="text" class="form-control form-control-lg" id="ort" placeholder="Ort" required />
 				<small id="ortHelp" class="form-text text-muted">
-					Bitte geben Sie den Ort von ihrem Termin ein. Beispiel: "Wien"
+					Bitte geben Sie den <b>Ort</b> von ihrem Termin ein. Beispiel: "Wien"
 				</small>
 			</div>
 			<div class="form-group">
 				<label for="hinw" class="headlabel">Hinweis:</label>
 				<input type="text" class="form-control form-control-lg" id="hinw" placeholder="Hinweis(optional)" />
 				<small id="hinwHelp" class="form-text text-muted">
-					Hier können sie einen Hinweis zu ihrem Termin hinzufügen. Beispiel: "E-Card nicht vergessen."
+					Hier können sie einen <b>Hinweis</b> zu ihrem Termin hinzufügen. Beispiel: "E-Card nicht vergessen."
 				</small>
 			</div>
 			
