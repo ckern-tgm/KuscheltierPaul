@@ -1,48 +1,75 @@
 <?php
 require 'functions.php';
 //Muss für Datenbank geupdatet werden. Folgt in kürze
+//echo "<script type='text/javascript'>alert('alert')</script>";
 if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
+    $ccount = 0;
+    echo "<script type='text/javascript'>
+		$(document).ready(function() {
+			$('#checkBtn').click(function() {
+				checked = $('input[type=checkbox]:checked').length;
+				if (!checked) {
+					alert('You must check at least one checkbox.');
+					return false;
+				}
+			});
+		});
+		</script>";
     if (isset($_POST['moCheck']) and $_POST['moCheck'] == '1') {
         // Montag angeklickt
         $m = 'true';
+        ++$ccount;
     } else {
         $m = 'false';
     }
     if (isset($_POST['diCheck']) and $_POST['diCheck'] == '1') {
         // Dienstag angeklickt
         $d = 'true';
+        ++$ccount;
     } else {
         $d = 'false';
     }
     if (isset($_POST['miCheck']) and $_POST['miCheck'] == '1') {
         // Mittwoch angeklickt
         $mi = 'true';
+        ++$ccount;
     } else {
         $mi = 'false';
     }
     if (isset($_POST['doCheck']) and $_POST['doCheck'] == '1') {
         // Donnerstag angeklickt
         $do = 'true';
+        ++$ccount;
     } else {
         $do = 'false';
     }
     if (isset($_POST['frCheck']) and $_POST['frCheck'] == '1') {
         // Freitag angeklickt
         $fr = 'true';
+        ++$ccount;
     } else {
         $fr = 'false';
     }
     if (isset($_POST['samCheck']) and $_POST['samCheck'] == '1') {
         // Samstag angeklickt
         $sa = 'true';
+        ++$ccount;
     } else {
         $sa = 'false';
     }
     if (isset($_POST['soCheck']) and $_POST['soCheck'] == '1') {
         // Sonntag angeklickt
         $so = 'true';
+        ++$ccount;
     } else {
         $so = 'false';
+    }
+
+    if (!$ccount > 0) {
+        echo "<script type='text/javascript'>
+		 $(document).ready(function(){
+		 $('#modalHinz').modal('show');});
+		 </script>";
     }
 
     $name = $_POST['name'];
@@ -50,6 +77,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     $zeit = $_POST['zeit'];
 
     addMedikament($name, $m, $d, $mi, $do, $fr, $sa, $so, $anz, $zeit);
+
+    echo "<script type='text/javascript'>
+		 $(document).ready(function(){
+		 $('#modalHinz').modal('show');});
+		 </script>";
 
     //header('location:medikamente_index.php');
 }
@@ -79,19 +111,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 	<script src="scripts/Remodal-1.1.1/dist/remodal.min.js"></script>
 	<!--Bootstrap-->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#checkBtn').click(function() {
-				checked = $("input[type=checkbox]:checked").length;
-				if (!checked) {
-					alert("You must check at least one checkbox.");
-					return false;
-				}
-
-			});
-		});
-	</script>
 
 	<!--Infobar-->
 	<div class="navbar navbarOne">
@@ -188,7 +207,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 		<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='medikamente_index.php';">OK</button>
 	</div>
 
-	<form method="post">
+	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 		<br />
 		<div class="form-group">
 			<label for="name" class="headlabel">Medikamentenname:</label>
@@ -248,14 +267,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 
 		<div class="form-group">
 			<div class="form-group col-md-6">
-				<a href="#modalHinz">
+				<!--<a href="#modalHinz">-->
 					<button type="submit" name="submit" id="submit" class="btn btn-info btn-lg btn-block" onclick="">
 						<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="width: 3vw; height: 3vw;" viewBox="0 0 24 24">
 							<path d="M0 0h24v24H0z" fill="none" />
 							<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" /></svg>
 						Hinzufügen
 					</button>
-				</a>
+				<!--</a>-->
 			</div>
 			<div class="form-group col-md-6">
 				<a href="#modalAbr">
