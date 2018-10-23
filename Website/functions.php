@@ -12,9 +12,9 @@
  *
  * @return int
  */
-function foo()
+function addMedikament($name, $mo, $di, $mi, $do, $fr, $sa, $so, $anz, $zeit)
 {
-    $shit = 10;
-
-    return $shit;
+    echo '<script language="javascript">';
+    echo 'alert("addMedikament()")';
+    echo '</script>';
 }

@@ -136,6 +136,11 @@ input:valid {
 	margin-top: 20px;
 	border-radius: 20px;
 }
+/*.btn.btn-info:hover{
+	color: white;
+	fill: white;
+	background: #203B45;
+}*/
 .btn.btn-success{
 	width: 60%;
 	font-size: 3vw; /*Responsive Buttontext*/
