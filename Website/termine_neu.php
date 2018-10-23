@@ -70,11 +70,7 @@
 				<?xml version="1.0" encoding="utf-8"?>
 				<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-				<svg version="1.1" alt="Termin hinzufügen" style="fill: white; width: 3vw; height: 3vw;" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-					<path d="M20,3h-1V1h-2v2H7V1H5v2H4C2.9,3,2,3.9,2,5v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5C22,3.9,21.1,3,20,3z M20,21H4V8h16V21z"/>
-					<path fill="none" d="M0,0h24v24H0V0z"/>
-					<path d="M16.969,15.304H12.71v4.259h-1.419v-4.259H7.031v-1.42h4.259V9.625h1.419v4.259h4.259V15.304z"/>
-				</svg>
+				<svg version="1.1" alt="Termin hinzufügen" style="fill: white; width: 3vw; height: 3vw;" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path d="M20,3h-1V1h-2v2H7V1H5v2H4C2.9,3,2,3.9,2,5v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5C22,3.9,21.1,3,20,3z M20,21H4V8h16V21z"/><path fill="none" d="M0,0h24v24H0V0z"/><path d="M16.969,15.304H12.71v4.259h-1.419v-4.259H7.031v-1.42h4.259V9.625h1.419v4.259h4.259V15.304z"/></svg>
 				<a href="#scroll" style="color: white;">Termin hinzufügen</a>
 			</h1>
 		</div>
@@ -110,35 +106,35 @@
 				<label for="name" class="headlabel">Terminname:</label>
 				<input type="text" class="form-control form-control-lg" id="name" placeholder="Terminname" required />
 				<small id="nameHelp" class="form-text text-muted">
-					Bitte geben Sie den Namen von ihrem Termim ein. Beispiel: "Zahnarzt"
+					Bitte geben Sie den <b>Namen</b> von ihrem Termim ein. Beispiel: "Zahnarzt"
 				</small>
 			</div>
 			<div class="form-group">
 				<label for="datum" class="headlabel">Datum:</label>
 				<input type="date" class="form-control form-control-lg" id="datum" placeholder="Datum" required />
 				<small id="datumHelp" class="form-text text-muted">
-					Bitte geben Sie das Datum ihres Termines ein. Beispiel: "01.01.2020"
+					Bitte geben Sie das <b>Datum</b> ihres Termines ein. Beispiel: "01.01.2020"
 				</small>
 			</div>
 			<div class="form-group">
 				<label for="zeit" class="headlabel">Uhrzeit:</label>
 				<input type="time" class="form-control form-control-lg" id="zeit" placeholder="Uhrzeit" required />
 				<small id="zeitHelp" class="form-text text-muted">
-					Bitte geben Sie die Uhrzeit ihres Termines ein. Beispiel: "08:00"
+					Bitte geben Sie die <b>Uhrzeit</b> ihres Termines ein. Beispiel: "08:00"
 				</small>
 			</div>
 			<div class="form-group">
 				<label for="ort" class="headlabel">Ort:</label>
 				<input type="text" class="form-control form-control-lg" id="ort" placeholder="Ort" required />
 				<small id="ortHelp" class="form-text text-muted">
-					Bitte geben Sie den Ort von ihrem Termin ein. Beispiel: "Wien"
+					Bitte geben Sie den <b>Ort</b> von ihrem Termin ein. Beispiel: "Wien"
 				</small>
 			</div>
 			<div class="form-group">
 				<label for="hinw" class="headlabel">Hinweis:</label>
 				<input type="text" class="form-control form-control-lg" id="hinw" placeholder="Hinweis(optional)" />
 				<small id="hinwHelp" class="form-text text-muted">
-					Hier können sie einen Hinweis zu ihrem Termin hinzufügen. Beispiel: "E-Card nicht vergessen."
+					Hier können sie einen <b>Hinweis</b> zu ihrem Termin hinzufügen. Beispiel: "E-Card nicht vergessen."
 				</small>
 			</div>
 			

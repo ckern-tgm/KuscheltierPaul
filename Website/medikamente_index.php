@@ -90,7 +90,7 @@
 			<h1 style="background-color: transparent; color: red; text-align: center;">Wirklich löschen?</h1>
 			<p>Wollen Sie das Medikament xxx wirklich löschen?</p>
 			<br />
-			<button data-remodal-action="confirm" class="remodal-confirm">Ja</button>
+			<button data-remodal-action="confirm" class="remodal-confirm" style="text-decoration:underline;">Ja</button>
 			<button data-remodal-action="cancel" class="remodal-cancel">Nein</button>
 		</div>
 		
@@ -116,71 +116,70 @@
 					<tr>
 						<th>Pille 1</th>
 						<td>08:00</td>
-						<td>3</td>
+						<th>3</th>
 						<td>MO,DI,MI</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
 					<tr>
 						<th>Pille 2</th>
 						<td>12:00</td>
-						<td>1</td>
+						<th>1</th>
 						<td>SA</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
 					<tr>
 						<th>Pille 3</th>
 						<td>18:00</td>
-						<td>0.5</td>
+						<th>0.5</th>
 						<td>FR,SO</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
-
 					<tr>
 						<th>Pille 4</th>
 						<td>18:00</td>
-						<td>0.5</td>
+						<th>0.5</th>
 						<td>FR,SO</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
 					<tr>
 						<th>Pille 5</th>
 						<td>18:00</td>
-						<td>0.5</td>
+						<th>0.5</th>
 						<td>FR,SO</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
 					<tr>
 						<th>Pille 6</th>
 						<td>18:00</td>
-						<td>0.5</td>
+						<th>0.5</th>
 						<td>FR,SO</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
 					<tr>
 						<th>Pille 7</th>
 						<td>18:00</td>
-						<td>0.5</td>
+						<th>0.5</th>
 						<td>FR,SO</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
 					<tr>
 						<th>Pille 8</th>
 						<td>18:00</td>
-						<td>0.5</td>
+						<th>0.5</th>
 						<td>FR,SO</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
 					<tr>
 						<th>Pille 9</th>
 						<td>18:00</td>
-						<td>0.5</td>
+						<th>0.5</th>
 						<td>FR,SO</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
 					<tr>
 						<th>Pille 10</th>
 						<td>18:00</td>
-						<td>0.5</td>
+						<th>0.5</th>
 						<td>FR,SO</td>
 						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>

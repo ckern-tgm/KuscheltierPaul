@@ -159,6 +159,12 @@ input:valid {
 	margin:0px auto;
 	margin-top: 40px;
 }
+button[type=button]:hover{
+    text-decoration:underline;
+}
+button[type=submit]:hover{
+    text-decoration:underline;
+}
 
 /* ??? */
 .alert{
