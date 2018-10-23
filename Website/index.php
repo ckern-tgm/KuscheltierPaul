@@ -88,8 +88,6 @@
 			Das Kuscheltier lässt sich über die verbauten Knöpfe bedienen und über eine seniorenfreundliche Website steuern. Das Kuscheltier hat verschiedenste Funktionen um den Senioren den Alltag zu erleichtern, wie eine Medikamentenerinnerung oder einen Terminplaner. Aus Unterhaltungszwecken kann man mit dem Kuscheltier Simon says spielen und man kann sich Hörbücher anhören. Des Weiteren kann man seine Herzfrequenz messen.
 		</p>
 		
-		<br />
-		
 		<!--Video-->
 		<div class="embed-responsive embed-responsive-16by9" style="margin-left: 40px; margin-right: 40px;">
 			<!--<iframe class="embed-responsive-item" src="Video/Teaser.mp4" allowfullscreen autoplay="0"></iframe>-->
