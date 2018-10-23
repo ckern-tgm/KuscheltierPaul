@@ -26,7 +26,7 @@
 		<div class="navbar navbarOne">
 			<div class="navbar-header">
 				<img src="Bilder/logo_klein.png" class="logo" alt="Logo" />
-				<a href="index.html" class="titel">Kuscheltier Paul</a>
+				<a href="index.php" class="titel">Kuscheltier Paul</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<!-- thumbnail image wrapped in a link -->
@@ -36,15 +36,15 @@
 		
 		<!--Menübar-->
 		<div class="navbar navbarTwo">
-			<a href="index.html" class="choosen">
+			<a href="index.php" class="choosen">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" width="35" height="35" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 				<span>Startseite</span>
 			</a>
-			<a href="medikamente_index.html">
+			<a href="medikamente_index.php">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Medikamente erinnern" width="35" height="35" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></svg>
 				<span>Medikamente erinnern</span>
 			</a>
-			<a href="termine_index.html">
+			<a href="termine_index.php">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Terminplanung" width="35" height="35" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
 				<span>Terminplanung</span>
 			</a>
