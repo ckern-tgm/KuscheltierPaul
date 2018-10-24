@@ -1,3 +1,4 @@
+<?php require 'functions.php'; ?>
 <html lang="de">
 	<head>
 		<title>Aktuelle Medikamente</title>
@@ -116,12 +117,8 @@
 				</thead>
 				<tbody>
 					<tr>
-						<th>Pille 1</th>
-						<td>08:00</td>
-						<th>3</th>
-						<td>MO,DI,MI</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
+                        <?php  ?>
+                    </tr>
 					<tr>
 						<th>Pille 2</th>
 						<td>12:00</td>

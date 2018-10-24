@@ -3,6 +3,7 @@
 require 'functions.php';
 //Muss für Datenbank geupdatet werden. Folgt in kürze
 echo "<script type='text/javascript'>alert('alert')</script>";
+echo "start";
 if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     $ccount = 0;
     if (isset($_POST['moCheck']) and $_POST['moCheck'] == '1') {
@@ -73,5 +74,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 		 $('#modalHinz').modal('show');});
 		 </script>";
 
+    echo "validation";
     //header('location:medikamente_index.php');
 }
