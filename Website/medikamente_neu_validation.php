@@ -2,15 +2,15 @@
 
 require 'functions.php';
 //Muss für Datenbank geupdatet werden. Folgt in kürze
-//echo "<script type='text/javascript'>alert('alert')</script>";
+echo "<script type='text/javascript'>alert('alert')</script>";
 if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     $ccount = 0;
     if (isset($_POST['moCheck']) and $_POST['moCheck'] == '1') {
         // Montag angeklickt
-        $m0 = 'true';
+        $mo = 'true';
         ++$ccount;
     } else {
-        $m0 = 'false';
+        $mo = 'false';
     }
     if (isset($_POST['diCheck']) and $_POST['diCheck'] == '1') {
         // Dienstag angeklickt
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     if (!$ccount > 0) {
         echo "<script type='text/javascript'>
 		 $(document).ready(function(){
-		 $('#modalHinz').modal('show');});
+		 $('#modalAbr').modal('show');});
 		 </script>";
     }
 
@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     $anz = $_POST['anz'];
     $zeit = $_POST['zeit'];
 
-    addMedikament($name, $m, $d, $mi, $do, $fr, $sa, $so, $anz, $zeit);
+    addMedikament($name, $mo, $di, $mi, $do, $fr, $sa, $so, $anz, $zeit);
 
     echo "<script type='text/javascript'>
 		 $(document).ready(function(){

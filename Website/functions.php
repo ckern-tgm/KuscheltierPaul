@@ -14,24 +14,29 @@
  */
 function addMedikament($name, $mo, $di, $mi, $do, $fr, $sa, $so, $anz, $zeit)
 {
+    /*
     echo '<script language="javascript">';
     echo 'alert("addMedikament()")';
     echo '</script>';
-    /*
-    $dbconn = pg_connect('host=localhost port=5432 dbname=teddy user=vinc password=vinc');
+    */
+    $dbconn = pg_connect('host=192.168.231.128 port=5432 dbname=kuscheltier user=vinc password=vinc'); //change to localhost
     pg_prepare($dbconn, 'addMedikament', 'INSERT INTO medikamente VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)');
     $insertValue = array($this->name, $this->mo, $this->di, $this->mi, $this->do, $this->fr, $this->sa, $this->so, $this->anz, $this->zeit);
     pg_execute($dbconn, 'addMedikament', $insertValue);
-    */
+
 }
 
+/**
+ * Liest alle Medikamente aus der Datenbank aus und zeigt sie an
+ *
+ */
 function showMedikamente()
 {
     echo '<script language="javascript">';
     echo 'alert("showMedikament()")';
     echo '</script>';
     /*
-    $dbconn = pg_connect('host=localhost port=5432 dbname=teddy user=vinc password=vinc');
+    $dbconn = pg_connect('host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc');
     $medikament = 'SELECT * FROM medikamente WHERE name is not null;';
     $sql = pg_query($dbconn, $medikament);
     $medikamentArr = pg_fetch_all($sql);
