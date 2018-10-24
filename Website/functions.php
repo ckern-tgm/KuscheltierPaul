@@ -30,7 +30,7 @@ function showMedikamente()
     echo '<script language="javascript">';
     echo 'alert("showMedikament()")';
     echo '</script>';
-
+    /*
     $dbconn = pg_connect('host=localhost port=5432 dbname=teddy user=vinc password=vinc');
     $medikament = 'SELECT * FROM medikamente WHERE name is not null;';
     $sql = pg_query($dbconn, $medikament);
@@ -50,6 +50,7 @@ function showMedikamente()
                     </tr>";
         echo '</form>';
     }
+    */
 }
 
 function addTermin($name, $datum, $zeit, $beschreibung, $ort)
