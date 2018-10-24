@@ -5,17 +5,6 @@ require 'functions.php';
 //echo "<script type='text/javascript'>alert('alert')</script>";
 if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     $ccount = 0;
-    echo "<script type='text/javascript'>
-		$(document).ready(function() {
-			$('#checkBtn').click(function() {
-				checked = $('input[type=checkbox]:checked').length;
-				if (!checked) {
-					alert('You must check at least one checkbox.');
-					return false;
-				}
-			});
-		});
-		</script>";
     if (isset($_POST['moCheck']) and $_POST['moCheck'] == '1') {
         // Montag angeklickt
         $m0 = 'true';
