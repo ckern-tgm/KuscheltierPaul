@@ -185,11 +185,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 		<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='medikamente_index.php';">OK</button>
 	</div>
 
-<<<<<<< HEAD
-	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-=======
-	<form method="post" id="scroll">
->>>>>>> 33298e4e37d7cf7cb867a2b00426495a0a5ee681
+	<form id="scroll" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 		<br />
 		<div class="form-group">
 			<label for="name" class="headlabel">Medikamentenname:</label>
@@ -249,17 +245,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
 
 		<div class="form-group">
 			<div class="form-group col-md-6">
-<<<<<<< HEAD
 				<!--<a href="#modalHinz">-->
 					<button type="submit" name="submit" id="submit" class="btn btn-info btn-lg btn-block" onclick="">
-						<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="width: 3vw; height: 3vw;" viewBox="0 0 24 24">
-							<path d="M0 0h24v24H0z" fill="none" />
-							<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" /></svg>
-=======
+						<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" /></svg>
 				<a href="#modalHinz">
 					<button type="submit" name="submit" id="submit" class="btn btn-success btn-lg btn-block" onclick="">
 						<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" /></svg>
->>>>>>> 33298e4e37d7cf7cb867a2b00426495a0a5ee681
 						Hinzufügen
 					</button>
 				<!--</a>-->
