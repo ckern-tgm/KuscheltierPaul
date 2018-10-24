@@ -132,7 +132,7 @@
 			</div>
 			<div class="form-group">
 				<label for="hinw" class="headlabel">Hinweis:</label>
-				<input type="text" class="form-control form-control-lg" id="hinw" placeholder="Hinweis(optional)" />
+				<input type="text" class="form-control form-control-lg" id="hinw" placeholder="Hinweis (optional)" />
 				<small id="hinwHelp" class="form-text text-muted">
 					Hier können sie einen <b>Hinweis</b> zu ihrem Termin hinzufügen. Beispiel: "E-Card nicht vergessen."
 				</small>
