@@ -29,8 +29,7 @@
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<!-- thumbnail image wrapped in a link -->
-				<li><a href="#img1"><span class="glyphicon glyphicon-question-sign" alt="Hilfe"></span> Hilfe</a></li>
+				<li><a href="#modalHelp"><span class="glyphicon glyphicon-question-sign" alt="Hilfe"></span> Hilfe</a></li>
 			</ul>
 		</div>
 		
@@ -69,16 +68,38 @@
 			</h1>
 		</div>
 		
-		<!-- lightbox container hidden with CSS -->
-		<a href="#_" class="lightbox" id="img1">
-			<img src="Bilder/kalender.png">
-		</a>
+		<!-- Hilfe Alert -->
+		<div class="remodal" data-remodal-id="modalHelp">
+			<button data-remodal-action="close" class="remodal-close"></button>
+			<h1 class="helpHeadline">Hilfe Startseite</h1>
+			<br />
+			<br />
+			<p class="helpText">
+				<u>Was kann ich hier machen?</u>
+				<br />
+				<b>Informationen</b> zu Ihrem Kuscheltier bekommen und zu den <b>Funktionen navigieren</b>.
+			</p>
+			<p class="helpText">
+				<u>Wie kann ich das machen?</u>
+				<br />
+				- Durch <b>Scrollen</b> durch die Startseite können Sie alle <b>Informationen</b> sehen.
+				<div style="text-align: center;">
+					<img src="Bilder/maus_scroll.png" alt="Scrollmaus" style="width: 10%;" />
+				</div>
+			</p>
+			<p class="helpText">
+				- Zu den <b>Funktionen</b> gelangen Sie durch die <b>weiße Menüleiste</b> oben auf der Website. 
+				Es ist immer die <b>aktuelle Seite</b> auf der Sie sich befinden <b>hellblau markiert</b>, durch
+				klicken auf die gewünschte Seite mit ihrer Maus gelangen Sie zu dieser.
+				<div style="text-align: center;">
+					<img src="Bilder/bar.png" alt="Menübar" style="width: 80%;" />
+				</div>
+			</p>
+			<button class="helpBackButton" onclick="location.href='index.php';">Hilfe schließen</button>
+		</div>
 		
 		<br />
 		
-		<p>
-			
-		</p>
 		<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: justify; padding: 10px; font-size: 1.5vw;">
 			<u>Was ist Paul?</u>
 			Paul ist ein interaktives Kuscheltier, das Senioren in ihrem Alltag unterstützen, aber auch unterhalten soll. Dafür hat Paul verschiedene Taster, Sensoren und bietet zielgruppenorientierte Funktionen.

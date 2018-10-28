@@ -29,6 +29,26 @@ h1{
 }
 
 
+/** Hilfe **/
+.helpHeadline{
+	background-color: transparent;
+	color: #203B45;
+	text-align: center;
+}
+.helpText{
+	font-size: 2vw;
+	text-align: justify;
+	line-height: 150%;
+}
+.helpBackButton{
+	background-color: #203B45;
+	color: white;
+	margin-top: 10px;
+	width: 60%;
+	font-size: 3vw;
+}
+
+
 /** Formular: **/
 form{
 	background-color: #eeeeee;
