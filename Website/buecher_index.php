@@ -30,8 +30,7 @@
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<!-- thumbnail image wrapped in a link -->
-				<li><a href="#img1"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
+				<li><a href="#modalHelp"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
 			</ul>
 		</div>
 		
@@ -72,10 +71,28 @@
 			</h1>
 		</div>
 		
-		<!-- lightbox container hidden with CSS -->
-		<a href="#_" class="lightbox" id="img1">
-			<img src="Bilder/kalender.png">
-		</a>
+		<!-- Hilfe Alert -->
+		<div class="remodal" data-remodal-id="modalHelp">
+			<button data-remodal-action="close" class="remodal-close"></button>
+			<h1 class="helpHeadline">Hilfe Bücher <br /> vorlesen</h1>
+			<br />
+			<br />
+			<p class="helpText">
+				<u>Was kann ich hier machen?</u>
+				<br />
+				Hier können Sie alle verfügbaren <b>Hörbücher</b> ansehen und auswählen, welche davon <b>zum Vorlesen ausgewählt</b> sind.
+			<p class="helpText">
+				<u>Wie kann ich das machen?</u>
+				<br />
+				- Durch <b>Scrollen</b> auf der aktuellen Seite können Sie alle verfügbaren <b>Hörbücher</b> ansehen.
+				Sie können durch Klicken auf die <b>Checkbox</b> in der jeweiligen Spalte den Status von <b>Gewählt?</b> ändern.
+				Ist ein Hörbuch gewählt, wird dieses bei Bedarf von Paul abgespielt.
+				<div style="text-align: center;">
+					<img src="Bilder/books_tabelle.png" alt="Bild Termin Tabelle" style="width: 100%;" />
+				</div>
+			</p>
+			<button type="button" class="helpBackButton" onclick="location.href='buecher_index.php';">Hilfe schließen</button>
+		</div>
 		
 		<br />
 		<br />
@@ -97,7 +114,7 @@
                     </tr>
 					<tr>
 						<th>Harry Potter</th>
-						<td>Science</td>
+						<td>Science Fiction</td>
 						<td>CK</td>
 						<td>11:00</td>
 						<td>

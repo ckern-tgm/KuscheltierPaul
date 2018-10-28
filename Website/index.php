@@ -92,10 +92,10 @@
 				Es ist immer die <b>aktuelle Seite</b> auf der Sie sich befinden <b>hellblau markiert</b>, durch
 				klicken auf die gewünschte Seite mit ihrer Maus gelangen Sie zu dieser.
 				<div style="text-align: center;">
-					<img src="Bilder/bar.png" alt="Menübar" style="width: 80%;" />
+					<img src="Bilder/bar.png" alt="Menübar" style="width: 100%;" />
 				</div>
 			</p>
-			<button class="helpBackButton" onclick="location.href='index.php';">Hilfe schließen</button>
+			<button type="button" class="helpBackButton" onclick="location.href='index.php';">Hilfe schließen</button>
 		</div>
 		
 		<br />

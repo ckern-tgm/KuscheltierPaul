@@ -29,8 +29,7 @@
 			<a href="index.php" clas s="titel">Kuscheltier Paul</a>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
-			<!-- thumbnail image wrapped in a link -->
-			<li><a href="#img1"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
+			<li><a href="#modalHelp"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
 		</ul>
 	</div>
 
@@ -71,14 +70,47 @@
 			<a href="#scroll" style="color: white;">Medikament hinzufügen</a>
 		</h1>
 	</div>
-
-	<!-- lightbox container hidden with CSS -->
-	<a href="#_" class="lightbox" id="img1">
-		<img src="Bilder/kalender.png">
-	</a>
-
+	
 	<br />
-
+	
+	<!-- Hilfe Alert -->
+	<div class="remodal" data-remodal-id="modalHelp">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h1 class="helpHeadline">Hilfe Medikament hinzufügen</h1>
+		<br />
+		<br />
+		<p class="helpText">
+			<u>Was kann ich hier machen?</u>
+			<br />
+			Sie können hier <b>neue Medikamente hinzufügen</b>.
+		</p>
+		<p class="helpText">
+			<u>Wie kann ich das machen?</u>
+			<br />
+			- Zunächst müssen Sie die <b>Formularfelder ausfüllen</b>, die sich auf der aktuellen Seite befinden.
+			Diese haben bunte Rahmen, sind die Rahmen <b>rot</b>, fehlen die Eingaben noch, sind diese <b>grün</b> ist die Eingaben möglich.
+			<b>Unter jedem Eingabefeld finden Sie Hinweise und Beispiele</b> für die Eingabe. Sollte es Fehler geben, werden Ihnen
+			diese in roter Schrift angezeigt. Sind alle benötigten Daten korrekt eingegeben, leuchten alle Eingabefelder sowie der Rahmen des
+			Formulares grün. Beispiel für eine Eingabe:
+			<div style="text-align: center;">
+				<img src="Bilder/medikament_bsp.png" alt="Bild Medikamentename Eingabe" style="width: 100%;" />
+			</div>
+		</p>
+		<p class="helpText">
+			- Um das <b>eingegebene Medikament</b> nun <b>hinzuzufügen</b> müssen Sie auf den <b>grünen Button</b> mit der Aufschrift "Hinzufügen" klicken.
+			<div style="text-align: center;">
+				<img src="Bilder/add.png" alt="Button hinzufügen" style="width: 80%;" />
+			</div>
+		</p>
+		<p class="helpText">
+			- Um das <b>Hinzufügen des Medikamentes abbzubrechen</b> müssen Sie auf den <b>roten Button</b> mit der Aufschrift "Abbrechen" klicken.
+			<div style="text-align: center;">
+				<img src="Bilder/cancel.png" alt="Button Abbrechen" style="width: 80%;" />
+			</div>
+		</p>
+		<button type="button" class="helpBackButton" onclick="location.href='medikamente_neu.php';">Hilfe schließen</button>
+	</div>
+	
 	<!-- Hinzufügen Alert -->
 	<div class="remodal" data-remodal-id="modalHinz">
 		<button data-remodal-action="close" class="remodal-close"></button>

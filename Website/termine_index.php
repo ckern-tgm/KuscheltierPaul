@@ -29,8 +29,7 @@
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<!-- thumbnail image wrapped in a link -->
-				<li><a href="#img1"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
+				<li><a href="#modalHelp"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
 			</ul>
 		</div>
 		
@@ -71,12 +70,35 @@
 			</h1>
 		</div>
 		
-		<!-- lightbox container hidden with CSS -->
-		<a href="#_" class="lightbox" id="img1">
-			<img src="Bilder/kalender.png">
-		</a>
-		
-		<br />
+		<!-- Hilfe Alert -->
+		<div class="remodal" data-remodal-id="modalHelp">
+			<button data-remodal-action="close" class="remodal-close"></button>
+			<h1 class="helpHeadline">Hilfe <br /> Terminplanung</h1>
+			<br />
+			<br />
+			<p class="helpText">
+				<u>Was kann ich hier machen?</u>
+				<br />
+				Ihre bereits eingespeicherten, <b>aktuellen Termine</b> einsehen, diese bei Bedarf löschen und zur Seite an dem Sie 
+				<b>neue Termine hinzufügen</b> können, navigieren.
+			</p>
+			<p class="helpText">
+				<u>Wie kann ich das machen?</u>
+				<br />
+				- Durch <b>Scrollen</b> auf der aktuellen Seite können Sie alle Ihre <b>aktuellen Termine</b> sehen.
+				Sie können durch Klicken auf den <b>roten Button</b> Termine <b>löschen</b>.
+				<div style="text-align: center;">
+					<img src="Bilder/termin_tabelle.png" alt="Bild Termin Tabelle" style="width: 100%;" />
+				</div>
+			</p>
+			<p class="helpText">
+				- Um <b>Termine hinzuzufügen</b> klicken Sie auf den <b>blauen Button</b> auf dem oberen Teil der Seite.
+				<div style="text-align: center;">
+					<img src="Bilder/termin_button.png" alt="Button Medikamente hinzufügen" style="width: 100%;" />
+				</div>
+			</p>
+			<button type="button" class="helpBackButton" onclick="location.href='termine_index.php';">Hilfe schließen</button>
+		</div>
 		
 		<!-- Löschen Alert Abfrage -->
 		<div class="remodal" data-remodal-id="modalDel">

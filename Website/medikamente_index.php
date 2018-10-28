@@ -90,19 +90,17 @@
 				- Durch <b>Scrollen</b> auf der aktuellen Seite können Sie alle Ihre <b>aktuellen Medikamente</b> sehen.
 				Sie können durch Klicken auf den <b>roten Button</b> Medikamente <b>löschen</b>.
 				<div style="text-align: center;">
-					<img src="Bilder/medikamente_tabelle.png" alt="Bild Medikamente Tabelle" style="width: 70%;" />
+					<img src="Bilder/medikamente_tabelle.png" alt="Bild Medikamente Tabelle" style="width: 100%;" />
 				</div>
 			</p>
 			<p class="helpText">
 				- Um <b>Medikamente hinzuzufügen</b> klicken Sie auf den <b>blauen Button</b> auf dem oberen Teil der Seite.
 				<div style="text-align: center;">
-					<img src="Bilder/medikamente_button.png" alt="Button Medikamente hinzufügen" style="width: 80%;" />
+					<img src="Bilder/medikamente_button.png" alt="Button Medikamente hinzufügen" style="width: 100%;" />
 				</div>
 			</p>
-			<button class="helpBackButton" onclick="location.href='medikamente_index.php';">Hilfe schließen</button>
+			<button type="button" class="helpBackButton" onclick="location.href='medikamente_index.php';">Hilfe schließen</button>
 		</div>
-		
-		<br />
 		
 		<!-- Löschen Alert Abfrage -->
 		<div class="remodal" data-remodal-id="modalDel">
