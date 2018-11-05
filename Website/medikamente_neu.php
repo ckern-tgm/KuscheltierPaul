@@ -133,14 +133,14 @@
 		<br />
 		<div class="form-group">
 			<label for="name" class="headlabel">Medikamentenname:</label>
-			<input type="text" class="form-control form-control-lg" id="name" placeholder="Medikamentenname" required />
+			<input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Medikamentenname" required />
 			<small id="nameHelp" class="form-text text-muted">
 				Bitte geben Sie den <b>Namen</b> von ihrem Medikament ein. Beispiel: "Parkemed"
 			</small>
 		</div>
 		<div class="form-group">
 			<label for="zeit" class="headlabel">Uhrzeit:</label>
-			<input type="time" class="form-control form-control-lg" id="zeit" placeholder="Uhrzeit" required />
+			<input type="time" class="form-control form-control-lg" name="zeit" id="zeit" placeholder="Uhrzeit" required />
 			<small id="zeitHelp" class="form-text text-muted">
 				Bitte geben Sie die <b>Uhrzeit</b> ein, an dem Sie ihr Medikament nehmen wollen. Beispiel "08:00"
 			</small>
@@ -169,7 +169,7 @@
 		<br />
 		<div class="form-group">
 			<label for="anz" class="headlabel">Medikamentenanzahl:</label>
-			<input type="number" class="form-control form-control-lg" id="anz" value="0.5" step="0.5" min="0.5" max="10"
+			<input type="number" class="form-control form-control-lg" name="anz" id="anz" value="0.5" step="0.5" min="0.5" max="10"
 			 required />
 			<small id="anzHelp" class="form-text text-muted">
 				Bitte wählen Sie aus, <b>wie viele</b> Tabletten oder Becher Sie nehmen wollen. Beispiel: "1"
@@ -189,12 +189,12 @@
 
 		<div class="form-group">
 			<div class="form-group col-md-6">
-				<a href="#modalHinz">
+				<!--<a href="#modalHinz">-->
 					<button type="submit" name="submit" id="submit" class="btn btn-success btn-lg btn-block" onclick="">
 						<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" /></svg>
 						Hinzufügen
 					</button>
-				</a>
+				<!--</a>-->
 			</div>
 			<div class="form-group col-md-6">
 				<a href="#modalAbr">

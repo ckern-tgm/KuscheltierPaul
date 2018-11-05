@@ -12,17 +12,17 @@
  *
  * @param $name, $mo, $di, $mi, $do, $fr, $sa, $so, $anz, $zeit
  */
-function addMedikament($name, $mo, $di, $mi, $do, $fr, $sa, $so, $anz, $zeit)
+function addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit)
 {
     /*
     echo '<script language="javascript">';
     echo 'alert("addMedikament()")';
     echo '</script>';
     */
-    $dbconn = pg_connect('host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc'); //change to localhost
-    pg_prepare($dbconn, 'addMedikament', 'INSERT INTO medikamente VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)');
-    $insertValue = array($name, $mo, $di, $mi, $do, $fr, $sa, $so, $anz, $zeit);
-    pg_execute($dbconn, 'addMedikament', $insertValue);
+    $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc"); //change to localhost
+    pg_prepare($dbconn, "addMedikament", "INSERT INTO medikamente VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)");
+    $insertValue = array($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit);
+    pg_execute($dbconn, "addMedikament", $insertValue);
 }
 
 /**

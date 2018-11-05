@@ -2,9 +2,13 @@
 
 require 'functions.php';
 //Muss für Datenbank geupdatet werden. Folgt in kürze
-echo "<script type='text/javascript'>alert('alert')</script>";
-echo "start";
+//echo "<script type='text/javascript'>alert('med validation start')</script>";
 if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
+
+    $name = $_POST['name'];
+    $anz = $_POST['anz'];
+    $zeit = $_POST['zeit'];
+
     $ccount = 0;
     if (isset($_POST['moCheck']) and $_POST['moCheck'] == '1') {
         // Montag angeklickt
@@ -55,25 +59,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     } else {
         $so = 'false';
     }
-
+/*
     if (!$ccount > 0) {
         echo "<script type='text/javascript'>
 		 $(document).ready(function(){
 		 $('#modalAbr').modal('show');});
 		 </script>";
-    }
+    }*/
 
-    $name = $_POST['name'];
-    $anz = $_POST['anz'];
-    $zeit = $_POST['zeit'];
-
-    addMedikament($name, $mo, $di, $mi, $do, $fr, $sa, $so, $anz, $zeit);
-
+    addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit);
+/*
     echo "<script type='text/javascript'>
 		 $(document).ready(function(){
 		 $('#modalHinz').modal('show');});
-		 </script>";
+		 </script>";*/
 
-    echo "validation";
-    //header('location:medikamente_index.php');
+    //echo "<script type='text/javascript'>alert('med validation end')</script>";
+    header('location:medikamente_index.php');
 }
