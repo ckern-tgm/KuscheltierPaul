@@ -134,64 +134,8 @@
 				</thead>
 				<tbody>
 					<tr>
-                        <?php  ?>
+                        <?php showMedikamente(); ?>
                     </tr>
-					<tr>
-						<th>Pille 2</th>
-						<td>12:00</td>
-						<th>1</th>
-						<td>SA</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th>Pille 3</th>
-						<td>18:00</td>
-						<th>0.5</th>
-						<td>FR,SO</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th>Pille 4</th>
-						<td>18:00</td>
-						<th>0.5</th>
-						<td>FR,SO</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th>Pille 5</th>
-						<td>18:00</td>
-						<th>0.5</th>
-						<td>FR,SO</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th>Pille 6</th>
-						<td>18:00</td>
-						<th>0.5</th>
-						<td>FR,SO</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th>Pille 7</th>
-						<td>18:00</td>
-						<th>0.5</th>
-						<td>FR,SO</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th>Pille 8</th>
-						<td>18:00</td>
-						<th>0.5</th>
-						<td>FR,SO</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th>Pille 9</th>
-						<td>18:00</td>
-						<th>0.5</th>
-						<td>FR,SO</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
 					<tr>
 						<th>Pille 10</th>
 						<td>18:00</td>

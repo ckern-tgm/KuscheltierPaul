@@ -14,11 +14,6 @@
  */
 function addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit)
 {
-    /*
-    echo '<script language="javascript">';
-    echo 'alert("addMedikament()")';
-    echo '</script>';
-    */
     $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc"); //change to localhost
     pg_prepare($dbconn, "addMedikament", "INSERT INTO medikamente VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)");
     $insertValue = array($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit);
@@ -31,35 +26,31 @@ function addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit)
  */
 function showMedikamente()
 {
-    echo '<script language="javascript">';
-    echo 'alert("showMedikament()")';
-    echo '</script>';
-
-    $dbconn = pg_connect('host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc');
-    $medikament = 'SELECT * FROM medikamente WHERE name is not null;';
+    $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc");
+    $medikament = "SELECT * FROM medikamente WHERE name is not null;";
     $sql = pg_query($dbconn, $medikament);
     $medikamentArr = pg_fetch_all($sql);
 
     foreach ($medikamentArr as $medikament) { //zwischen zeit und anzahl die Tage ausgeben
         $name = $medikament['name'];
-        echo '<form action="delMedikament.php" method="get">';
+        echo "<form action='delMedikament.php' method='get'>";
         echo   "<tr>
                         <td scope='row'><h3>".$medikament['name'].'</h3></td>
                         <td><h3>'.$medikament['zeit'].'</h3></td>
-                        <td><h3>'.showDays($medikament['name']).'</h3></td>
-                        <td><h3>'.$medikament['anz']."</h3></td>
+                        <td><h3>'.$medikament['anz'].'</h3></td>
+                        <td><h3>'.showDays($medikament['name'])."</h3></td>
                         <td>
                             <a href='#modalDel' data-id='".$name."' class='btn btn-danger'>Löschen</a>
                         </td>
                     </tr>";
-        echo '</form>';
+        echo "</form>";
     }
 }
 
 function showDays($name)
 {
     $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc");
-    $days = "SELECT mo,di,mi,don,fr,sa,so FROM pillen WHERE name = '$name';";
+    $days = "SELECT montag,dienstag,mittwoch,donnerstag,freitag,samstag,sonntag FROM medikamente WHERE name = '$name';";
     $sql = pg_query($dbconn, $days);
     $i = pg_num_fields($sql);
     $row = pg_fetch_row($sql);
@@ -70,25 +61,25 @@ function showDays($name)
         $fieldname = pg_field_name($sql, $j);
         if ($row[$j] == 't') {
             switch ($fieldname) {
-                case 'mo':
+                case 'montag':
                     $fieldname = 'Mo';
                     break;
-                case 'di':
+                case 'dienstag':
                     $fieldname = 'Di';
                     break;
-                case 'mi':
+                case 'mittwoch':
                     $fieldname = 'Mi';
                     break;
-                case 'don':
+                case 'donnerstag':
                     $fieldname = 'Do';
                     break;
-                case 'fr':
+                case 'freitag':
                     $fieldname = 'Fr';
                     break;
-                case 'sa':
+                case 'samstag':
                     $fieldname = 'Sa';
                     break;
-                case 'so':
+                case 'sonntag':
                     $fieldname = 'So';
                     break;
             }

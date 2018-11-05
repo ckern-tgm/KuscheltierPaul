@@ -68,11 +68,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     }*/
 
     addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit);
-/*
-    echo "<script type='text/javascript'>
-		 $(document).ready(function(){
-		 $('#modalHinz').modal('show');});
-		 </script>";*/
+
+    echo "<script type='text/javascript'>";
+    echo "$(document).ready(function(){";
+    echo "$('#modalHinz').modal('show');});";
+	echo "</script>";
 
     //echo "<script type='text/javascript'>alert('med validation end')</script>";
     header('location:medikamente_index.php');
