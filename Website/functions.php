@@ -90,12 +90,36 @@ function showDays($name)
     return $string;
 }
 
-function addTermin($name, $datum, $zeit, $beschreibung, $ort)
+function addTermin($name, $datum, $zeit, $ort, $hinweis)
 {
-    /*
-    $dbconn = pg_connect('host=localhost port=5432 dbname=teddy user=vinc password=vinc');
-    pg_prepare($dbconn, 'addTermin', 'INSERT INTO termine VALUES($1,$2,$3,$4,$5,$6)');
-    $insertValue = array($this->name, $this->datum, $this->zeit, $this->beschreibung, $this->ort);
-    pg_execute($dbconn, 'addTermin', $insertValue);
-    */
+
+    $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc");
+    pg_prepare($dbconn, "addTermin", "INSERT INTO termine VALUES($1,$2,$3,$4,$5)");
+    $insertValue = array($name, $datum, $zeit, $ort, $hinweis);
+    pg_execute($dbconn, "addTermin", $insertValue);
+   
+}
+
+function showTermine(){
+    $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc");
+    $termine = "SELECT * FROM termine WHERE name is not null;";
+    $sql = pg_query($dbconn, $termine);
+    $termineArr = pg_fetch_all($sql);
+
+    foreach($termineArr as $termin){
+        $name = $termin['name'];
+        echo '<form action="delTermin.php" method="get">';
+        echo   "<tr>
+                        <td scope='row'><h3>".$termin['datum']."</h3></td>
+                        <td><h3>".$termin['uhrzeit']."</h3></td>
+                        <td><h3>".$termin['name']."</h3></td>
+                        <td><h3>".$termin['ort']."</h3></td>
+                        <td><h3>".$termin['hinweis']."</h3></td>
+                        <td>
+                            <!--<a href='deleteTermin.php?id=$name' class='btn btn-outline-danger'>Löschen</a>-->
+                            <a href='#modalDel'><button type='button' class='btn btn-danger'>Löschen</button></a>
+                        </td>
+                    </tr>";
+        echo '</form>';
+    }
 }

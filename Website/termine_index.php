@@ -1,3 +1,4 @@
+<?php require 'functions.php'; ?>
 <html lang="de">
 	<head>
 		<title>Aktuelle Termine</title>
@@ -111,9 +112,9 @@
 		</div>
 		
 		<button type="button" class="btn btn-info btn-lg btn-block" onclick="location.href='termine_neu.php';">
-			<?xml version="1.0" encoding="utf-8"?>
+			<?//xml version="1.0" encoding="utf-8"?>
 			<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-			<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+			<!DOCTYPE PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 			<svg version="1.1" alt="Termin hinzufügen" style="width: 3vw; height: 3vw;" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path d="M20,3h-1V1h-2v2H7V1H5v2H4C2.9,3,2,3.9,2,5v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5C22,3.9,21.1,3,20,3z M20,21H4V8h16V21z"/><path fill="none" d="M0,0h24v24H0V0z"/><path d="M16.969,15.304H12.71v4.259h-1.419v-4.259H7.031v-1.42h4.259V9.625h1.419v4.259h4.259V15.304z"/></svg>
 			Termin hinzufügen
 		</button>
@@ -133,46 +134,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<th scope="row">12.12.2018</th>
-						<td>08:00</td>
-						<th>Zahnarzt</th>
-						<td>Wien</td>
-						<td>E-Card</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th scope="row">26.12.2018</th>
-						<td>13:00</td>
-						<th>Familienessen</th>
-						<td>Schwechat</td>
-						<td>Kuchen</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th scope="row">31.12.2018</th>
-						<td>20:00</td>
-						<th>Silvesterfeier</th>
-						<td>Klosterneuburg</td>
-						<td>Geschenk</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th scope="row">12.12.2018</th>
-						<td>08:00</td>
-						<th>Zahnarzt</th>
-						<td>Wien</td>
-						<td>E-Card</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
-					<tr>
-						<th scope="row">26.12.2018</th>
-						<td>13:00</td>
-						<th>Familienessen</th>
-						<td>Schwechat</td>
-						<td>Kuchen</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
+                    <?php showTermine(); ?>
 					<tr>
 						<th scope="row">31.12.2018</th>
 						<td>20:00</td>
