@@ -1,7 +1,7 @@
 <?php require 'functions.php'; ?>
 <html lang="de">
 	<head>
-		<title>Termin hinzufügen</title>
+		<title>Notfalldaten ändern</title>
 		<!--Bootstrap-->
 		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
 		<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
@@ -32,6 +32,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#modalHelp"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
 			</ul>
+			<!--<button onclick="document.location = 'medikamente_index.php#img1'" style="float: right">Hilfe</button>-->
 		</div>
 		
 		<!--Menübar-->
@@ -44,7 +45,7 @@
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Medikamente erinnern" width="35" height="35" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></svg>
 				<span>Medikamente erinnern</span>
 			</a>
-			<a href="termine_index.php" class="choosen">
+			<a href="termine_index.php">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Terminplanung" width="35" height="35" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
 				<span>Terminplanung</span>
 			</a>
@@ -52,7 +53,7 @@
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Bücher vorlesen" width="35" height="35" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><defs><path id="a" d="M0 0h24v24H0V0z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"/></svg>
 				<span>Bücher vorlesen</span>
 			</a>
-			<a href="notfallsignal_index.php">
+			<a href="notfallsignal_index.php" class="choosen">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Notfallsignal" width="35" height="35" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 				<span>Notfallsignal</span>
 			</a>
@@ -61,53 +62,48 @@
 		<!--Aktuelle Seiten-Position-->
 		<ol class="breadcrumb">
 			<li><a href="index.php">Startseite</a></li>
-			<li><a href="termine_index.php">Terminplanung</a></li>
-			<li class="active">Termin hinzufügen</li>
+			<li><a href="notfallsignal_index.php">Aktuelle Notfalldaten</a></li>
+			<li class="active">Notfalldaten ändern</li>
 		</ol>
 		
 		<div>
 			<h1>
-				<?//xml version="1.0" encoding="utf-8"?>
-				<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-				<!DOCTYPE PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-				<svg version="1.1" alt="Termin hinzufügen" style="fill: white; width: 3vw; height: 3vw;" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path d="M20,3h-1V1h-2v2H7V1H5v2H4C2.9,3,2,3.9,2,5v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5C22,3.9,21.1,3,20,3z M20,21H4V8h16V21z"/><path fill="none" d="M0,0h24v24H0V0z"/><path d="M16.969,15.304H12.71v4.259h-1.419v-4.259H7.031v-1.42h4.259V9.625h1.419v4.259h4.259V15.304z"/></svg>
-				<a href="#scroll" style="color: white;">Termin hinzufügen</a>
+				<svg xmlns="http://www.w3.org/2000/svg" alt="Notfallsignal" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+				<a href="#scroll" style="color: white;">Notfalldaten ändern</a>
 			</h1>
 		</div>
-		
-		<br />
 		
 		<!-- Hilfe Alert -->
 		<div class="remodal" data-remodal-id="modalHelp">
 			<button data-remodal-action="close" class="remodal-close"></button>
-			<h1 class="helpHeadline">Hilfe Termin <br /> hinzufügen</h1>
+			<h1 class="helpHeadline">Hilfe Notfalldaten ändern</h1>
 			<br />
 			<br />
 			<p class="helpText">
 				<u>Was kann ich hier machen?</u>
 				<br />
-				Sie können hier <b>neue Termine hinzufügen</b>.
+				Ihre bereits eingespeicherten, <b>aktuellen Notfalldaten ändern</b>.
 			</p>
 			<p class="helpText">
 				<u>Wie kann ich das machen?</u>
 				<br />
 				- Zunächst müssen Sie die <b>Formularfelder ausfüllen</b>, die sich auf der aktuellen Seite befinden.
-				Diese haben bunte Rahmen, sind die Rahmen <b>rot</b>, fehlen die Eingaben noch, sind diese <b>grün</b> ist die Eingaben möglich.
-				<b>Unter jedem Eingabefeld finden Sie Hinweise und Beispiele</b> für die Eingabe. Sollte es Fehler geben, werden Ihnen
-				diese in roter Schrift angezeigt. Sind alle benötigten Daten korrekt eingegeben, leuchten alle Eingabefelder sowie der Rahmen des
-				Formulares grün. Beispiel für eine Eingabe:
+				Zur Zeit stehen hier die <b>aktuell eingespeicherten Notfalldaten</b> in den jeweiligen Feldern. Um diese <b>zu Ändern</b>, klicken Sie in die
+				<b>jeweiligen Felder</b> und <b>ändern Sie die Werte</b> in diesen.
+				Die Eingabefelder haben bunte Rahmen, sind die Rahmen <b>rot</b>, fehlen Eingaben, sind diese <b>grün</b> ist die Eingaben möglich. Sind alle 
+				benötigten Daten korrekt eingegeben, leuchten alle Eingabefelder sowie der Rahmen des Formulares grün. Beispiel für eine Eingabe:
 				<div style="text-align: center;">
-					<img src="Bilder/termin_bsp.png" alt="Bild Terminname Eingabe" style="width: 100%;" />
+					<img src="Bilder/notfalldaten_bsp.png" alt="Bild Medikamente Tabelle" style="width: 100%;" />
 				</div>
 			</p>
 			<p class="helpText">
-				- Um den <b>eingegebenen Termin</b> nun <b>hinzuzufügen</b> müssen Sie auf den <b>grünen Button</b> mit der Aufschrift "Hinzufügen" klicken.
+				- Um die <b>eingegebenen Daten</b> nun <b>permanent zu speichern</b> müssen Sie auf den <b>grünen Button</b> mit der Aufschrift "Speichern" klicken.
 				<div style="text-align: center;">
-					<img src="Bilder/add.png" alt="Button hinzufügen" style="width: 80%;" />
+					<img src="Bilder/save.png" alt="Button speichern" style="width: 80%;" />
 				</div>
 			</p>
 			<p class="helpText">
-				- Um das <b>Hinzufügen des Termines abbzubrechen</b> müssen Sie auf den <b>roten Button</b> mit der Aufschrift "Abbrechen" klicken.
+				- Um das <b>Hinzufügen der Daten abbzubrechen</b> müssen Sie auf den <b>roten Button</b> mit der Aufschrift "Abbrechen" klicken.
 				<div style="text-align: center;">
 					<img src="Bilder/cancel.png" alt="Button Abbrechen" style="width: 80%;" />
 				</div>
@@ -116,80 +112,91 @@
 		</div>
 		
 		<!-- Hinzufügen Alert -->
-		<div class="remodal" data-remodal-id="modalHinz">
+		<div class="remodal" data-remodal-id="modalUpd">
 			<button data-remodal-action="close" class="remodal-close"></button>
-			<h1 style="background-color: transparent; color: green; text-align: center;">Hinzufügen <br /> erfolgreich!</h1>
+			<h1 style="background-color: transparent; color: green; text-align: center;">Speichern <br /> erfolgreich!</h1>
 			<br />
 			<br />
-			<button data-remodal-action="confirm" class="remodal-confirm" onclick="location.href='termine_index.php';">OK</button>
+			<button data-remodal-action="confirm" class="remodal-confirm" onclick="location.href='notfallsignal_index.php';">OK</button>
 		</div>
-		
+
 		<!-- Abbrechen Alert -->
 		<div class="remodal" data-remodal-id="modalAbr">
 			<button data-remodal-action="close" class="remodal-close"></button>
 			<h1 style="background-color: transparent; color: red; text-align: center;">Hinzufügen <br /> abgebrochen!</h1>
 			<br />
 			<br />
-			<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='termine_index.php';">OK</button>
+			<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='notfallsignal_index.php';">OK</button>
 		</div>
 		
-		<form action="termine_neu_validation.php" method="post" id="scroll">
+		<br />
+		
+		<form action="" method="post" id="scroll">
 			<br />
-			<div class="form-group">
-				<label for="name" class="headlabel">Terminname:</label>
-				<input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Terminname" required />
-				<small id="nameHelp" class="form-text text-muted">
-					Bitte geben Sie den <b>Namen</b> von ihrem Termim ein. Beispiel: "Zahnarzt"
-				</small>
-			</div>
-			<div class="form-group">
-				<label for="datum" class="headlabel">Datum:</label>
-				<input type="date" class="form-control form-control-lg" id="datum" name="datum" placeholder="Datum" required />
-				<small id="datumHelp" class="form-text text-muted">
-					Bitte geben Sie das <b>Datum</b> ihres Termines ein. Beispiel: "01.01.2020"
-				</small>
-			</div>
-			<div class="form-group">
-				<label for="zeit" class="headlabel">Uhrzeit:</label>
-				<input type="time" class="form-control form-control-lg" id="zeit" name="zeit" placeholder="Uhrzeit" required />
-				<small id="zeitHelp" class="form-text text-muted">
-					Bitte geben Sie die <b>Uhrzeit</b> ihres Termines ein. Beispiel: "08:00"
-				</small>
-			</div>
-			<div class="form-group">
-				<label for="ort" class="headlabel">Ort:</label>
-				<input type="text" class="form-control form-control-lg" id="ort" name="ort" placeholder="Ort" required />
-				<small id="ortHelp" class="form-text text-muted">
-					Bitte geben Sie den <b>Ort</b> von ihrem Termin ein. Beispiel: "Wien"
-				</small>
-			</div>
-			<div class="form-group">
-				<label for="hinw" class="headlabel">Hinweis:</label>
-				<input type="text" class="form-control form-control-lg" id="hinw" name="hinw" placeholder="Hinweis (optional)" />
-				<small id="hinwHelp" class="form-text text-muted">
-					Hier können sie einen <b>Hinweis</b> zu ihrem Termin hinzufügen. Beispiel: "E-Card nicht vergessen."
-				</small>
+			<div class="table-responsive table-wrapper-scroll-y" id="scroll">
+				<table class="table table-dark table-bordered table-hover table-striped">
+					<thead class="tablehead">
+						<tr>
+							<th scope="col" colspan="3">Daten des Kuscheltierbesitzers:</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Name</th>
+							<td>
+								<input type="text" class="form-control form-control-lg" value="Max Mustermann" placeholder="Name" required />
+							</td>
+						</tr>
+						<tr>
+							<th>Adresse</th>
+							<td>
+								<input type="text" class="form-control form-control-lg" value="Musterstraße 10" placeholder="Adresse" required />
+							</td>
+						</tr>
+						<tr>
+							<th>Telefonnummer</th>
+							<td>
+								<input type="text" class="form-control form-control-lg" value="06501234567" pattern="[0-9]{11}" placeholder="Telefonnummer" required />
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			
 			<br />
-			<br />
 			
-			<div class="progress">
-				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-					<p class="progress-bar-text">25%</p>
-				</div>
+			<div class="table-responsive table-wrapper-scroll-y" id="scroll">
+				<table class="table table-dark table-bordered table-hover table-striped">
+					<thead class="tablehead">
+						<tr>
+							<th scope="col" colspan="3">Daten des Notfallkontaktes:</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Name</th>
+							<td>
+								<input type="text" class="form-control form-control-lg" value="Hilfi Mustermann" placeholder="Name" required />
+							</td>
+						</tr>
+						<tr>
+							<th>Telefonnummer</th>
+							<td>
+								<input type="text" class="form-control form-control-lg" value="06501234568" pattern="[0-9]{11}" placeholder="Telefonnummer" required />
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			
-			<br />
 			
 			<div class="form-group">
 				<div class="form-group col-md-6">
-					<!--<a href="#modalHinz">-->
-						<button type="submit" name="submit" id="submit" class="btn btn-success btn-lg btn-block" onclick="">
+					<a href="#modalUpd">
+						<button type="button" name="submit" id="submit" class="btn btn-success btn-lg btn-block" onclick="">
 							<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
-							Hinzufügen
+							Speichern
 						</button>
-					<!--</a>-->
+					</a>
 				</div>
 				<div class="form-group col-md-6">
 					<a href="#modalAbr">
@@ -202,6 +209,8 @@
 			</div>
 		</form>
 		
+		<br />
+		<br />
 		<br />
 		<br />
 		<br />
