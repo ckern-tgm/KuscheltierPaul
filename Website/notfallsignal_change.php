@@ -32,7 +32,6 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#modalHelp"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
 			</ul>
-			<!--<button onclick="document.location = 'medikamente_index.php#img1'" style="float: right">Hilfe</button>-->
 		</div>
 		
 		<!--Menübar-->
