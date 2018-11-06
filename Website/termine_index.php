@@ -141,7 +141,7 @@
 						<th>Silvesterfeier</th>
 						<td>Klosterneuburg</td>
 						<td>Geschenk</td>
-						<td><a href="#modalDel"><button type="button" class="btn btn-danger">Löschen</button></a></td>
+						<td><a href="#modalDel" class="noUnderline"><button type="button" class="btn btn-danger">Löschen</button></a></td>
 					</tr>
 				</tbody>
 			</table>
