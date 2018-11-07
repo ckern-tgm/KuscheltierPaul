@@ -168,6 +168,7 @@ input:valid {
 	text-align: center;
 	margin:0px auto;
 	margin-top: 40px;
+	
 }
 .btn.btn-warning{
 	width: 60%;
@@ -184,6 +185,10 @@ button[type=button]:hover{
 }
 button[type=submit]:hover{
     text-decoration:underline;
+}
+
+.noUnderline:hover {
+	text-decoration: none;
 }
 
 /* ??? */
