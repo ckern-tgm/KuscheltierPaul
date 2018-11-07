@@ -14,7 +14,7 @@
  */
 function addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit)
 {
-    $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc"); //change to localhost
+    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc"); //change to localhost
     pg_prepare($dbconn, "addMedikament", "INSERT INTO medikamente VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)");
     $insertValue = array($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit);
     pg_execute($dbconn, "addMedikament", $insertValue);
@@ -26,7 +26,7 @@ function addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit)
  */
 function showMedikamente()
 {
-    $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc");
+    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
     $medikament = "SELECT * FROM medikamente WHERE name is not null;";
     $sql = pg_query($dbconn, $medikament);
     $medikamentArr = pg_fetch_all($sql);
@@ -49,7 +49,7 @@ function showMedikamente()
 
 function showDays($name)
 {
-    $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc");
+    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
     $days = "SELECT montag,dienstag,mittwoch,donnerstag,freitag,samstag,sonntag FROM medikamente WHERE name = '$name';";
     $sql = pg_query($dbconn, $days);
     $i = pg_num_fields($sql);
@@ -93,7 +93,7 @@ function showDays($name)
 function addTermin($name, $datum, $zeit, $ort, $hinweis)
 {
 
-    $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc");
+    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
     pg_prepare($dbconn, "addTermin", "INSERT INTO termine VALUES($1,$2,$3,$4,$5)");
     $insertValue = array($name, $datum, $zeit, $ort, $hinweis);
     pg_execute($dbconn, "addTermin", $insertValue);
@@ -101,7 +101,7 @@ function addTermin($name, $datum, $zeit, $ort, $hinweis)
 }
 
 function showTermine(){
-    $dbconn = pg_connect("host=localhost port=5432 dbname=kuscheltier user=vinc password=vinc");
+    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
     $termine = "SELECT * FROM termine WHERE name is not null;";
     $sql = pg_query($dbconn, $termine);
     $termineArr = pg_fetch_all($sql);
