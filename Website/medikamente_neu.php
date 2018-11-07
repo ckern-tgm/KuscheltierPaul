@@ -147,19 +147,19 @@
 		</div>
 		<label for="tage" class="headlabel">Einnahmetage:</label>
 		<div class="form-check form-check-inline" id="tage">
-			<input type="checkbox" class="form-check-input" id="moCheck" />
+			<input type="checkbox" class="form-check-input" id="moCheck" name="moCheck"/>
 			<label class="form-check-label" for="moCheck">Montag</label>
-			<input type="checkbox" class="form-check-input" id="diCheck" />
+			<input type="checkbox" class="form-check-input" id="diCheck" name="diCheck"/>
 			<label class="form-check-label" for="diCheck">Dienstag</label>
-			<input type="checkbox" class="form-check-input" id="miCheck" />
+			<input type="checkbox" class="form-check-input" id="miCheck" name="miCheck"/>
 			<label class="form-check-label" for="miCheck">Mittwoch</label>
-			<input type="checkbox" class="form-check-input" id="doCheck" />
+			<input type="checkbox" class="form-check-input" id="doCheck" name="doCheck" />
 			<label class="form-check-label" for="doCheck">Donnerstag</label>
-			<input type="checkbox" class="form-check-input" id="frCheck" />
+			<input type="checkbox" class="form-check-input" id="frCheck" name="frCheck"/>
 			<label class="form-check-label" for="frCheck">Freitag</label>
-			<input type="checkbox" class="form-check-input" id="samCheck" />
+			<input type="checkbox" class="form-check-input" id="samCheck" name="samCheck"/>
 			<label class="form-check-label" for="samCheck">Samstag</label>
-			<input type="checkbox" class="form-check-input" id="soCheck" />
+			<input type="checkbox" class="form-check-input" id="soCheck" name="soCheck"/>
 			<label class="form-check-label" for="soCheck">Sonntag</label>
 			<br />
 			<small id="tageHelp" class="form-text text-muted">
