@@ -116,8 +116,8 @@ function showTermine(){
                         <td><h3>".$termin['ort']."</h3></td>
                         <td><h3>".$termin['hinweis']."</h3></td>
                         <td>
-                            <!--<a href='deleteTermin.php?id=$name' class='btn btn-outline-danger'>Löschen</a>-->
-                            <a href='#modalDel'><button type='button' class='btn btn-danger'>Löschen</button></a>
+                            <a href='delTermin.php?id=$name' class='btn btn-danger'>Löschen</a>
+                            <!--<a href='#modalDel'><button type='button' class='btn btn-danger'>Löschen</button></a>-->
                         </td>
                     </tr>";
         echo '</form>';

@@ -135,14 +135,6 @@
 				</thead>
 				<tbody>
                     <?php showTermine(); ?>
-					<tr>
-						<th scope="row">31.12.2018</th>
-						<td>20:00</td>
-						<th>Silvesterfeier</th>
-						<td>Klosterneuburg</td>
-						<td>Geschenk</td>
-						<td><a href="#modalDel" class="noUnderline"><button type="button" class="btn btn-danger">Löschen</button></a></td>
-					</tr>
 				</tbody>
 			</table>
 		</div>
