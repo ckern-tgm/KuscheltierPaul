@@ -59,15 +59,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     } else {
         $so = 'false';
     }
-
-    if (!$ccount > 0) {
+    /*
+    if ($ccount == 0) {
         echo "<script type='text/javascript'>
-		 $(document).ready(function(){
-		    $('#modalAbr').modal('show');
-		 });
-		 </script>";
+		     $('#modalAbr').modal('toggle');
+		     </script>";
     }
-
+    */
     addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit);
 /*
     echo "<script type='text/javascript'>";

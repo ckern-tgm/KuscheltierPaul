@@ -35,12 +35,12 @@ function showMedikamente()
         $name = $medikament['name'];
         echo "<form action='delMedikament.php' method='get'>";
         echo   "<tr>
-                        <td scope='row'><h3>".$medikament['name'].'</h3></td>
+                        <td scope='row'><h3>".$name.'</h3></td>
                         <td><h3>'.$medikament['zeit'].'</h3></td>
                         <td><h3>'.$medikament['anz'].'</h3></td>
                         <td><h3>'.showDays($medikament['name'])."</h3></td>
                         <td>
-                            <a href='#modalDel' data-id='".$name."' class='btn btn-danger'>Löschen</a>
+                            <a href='delMedikament.php?id=$name' class='btn btn-danger'>Löschen</a>
                         </td>
                     </tr>";
         echo "</form>";

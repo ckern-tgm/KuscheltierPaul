@@ -106,7 +106,7 @@
 		<div class="remodal" data-remodal-id="modalDel">
 			<button data-remodal-action="close" class="remodal-close"></button>
 			<h1 style="background-color: transparent; color: red; text-align: center;">Wirklich löschen?</h1>
-			<p>Wollen Sie das Medikament <?php echo $name; ?> wirklich löschen?</p>
+			<p>Wollen Sie das Medikament wirklich löschen?</p>
 			<br />
 			<a href='delMedikament.php?id=$name'>
 				<button data-remodal-action="confirm" class="remodal-confirm" style="text-decoration:underline;">Ja</button>
