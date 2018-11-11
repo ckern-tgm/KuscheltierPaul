@@ -116,13 +116,7 @@
 		</div>
 		
 		<!-- Hinzufügen Alert -->
-		<div class="remodal" data-remodal-id="modalHinz">
-			<button data-remodal-action="close" class="remodal-close"></button>
-			<h1 style="background-color: transparent; color: green; text-align: center;">Hinzufügen <br /> erfolgreich!</h1>
-			<br />
-			<br />
-			<button data-remodal-action="confirm" class="remodal-confirm" onclick="location.href='termine_index.php';">OK</button>
-		</div>
+
 		
 		<!-- Abbrechen Alert -->
 		<div class="remodal" data-remodal-id="modalAbr">

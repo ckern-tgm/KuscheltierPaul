@@ -18,6 +18,7 @@ function addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit)
     pg_prepare($dbconn, "addMedikament", "INSERT INTO medikamente VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)");
     $insertValue = array($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit);
     pg_execute($dbconn, "addMedikament", $insertValue);
+
 }
 
 /**
@@ -31,26 +32,30 @@ function showMedikamente()
     $sql = pg_query($dbconn, $medikament);
     $medikamentArr = pg_fetch_all($sql);
 
+
     foreach ($medikamentArr as $medikament) { //zwischen zeit und anzahl die Tage ausgeben
         $name = $medikament['name'];
-        echo "<form action='delMedikament.php' method='get'>";
+        $zeit = $medikament['zeit'];
+        $anz = $medikament['anz'];
+        echo "<form action='delMedikament.php' method='GET'>";
         echo   "<tr>
                         <td scope='row'><h3>".$name.'</h3></td>
-                        <td><h3>'.$medikament['zeit'].'</h3></td>
-                        <td><h3>'.$medikament['anz'].'</h3></td>
-                        <td><h3>'.showDays($medikament['name'])."</h3></td>
+                        <td><h3>'.$zeit.'</h3></td>
+                        <td><h3>'.$anz.'</h3></td>
+                        <td><h3>'.showDays($name, $zeit, $anz)."</h3></td>
                         <td>
-                            <a href='delMedikament.php?id=$name' class='btn btn-danger'>Löschen</a>
+                            <a href='delMedikament.php?id=$name&zeit=$zeit&anz=$anz;' class='btn btn-danger'>Löschen</a>
                         </td>
                     </tr>";
         echo "</form>";
     }
+
 }
 
-function showDays($name)
+function showDays($name, $zeit, $anz)
 {
     $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
-    $days = "SELECT montag,dienstag,mittwoch,donnerstag,freitag,samstag,sonntag FROM medikamente WHERE name = '$name';";
+    $days = "SELECT montag,dienstag,mittwoch,donnerstag,freitag,samstag,sonntag FROM medikamente WHERE name = '$name' AND zeit = '".$zeit."' AND anz = ".$anz.";";
     $sql = pg_query($dbconn, $days);
     $i = pg_num_fields($sql);
     $row = pg_fetch_row($sql);
@@ -97,6 +102,7 @@ function addTermin($name, $datum, $zeit, $ort, $hinweis)
     pg_prepare($dbconn, "addTermin", "INSERT INTO termine VALUES($1,$2,$3,$4,$5)");
     $insertValue = array($name, $datum, $zeit, $ort, $hinweis);
     pg_execute($dbconn, "addTermin", $insertValue);
+
    
 }
 
@@ -108,18 +114,28 @@ function showTermine(){
 
     foreach($termineArr as $termin){
         $name = $termin['name'];
+        $datum = $termin['datum'];
+        $zeit = $termin['uhrzeit'];
+        /*echo "<div class='remodal' data-remodal-id='modalHinz".$name."'>
+			   <button data-remodal-action='close' class='remodal-close'></button>
+			   <h1 style='background-color: transparent; color: red; text-align: center;'>".$name." <br /> löschen?</h1>
+			   <br />
+			   <br />
+			   <a href='delTermin.php?id=$name' data-remodal-action='confirm' class='remodal-confirm'>OK</a>
+		       </div>";
+           */
         echo '<form action="delTermin.php" method="get">';
         echo   "<tr>
-                        <td scope='row'><h3>".$termin['datum']."</h3></td>
-                        <td><h3>".$termin['uhrzeit']."</h3></td>
-                        <td><h3>".$termin['name']."</h3></td>
+                        <td scope='row'><h3>".$datum."</h3></td>
+                        <td><h3>".$zeit."</h3></td>
+                        <td><h3>".$name."</h3></td>
                         <td><h3>".$termin['ort']."</h3></td>
                         <td><h3>".$termin['hinweis']."</h3></td>
                         <td>
-                            <a href='delTermin.php?id=$name' class='btn btn-danger'>Löschen</a>
-                            <!--<a href='#modalDel'><button type='button' class='btn btn-danger'>Löschen</button></a>-->
+                            <a href='delTermin.php?id=$name&datum=$datum&zeit=$zeit' class='btn btn-danger'>Löschen</a>
                         </td>
                     </tr>";
         echo '</form>';
     }
+
 }
