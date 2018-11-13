@@ -141,12 +141,125 @@ function showTermine(){
 }
 
 function showBuecher(){
-    $dbconn = pg_connect("host=localhost port=5432 dbname=teddy user=vinc password=vinc");
+    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
     $select = "SELECT name, genre, author FROM buch WHERE name is not null";
     $sql = pg_query($dbconn, $select);
     $buchArr = pg_fetch_all($sql);
 
     foreach($buchArr as $buch){
-        
+
     }
+}
+
+class Notfallkontakt{
+    private $update;
+    function __construct(){}
+
+    function getName(){
+        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+        $nname = "SELECT name FROM notfallkontakt WHERE name is not null;";
+        $sql = pg_query($dbconn, $nname);
+        $nname = pg_fetch_row($sql);
+
+        echo "$nname[0]";
+    }
+
+    function getTel(){
+        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+        $ntel = "SELECT tel FROM notfallkontakt WHERE name is not null;";
+        $sql = pg_query($dbconn, $ntel);
+        $ntel = pg_fetch_row($sql);
+
+        echo "$ntel[0]";
+    }
+
+    function show(){
+        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+        $nname = "SELECT name FROM notfallkontakt WHERE name is not null;";
+        $sql = pg_query($dbconn, $nname);
+        $nname = pg_fetch_row($sql);
+
+        $ntel = "SELECT tel FROM notfallkontakt WHERE name is not null;";
+        $sql = pg_query($dbconn, $ntel);
+        $ntel = pg_fetch_row($sql);
+
+        echo    "<p class=\'card-text\'><h3>Name: $nname[0]</h3></p>
+			    <p class=\'card-text\'><h3>Telefon: $ntel[0]</h3></p>";
+
+    }
+    /*
+    function update(){
+        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+
+        if(func_num_args() == 2){
+            $del = "DELETE FROM notfallkontakt WHERE name is not null;";
+            pg_query($dbconn, $del);
+            pg_prepare($dbconn,"updateKontakt","INSERT INTO notfallkontakt VALUES($1,$2)");
+            $insertValue = array(func_get_arg(0), func_get_arg(1));
+            pg_execute($dbconn,"updateKontakt", $insertValue);
+        }
+    }
+    */
+}
+
+class Kuscheltiernutzer{
+    function __construct(){}
+
+    function getName(){
+        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+        $nname = "SELECT name FROM kuscheltiernutzer WHERE name is not null;";
+        $sql = pg_query($dbconn, $nname);
+        $nname = pg_fetch_row($sql);
+
+        echo "$nname[0]";
+    }
+
+    function getAdress(){
+        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+        $nadress = "SELECT adresse FROM kuscheltiernutzer WHERE name is not null;";
+        $sql = pg_query($dbconn, $nadress);
+        $nadress = pg_fetch_row($sql);
+
+        echo "$nadress[0]";
+    }
+
+    function getTel(){
+        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+        $ntel = "SELECT tel FROM kuscheltiernutzer WHERE name is not null;";
+        $sql = pg_query($dbconn, $ntel);
+        $ntel = pg_fetch_row($sql);
+
+        echo "$ntel[0]";
+    }
+    /*
+    function update(){
+        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+
+        if(func_num_args() == 3){
+            $del = "DELETE FROM kuscheltiernutzer WHERE name is not null;";
+            pg_query($dbconn, $del);
+            pg_prepare($dbconn,"updateNutzer","INSERT INTO kuscheltiernutzer VALUES($1,$2,$3)");
+            $insertValue = array(func_get_arg(0), func_get_arg(1),func_get_arg(2));
+            pg_execute($dbconn,"updateNutzer", $insertValue);
+        }
+    }
+
+    function show(){
+        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+        $nname = "SELECT name FROM kuscheltiernutzer WHERE name is not null;";
+        $sql = pg_query($dbconn, $nname);
+        $nname = pg_fetch_row($sql);
+
+        $nadresse = "SELECT adresse FROM kuscheltiernutzer WHERE name is not null;";
+        $sql = pg_query($dbconn, $nadresse);
+        $nadresse = pg_fetch_row($sql);
+
+        $ntel = "SELECT tel FROM kuscheltiernutzer WHERE name is not null;";
+        $sql = pg_query($dbconn, $ntel);
+        $ntel = pg_fetch_row($sql);
+
+        echo   "<p class=\'card-text\'><h3>Name: $nname[0]</h3></p>
+			        <p class=\'card-text\'><h3>Adresse: $nadresse[0]</h3></p>
+				    <p class=\'card-text\'><h3>Telefon: $ntel[0]</h3></p>";
+    }*/
 }

@@ -1,4 +1,8 @@
-<?php require 'functions.php'; ?>
+<?php
+    require 'functions.php';
+    $nk = new Notfallkontakt();
+    $kn = new Kuscheltiernutzer();
+?>
 <html lang="de">
 	<head>
 		<title>Aktuelle Notfalldaten</title>
@@ -130,15 +134,15 @@
 				<tbody>
 					<tr>
 						<th>Name</th>
-						<td>Max Mustermann</td>
+						<td><?php $kn->getName(); ?></td>
                     </tr>
 					<tr>
 						<th>Adresse</th>
-						<td>Musterstraße 10</td>
+						<td><?php $kn->getAdress(); ?></td>
                     </tr>
 					<tr>
 						<th>Telefonnummer</th>
-						<td>06501234567</td>
+						<td><?php $kn->getTel(); ?></td>
                     </tr>
 				</tbody>
 			</table>
@@ -156,11 +160,11 @@
 				<tbody>
 					<tr>
 						<th>Name</th>
-						<td>Hilfi Mustermann</td>
+						<td><?php $nk->getName(); ?></td>
                     </tr>
 					<tr>
 						<th>Telefonnummer</th>
-						<td>06641234567</td>
+						<td><?php $nk->getTel(); ?></td>
                     </tr>
 				</tbody>
 			</table>
