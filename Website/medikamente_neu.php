@@ -15,6 +15,21 @@
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css">
 		<!--CSS-->
 		<link href="design.css" rel="stylesheet" />
+
+		<script type="text/javascript">
+            jQuery(function ($) {
+                //form submit handler
+                $('#scroll').submit(function (e) {
+                    //check atleat 1 checkbox is checked
+                    if (!$('.tagselect').is(':checked')) {
+                        //prevent the default form submit if it is not checked
+                        e.preventDefault();
+                        alert('Min 1 Tag muss selected werden');
+                        //$('#modalHinz').modal('show');
+                    }
+                })
+            })
+		</script>
 	</head>
 <body>
 	<!--Remodal-->
@@ -147,19 +162,19 @@
 		</div>
 		<label for="tage" class="headlabel">Einnahmetage:</label>
 		<div class="form-check form-check-inline" id="tage">
-			<input type="checkbox" class="form-check-input" id="moCheck" name="moCheck"/>
+			<input type="checkbox" class="form-check-input tagselect" id="moCheck" name="moCheck"/>
 			<label class="form-check-label" for="moCheck">Montag</label>
-			<input type="checkbox" class="form-check-input" id="diCheck" name="diCheck"/>
+			<input type="checkbox" class="form-check-input tagselect" id="diCheck" name="diCheck"/>
 			<label class="form-check-label" for="diCheck">Dienstag</label>
-			<input type="checkbox" class="form-check-input" id="miCheck" name="miCheck"/>
+			<input type="checkbox" class="form-check-input tagselect" id="miCheck" name="miCheck"/>
 			<label class="form-check-label" for="miCheck">Mittwoch</label>
-			<input type="checkbox" class="form-check-input" id="doCheck" name="doCheck" />
+			<input type="checkbox" class="form-check-input tagselect" id="doCheck" name="doCheck" />
 			<label class="form-check-label" for="doCheck">Donnerstag</label>
-			<input type="checkbox" class="form-check-input" id="frCheck" name="frCheck"/>
+			<input type="checkbox" class="form-check-input tagselect" id="frCheck" name="frCheck"/>
 			<label class="form-check-label" for="frCheck">Freitag</label>
-			<input type="checkbox" class="form-check-input" id="samCheck" name="samCheck"/>
+			<input type="checkbox" class="form-check-input tagselect" id="samCheck" name="samCheck"/>
 			<label class="form-check-label" for="samCheck">Samstag</label>
-			<input type="checkbox" class="form-check-input" id="soCheck" name="soCheck"/>
+			<input type="checkbox" class="form-check-input tagselect" id="soCheck" name="soCheck"/>
 			<label class="form-check-label" for="soCheck">Sonntag</label>
 			<br />
 			<small id="tageHelp" class="form-text text-muted">

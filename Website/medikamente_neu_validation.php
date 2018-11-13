@@ -1,10 +1,8 @@
 <?php
 
 require 'functions.php';
-//Muss für Datenbank geupdatet werden. Folgt in kürze
-//echo "<script type='text/javascript'>alert('med validation start')</script>";
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
-    echo "<script type='text/javascript'>alert('start')</script>";
     $name = $_POST['name'];
     $anz = $_POST['anz'];
     $zeit = $_POST['zeit'];
@@ -73,6 +71,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     echo "$('#modalHinz').modal('show');});";
 	echo "</script>";*/
 
-    //echo "<script type='text/javascript'>alert('med validation end')</script>";
     header('location:medikamente_index.php');
 }

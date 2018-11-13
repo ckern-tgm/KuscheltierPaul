@@ -139,3 +139,14 @@ function showTermine(){
     }
 
 }
+
+function showBuecher(){
+    $dbconn = pg_connect("host=localhost port=5432 dbname=teddy user=vinc password=vinc");
+    $select = "SELECT name, genre, author FROM buch WHERE name is not null";
+    $sql = pg_query($dbconn, $select);
+    $buchArr = pg_fetch_all($sql);
+
+    foreach($buchArr as $buch){
+        
+    }
+}

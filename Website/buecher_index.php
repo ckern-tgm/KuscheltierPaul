@@ -109,9 +109,9 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-                        <?php  ?>
-                    </tr>
+
+                    <?php  ?>
+
 					<tr>
 						<th>Harry Potter</th>
 						<td>Science Fiction</td>
