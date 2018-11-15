@@ -111,7 +111,7 @@
 			<br />
 			<br />
 			<p>Mit geben Sie im folgenden Feld des Passwort zum Ändern der Notfalldaten ein:</p>
-			<input type="text" class="form-control form-control-lg" name="pwd" id="pwd" placeholder="Passwort" required />
+			<input type="password" class="form-control form-control-lg" name="pwd" id="pwd" placeholder="Passwort" required />
 			<br />
 			<button data-remodal-action="confirm" class="remodal-confirm" onclick="location.href='notfallsignal_change.php'">Prüfen</button>
 			<button data-remodal-action="cancel" class="remodal-cancel">Abbrechen</button>

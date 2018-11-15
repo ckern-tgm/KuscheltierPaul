@@ -92,6 +92,13 @@ input[type=date]{
 	padding-left: 4%;
 	border-radius: 10px;
 }
+input[type=password]{
+	height: 60px;
+	font-size: 2vw;
+	text-align: center;
+	padding-left: 4%;
+	border-radius: 10px;
+}
 small{
 	font-size: 18px;
 }
