@@ -173,21 +173,6 @@ class Notfallkontakt{
         echo "$ntel[0]";
     }
 
-    function show(){
-        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
-        $nname = "SELECT name FROM notfallkontakt WHERE name is not null;";
-        $sql = pg_query($dbconn, $nname);
-        $nname = pg_fetch_row($sql);
-
-        $ntel = "SELECT tel FROM notfallkontakt WHERE name is not null;";
-        $sql = pg_query($dbconn, $ntel);
-        $ntel = pg_fetch_row($sql);
-
-        echo    "<p class=\'card-text\'><h3>Name: $nname[0]</h3></p>
-			    <p class=\'card-text\'><h3>Telefon: $ntel[0]</h3></p>";
-
-    }
-    /*
     function update(){
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
 
@@ -199,7 +184,6 @@ class Notfallkontakt{
             pg_execute($dbconn,"updateKontakt", $insertValue);
         }
     }
-    */
 }
 
 class Kuscheltiernutzer{
@@ -231,7 +215,7 @@ class Kuscheltiernutzer{
 
         echo "$ntel[0]";
     }
-    /*
+
     function update(){
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
 
@@ -243,7 +227,7 @@ class Kuscheltiernutzer{
             pg_execute($dbconn,"updateNutzer", $insertValue);
         }
     }
-
+    /*
     function show(){
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $nname = "SELECT name FROM kuscheltiernutzer WHERE name is not null;";

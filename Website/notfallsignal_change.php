@@ -1,4 +1,11 @@
-<?php require 'functions.php'; ?>
+<?php
+
+require 'functions.php';
+
+$nk = new Notfallkontakt();
+$kn = new Kuscheltiernutzer();
+
+?>
 <html lang="de">
 	<head>
 		<title>Notfalldaten ändern</title>
@@ -130,7 +137,7 @@
 		
 		<br />
 		
-		<form action="" method="post" id="scroll">
+		<form action="notfallsignal_change_validation.php" method="post" id="scroll">
 			<br />
 			<div class="table-responsive table-wrapper-scroll-y" id="scroll">
 				<table class="table table-dark table-bordered table-hover table-striped">
@@ -143,19 +150,19 @@
 						<tr>
 							<th>Name</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="Max Mustermann" placeholder="Name" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $kn->getName(); ?>" placeholder="Name" name="nameNutzer" required />
 							</td>
 						</tr>
 						<tr>
 							<th>Adresse</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="Musterstraße 10" placeholder="Adresse" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $kn->getAdress(); ?>" placeholder="Adresse" name="adresseNutzer" required />
 							</td>
 						</tr>
 						<tr>
 							<th>Telefonnummer</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="06501234567" pattern="[0-9]{11}" placeholder="Telefonnummer" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $kn->getTel(); ?>" pattern="[0-9]{11}" placeholder="Telefonnummer" name="nrNutzer" required />
 							</td>
 						</tr>
 					</tbody>
@@ -175,13 +182,13 @@
 						<tr>
 							<th>Name</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="Hilfi Mustermann" placeholder="Name" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $nk->getName(); ?>" placeholder="Name" name="nameKontakt" required />
 							</td>
 						</tr>
 						<tr>
 							<th>Telefonnummer</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="06501234568" pattern="[0-9]{11}" placeholder="Telefonnummer" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $nk->getTel(); ?>" pattern="[0-9]{11}" placeholder="Telefonnummer" name="nrKontakt" required />
 							</td>
 						</tr>
 					</tbody>
@@ -190,12 +197,12 @@
 			
 			<div class="form-group">
 				<div class="form-group col-md-6">
-					<a href="#modalUpd" class="noUnderline">
-						<button type="button" name="submit" id="submit" class="btn btn-success btn-lg btn-block" onclick="">
+					<!--<a href="#modalUpd" class="noUnderline">-->
+						<button type="submit" name="submit" id="submit" class="btn btn-success btn-lg btn-block" onclick="">
 							<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
 							Speichern
 						</button>
-					</a>
+					<!--</a>-->
 				</div>
 				<div class="form-group col-md-6">
 					<a href="#modalAbr" class="noUnderline">
