@@ -142,17 +142,56 @@ function showTermine(){
 
 function showBuecher(){
     $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
-    $select = "SELECT name, genre, author FROM buch WHERE name is not null";
+    $select = "SELECT name, genre, autor FROM buch WHERE name is not null";
     $sql = pg_query($dbconn, $select);
     $buchArr = pg_fetch_all($sql);
 
     foreach($buchArr as $buch){
-
+        $name = $buch['name'];
+        $nameOhneWS = preg_replace('/\s+/', '', $name);
+        $genre = $buch['genre'];
+        $autor = $buch['autor'];
+        echo '<form action="" method="get">';
+        echo "<tr>
+						<td scope='row'><h3>".$name."</h3></td>
+						<td><h3>".$genre."</h3></td>
+						<td><h3>".$autor. "</h3></td>
+						<td>
+						    <input type='text' id='text_".$nameOhneWS."' value='Nein' disabled />
+							<input type='checkbox' id='checkbox_".$nameOhneWS."' style='margin-left: 10px;' />
+							<script>
+								$('#checkbox_".$nameOhneWS."').click(function () {
+									if ($(this).prop('checked')) {
+										$('#text_".$nameOhneWS."').val('Ja');
+										
+										//setAusgewaehltTrue($name, $genre, $autor);
+									}
+									else {
+										$('#text_".$nameOhneWS."').val('Nein');
+										
+										//setAusgewaehltFalse($name, $genre, $autor);
+									}
+								});
+							</script>
+						</td>
+					</tr>";
+        echo '</form>';
     }
 }
 
+function setAusgewaehltTrue($name, $genre, $autor){
+    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+    $set = "UPDATE buch SET ausgewaehlt = true WHERE name = '$name' and genre = '$genre' and author = '$autor';";
+    pg_query($dbconn, $set);
+}
+
+function setAusgewaehltFalse($name, $genre, $autor){
+    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
+    $set = "UPDATE buch SET ausgewaehlt = false WHERE name = '$name' and genre = '$genre' and author = '$autor';";
+    pg_query($dbconn, $set);
+}
+
 class Notfallkontakt{
-    private $update;
     function __construct(){}
 
     function getName(){
@@ -227,23 +266,5 @@ class Kuscheltiernutzer{
             pg_execute($dbconn,"updateNutzer", $insertValue);
         }
     }
-    /*
-    function show(){
-        $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
-        $nname = "SELECT name FROM kuscheltiernutzer WHERE name is not null;";
-        $sql = pg_query($dbconn, $nname);
-        $nname = pg_fetch_row($sql);
-
-        $nadresse = "SELECT adresse FROM kuscheltiernutzer WHERE name is not null;";
-        $sql = pg_query($dbconn, $nadresse);
-        $nadresse = pg_fetch_row($sql);
-
-        $ntel = "SELECT tel FROM kuscheltiernutzer WHERE name is not null;";
-        $sql = pg_query($dbconn, $ntel);
-        $ntel = pg_fetch_row($sql);
-
-        echo   "<p class=\'card-text\'><h3>Name: $nname[0]</h3></p>
-			        <p class=\'card-text\'><h3>Adresse: $nadresse[0]</h3></p>
-				    <p class=\'card-text\'><h3>Telefon: $ntel[0]</h3></p>";
-    }*/
 }
+

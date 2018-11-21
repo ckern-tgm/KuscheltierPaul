@@ -104,74 +104,14 @@
 						<th scope="col">Buchtitel:</th>
 						<th scope="col">Genre:</th>
 						<th scope="col">Autor:</th>
-						<th scope="col">Dauer:</th>
+						<!--<th scope="col">Dauer:</th>-->
 						<th scope="col">Gewählt?</th>
 					</tr>
 				</thead>
 				<tbody>
 
-                    <?php  ?>
+                    <?php showBuecher(); ?>
 
-					<tr>
-						<th>Harry Potter</th>
-						<td>Science Fiction</td>
-						<td>CK</td>
-						<td>11:00</td>
-						<td>
-							<input type="text" id="text_1" value="Nein" disabled />
-							<input type="checkbox" id="checkbox_1" style="margin-left: 10px;" />
-							<script>
-								$("#checkbox_1").click(function () {
-									if ($(this).prop("checked")) {
-										$("#text_1").val("Ja");
-									}
-									else {
-										$("#text_1").val("Nein");
-									}
-								});
-							</script>
-						</td>
-					</tr>
-					<tr>
-						<th>Hans im Glück</th>
-						<td>Erlebnisgeschichte</td>
-						<td>Uhu</td>
-						<td>01:34</td>
-						<td>
-							<input type="text" id="text_2" value="Nein" disabled />
-							<input type="checkbox" id="checkbox_2" style="margin-left: 10px;" />
-							<script>
-								$("#checkbox_2").click(function () {
-									if ($(this).prop("checked")) {
-										$("#text_2").val("Ja");
-									}
-									else {
-										$("#text_2").val("Nein");
-									}
-								});
-							</script>
-						</td>
-					</tr>
-					<tr>
-						<th>BSP Titel</th>
-						<td>BSP Genre</td>
-						<td>BSP Autor</td>
-						<td>00:08</td>
-						<td>
-							<input type="text" id="text_3" value="Nein" disabled />
-							<input type="checkbox" id="checkbox_3" style="margin-left: 10px;" />
-							<script>
-								$("#checkbox_3").click(function () {
-									if ($(this).prop("checked")) {
-										$("#text_3").val("Ja");
-									}
-									else {
-										$("#text_3").val("Nein");
-									}
-								});
-							</script>
-						</td>
-					</tr>
 				</tbody>
 			</table>
 		</div>

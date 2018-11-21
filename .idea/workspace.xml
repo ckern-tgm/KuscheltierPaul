@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bd7d8e6-e4cf-45f0-896a-0c68fd60a232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Website/notfallsignal_change_validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/buecher_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/buecher_index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/notfallsignal_change.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/notfallsignal_change.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
     <session id="-1050002211">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
@@ -60,31 +59,32 @@
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="2914" />
+          <entry key="php" value="3251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="23" />
-          <entry key="PHP" value="2891" />
+          <entry key="HTML" value="30" />
+          <entry key="PHP" value="3221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="json" value="1" />
-          <entry key="php" value="44" />
+          <entry key="php" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="44" />
+          <entry key="PHP" value="49" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -97,68 +97,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Website/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="183" column="62" lean-forward="true" selection-start-line="183" selection-start-column="62" selection-end-line="183" selection-end-column="62" />
+            <state relative-caret-position="267">
+              <caret line="168" column="42" lean-forward="true" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
               <folding>
                 <element signature="e#6#117#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#td#3;n#tr#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Kuscheltier/Homepage/notfallsignal_ändern.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/notfallsignal_index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="150" column="14" selection-start-line="150" selection-start-column="14" selection-end-line="150" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Website/notfallsignal_change.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="204" column="31" lean-forward="true" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/medikamente_neu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2868">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/notfallsignal_change_validation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/medikamente_neu_validation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -166,8 +113,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Kuscheltier/Homepage/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="274" column="5" lean-forward="true" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
+            <state relative-caret-position="-158">
+              <caret line="287" column="35" lean-forward="true" selection-start-line="287" selection-start-column="35" selection-end-line="287" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/buecher_index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
             </state>
           </provider>
         </entry>
@@ -186,6 +142,7 @@
       <find>get</find>
       <find>post</find>
       <find>teddy</find>
+      <find>\&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -194,6 +151,7 @@
       <replace>POST</replace>
       <replace>GET</replace>
       <replace>paul</replace>
+      <replace>'</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -210,12 +168,12 @@
         <option value="$PROJECT_DIR$/Website/delMedikament.php" />
         <option value="$PROJECT_DIR$/Website/medikamente_neu_validation.php" />
         <option value="$PROJECT_DIR$/Website/medikamente_neu.php" />
-        <option value="$PROJECT_DIR$/Website/buecher_index.php" />
         <option value="$PROJECT_DIR$/../Kuscheltier/Homepage/notfallsignal.php" />
         <option value="$PROJECT_DIR$/Website/notfallsignal_index.php" />
-        <option value="$PROJECT_DIR$/Website/functions.php" />
         <option value="$PROJECT_DIR$/Website/notfallsignal_change_validation.php" />
         <option value="$PROJECT_DIR$/Website/notfallsignal_change.php" />
+        <option value="$PROJECT_DIR$/Website/buecher_index.php" />
+        <option value="$PROJECT_DIR$/Website/functions.php" />
       </list>
     </option>
   </component>
@@ -392,12 +350,13 @@
       <workItem from="1542100408734" duration="4411000" />
       <workItem from="1542356283227" duration="6000" />
       <workItem from="1542547991301" duration="930000" />
-      <workItem from="1542704780922" duration="2000000" />
+      <workItem from="1542704780922" duration="2319000" />
+      <workItem from="1542807409146" duration="5954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55630000" />
+    <option name="totallyTimeSpent" value="61903000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -412,7 +371,7 @@
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16923077" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17165992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -493,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/delTermin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/termine_index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2312">
@@ -521,30 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/buecher_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="153" column="25" lean-forward="true" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Kuscheltier/Homepage/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="274" column="5" lean-forward="true" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="183" column="62" lean-forward="true" selection-start-line="183" selection-start-column="62" selection-end-line="183" selection-end-column="62" />
-          <folding>
-            <element signature="e#6#117#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Kuscheltier/Homepage/notfallsignal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -555,27 +483,20 @@
     <entry file="file://$PROJECT_DIR$/../Kuscheltier/Homepage/notfallsignal_ändern.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/notfallsignal_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="2550">
           <caret line="150" column="14" selection-start-line="150" selection-start-column="14" selection-end-line="150" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/medikamente_neu_validation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/medikamente_neu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2868">
+        <state relative-caret-position="442">
           <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
@@ -583,14 +504,63 @@
     <entry file="file://$PROJECT_DIR$/Website/notfallsignal_change_validation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/medikamente_neu_validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/notfallsignal_change.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="204" column="31" lean-forward="true" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
+        <state relative-caret-position="1440">
+          <caret line="204" column="31" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Kuscheltier/Homepage/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-158">
+          <caret line="287" column="35" lean-forward="true" selection-start-line="287" selection-start-column="35" selection-end-line="287" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Kuscheltier/Homepage/addBuch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Kuscheltier/Homepage/deleteBuch.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/delTermin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/buecher_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="168" column="42" lean-forward="true" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
+          <folding>
+            <element signature="e#6#117#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#td#3;n#tr#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
