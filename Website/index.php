@@ -145,17 +145,16 @@
 		<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: center; padding: 10px; font-size: 2vw;">
 			<u>Sitemap:</u> <br />
 			<br />
-			<!--<img src="Bilder/Sitemap.png" alt="Sitemap" class="img-responsive center-block" />-->
-			<img src="Bilder/Sitemap.png" alt="Sitemap" usemap="#Map" />
+			<img src="Bilder/Sitemap.png" alt="Sitemap" usemap="#Map" class="img-responsive center-block" />
 			<map name="Map" id="Map">
-				<area alt="" title="Medikamente" href="medikamente_index.php" shape="rect" coords="12,141,245,269" />
-				<area alt="" title="Neues Medikament" href="medikamente_neu.php" shape="rect" coords="12,313,245,442" />
-				<area alt="" title="Termine" href="termine_index.php" shape="rect" coords="269,141,501,238" />
-				<area alt="" title="Neuer Termin" href="termine_neu.php" shape="rect" coords="269,281,501,410" />
-				<area alt="" title="Bücher vorlesen" href="buecher_index.php" shape="rect" coords="524,141,757,238" />
-				<area alt="" title="Notfalldaten" href="notfallsignal_index.php" shape="rect" coords="780,141,1013,237" />
-				<area alt="" title="Notfalldaten ändern" href="notfallsignal_index.php" shape="rect" coords="780,281,1013,411" />
-				<area alt="" title="Startseite" href="index.php" shape="rect" coords="396,0,629,97" />
+				<area alt="Medikamente" title="Medikamente" href="medikamente_index.php" shape="rect" coords="12,141,245,269" />
+				<area alt="Neues Medikament" title="Neues Medikament" href="medikamente_neu.php" shape="rect" coords="12,313,245,442" />
+				<area alt="Termine" title="Termine" href="termine_index.php" shape="rect" coords="269,141,501,238" />
+				<area alt="Neuer Termin" title="Neuer Termin" href="termine_neu.php" shape="rect" coords="269,281,501,410" />
+				<area alt="Bücher vorlesen" title="Bücher vorlesen" href="buecher_index.php" shape="rect" coords="524,141,757,238" />
+				<area alt="Notfalldaten" title="Notfalldaten" href="notfallsignal_index.php" shape="rect" coords="780,141,1013,237" />
+				<area alt="Notfalldaten ändern" title="Notfalldaten ändern" href="notfallsignal_index.php" shape="rect" coords="780,281,1013,411" />
+				<area alt="Startseite" title="Startseite" href="index.php" shape="rect" coords="396,0,629,97" />
 			</map>
 		</p>
 		
