@@ -100,13 +100,17 @@
 		
 		<br />
 		
-		<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: justify; padding: 10px; font-size: 1.5vw;">
+		<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: justify; padding: 10px; font-size: 2vw;">
 			<u>Was ist Paul?</u>
-			Paul ist ein interaktives Kuscheltier, das Senioren in ihrem Alltag unterstützen, aber auch unterhalten soll. Dafür hat Paul verschiedene Taster, Sensoren und bietet zielgruppenorientierte Funktionen.
+			Paul ist ein interaktives Kuscheltier, das Senioren in ihrem Alltag unterstützen, aber auch unterhalten soll. Dafür hat Paul verschiedene Taster, 
+			Sensoren und bietet zielgruppenorientierte Funktionen.
 			<br />
 			<br />
 			<u>Wie funktioniert Paul?</u> 
-			Das Kuscheltier lässt sich über die verbauten Knöpfe bedienen und über eine seniorenfreundliche Website steuern. Das Kuscheltier hat verschiedenste Funktionen um den Senioren den Alltag zu erleichtern, wie eine Medikamentenerinnerung oder einen Terminplaner. Aus Unterhaltungszwecken kann man mit dem Kuscheltier Simon says spielen und man kann sich Hörbücher anhören. Des Weiteren kann man seine Herzfrequenz messen.
+			Das Kuscheltier lässt sich über die verbauten Knöpfe bedienen und über eine seniorenfreundliche Website steuern. Das Kuscheltier hat verschiedenste
+			Funktionen um den Senioren den Alltag zu erleichtern, wie eine <a href="medikamente_index.php">Medikamentenerinnerung</a> oder einen <a href="termine_index.php">Terminplaner</a>. 
+			Aus Unterhaltungszwecken kann man mit dem Kuscheltier Simon says spielen und man kann sich <a href="buecher_index.php">Hörbücher anhören</a>.
+			Des Weiteren kann man seine Herzfrequenz messen.
 		</p>
 		
 		<!--Video-->
@@ -119,17 +123,39 @@
 		
 		<br />
 		
-		<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: justify; padding: 10px; font-size: 1.5vw;">
+		<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: justify; padding: 10px; font-size: 2vw;">
 			<u>Einzigartigkeit und Innovation:</u>
-			Geht man zunächst auf die Hinsicht der Unterhaltung ein, gibt es am Markt eine riesige Menge  an  Unterhaltungsgeräten.  Diese  sind  aber  Großteiles  sehr  teuer,  unhandlich und  für  die  ältere  Generation  schlichtweg  unverständlich.  Es  gibt  jedoch  bereits spezielle  Produkte  zur  Unterhaltung  von  Pensionisten,  wie  zum  Beispiel  einen Katzenroboter  der Firma  Hasbro  oder  einen  Hunderoboter.  Diese  dienen  aber ausschließlich zur Unterhaltung und Beschäftigung der Rentner.Roboter  für  Haushaltstätigkeiten  wie  Saugen,  Rasenmähen  oder Fensterputzen  gibt es  nun  seit  einigen  Jahren  und  sind  heute  weit  verbreitet.  Diese  Geräte  sind  aber oftmals   schwierig   zu   konfigurieren   und   bieten   eben   nur   in   ihren   jeweiligen Einsatzgebieten Hilfe. Aber auch in der Altenpflege wird Robotik bereits eingesetzt. Es gibt  einige  Roboter  und  Prototypen,  die  beispielsweise  in  Pflegeheimen  eingesetzt werden   und   mit   umfassender   Funktionalität   Pensionisten   unterstützen.   Die entscheidenden Probleme an diesen Assistenten sind, der große Platzbedarf und die sehr hohen Anschaffungskosten von mehreren Hunderttausenden bis Millionen Euro.Kaum ein Pensionist in Österreich könnte solche hohen Kosten tragen und somit bleibt der  Bedarf  eines  kompakten  und  preiswertem  interaktiven  Alltagshelfer  offen,  der sowohl    Unterhaltung    als    auch    Unterstützung    bietet.    Zusätzlich    fallen    die Verständnisprobleme mit der zuvor genannten Technik nicht weg. Hier bietet sich eine vertraute  Gestalt  wie  ein  Kuscheltier  an,  um  den  Pensionisten  die  Angst  vor  der Technik zu nehmen und ein Sicherheitsgefühl zu schaffen.
+			Geht man zunächst auf die Hinsicht der Unterhaltung ein, gibt es am Markt eine riesige Menge  an  Unterhaltungsgeräten.  Diese  sind  aber  
+			Großteiles  sehr  teuer,  unhandlich und  für  die  ältere  Generation  schlichtweg  unverständlich.  Es  gibt  jedoch  bereits spezielle  
+			Produkte  zur  Unterhaltung  von  Pensionisten,  wie  zum  Beispiel  einen Katzenroboter  der Firma  Hasbro  oder  einen  Hunderoboter.  
+			Diese  dienen  aber ausschließlich zur Unterhaltung und Beschäftigung der Rentner.Roboter  für  Haushaltstätigkeiten  wie  Saugen,  Rasenmähen
+			oder Fensterputzen  gibt es  nun  seit  einigen  Jahren  und  sind  heute  weit  verbreitet.  Diese  Geräte  sind  aber oftmals   schwierig   
+			zu   konfigurieren   und   bieten   eben   nur   in   ihren   jeweiligen Einsatzgebieten Hilfe. Aber auch in der Altenpflege wird Robotik 
+			bereits eingesetzt. Es gibt  einige  Roboter  und  Prototypen,  die  beispielsweise  in  Pflegeheimen  eingesetzt werden   und   mit   
+			umfassender   Funktionalität   Pensionisten   unterstützen.   Die entscheidenden Probleme an diesen Assistenten sind, der große Platzbedarf 
+			und die sehr hohen Anschaffungskosten von mehreren Hunderttausenden bis Millionen Euro. Kaum ein Pensionist in Österreich könnte solche hohen 
+			Kosten tragen und somit bleibt der  Bedarf  eines  kompakten und  preiswertem  interaktiven  Alltagshelfer  offen,  der sowohl Unterhaltung
+			als    auch    Unterstützung    bietet.    Zusätzlich    fallen    die Verständnisprobleme mit der zuvor genannten Technik nicht weg. Hier 
+			bietet sich eine vertraute  Gestalt  wie  ein  Kuscheltier  an,  um  den  Pensionisten  die  Angst  vor  der Technik zu nehmen und ein 
+			Sicherheitsgefühl zu schaffen.
 		</p>
 		
 		<br />
 		
-		<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: center; padding: 10px; font-size: 1.5vw;">
+		<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: center; padding: 10px; font-size: 2vw;">
 			<u>Sitemap:</u> <br />
 			<br />
-			<img src="Bilder/Sitemap.png" alt="Sitemap" class="img-responsive center-block" />
+			<img src="Bilder/Sitemap.png" alt="Sitemap" usemap="#Map" class="img-responsive center-block" />
+			<map name="Map" id="Map">
+				<area alt="Medikamente" title="Medikamente" href="medikamente_index.php" shape="rect" coords="12,141,245,269" />
+				<area alt="Neues Medikament" title="Neues Medikament" href="medikamente_neu.php" shape="rect" coords="12,313,245,442" />
+				<area alt="Termine" title="Termine" href="termine_index.php" shape="rect" coords="269,141,501,238" />
+				<area alt="Neuer Termin" title="Neuer Termin" href="termine_neu.php" shape="rect" coords="269,281,501,410" />
+				<area alt="Bücher vorlesen" title="Bücher vorlesen" href="buecher_index.php" shape="rect" coords="524,141,757,238" />
+				<area alt="Notfalldaten" title="Notfalldaten" href="notfallsignal_index.php" shape="rect" coords="780,141,1013,237" />
+				<area alt="Notfalldaten ändern" title="Notfalldaten ändern" href="notfallsignal_index.php" shape="rect" coords="780,281,1013,411" />
+				<area alt="Startseite" title="Startseite" href="index.php" shape="rect" coords="396,0,629,97" />
+			</map>
 		</p>
 		
 		<br />
