@@ -142,7 +142,7 @@ function showTermine(){
 
 function showBuecher(){
     $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
-    $select = "SELECT name, genre, autor FROM buch WHERE name is not null";
+    $select = "SELECT name, genre, autor, ausgewaehlt FROM buch WHERE name is not null";
     $sql = pg_query($dbconn, $select);
     $buchArr = pg_fetch_all($sql);
 
@@ -151,6 +151,8 @@ function showBuecher(){
         $nameOhneWS = preg_replace('/\s+/', '', $name);
         $genre = $buch['genre'];
         $autor = $buch['autor'];
+        $ausgewaehlt = $buch['ausgewaehlt'];
+
         echo '<form action="" method="get">';
         echo "<tr>
 						<td scope='row'><h3>".$name."</h3></td>
@@ -160,16 +162,33 @@ function showBuecher(){
 						    <input type='text' id='text_".$nameOhneWS."' value='Nein' disabled />
 							<input type='checkbox' id='checkbox_".$nameOhneWS."' style='margin-left: 10px;' />
 							<script>
+							    var bool = '$ausgewaehlt';
+							    if(bool == 't'){
+							        $('#checkbox_".$nameOhneWS."').prop('checked', true);
+							        $('#text_".$nameOhneWS."').val('Ja');
+							    }
 								$('#checkbox_".$nameOhneWS."').click(function () {
-									if ($(this).prop('checked')) {
-										$('#text_".$nameOhneWS."').val('Ja');
-										
-										//setAusgewaehltTrue($name, $genre, $autor);
+									if($(this).prop('checked')) {
+										 $('#text_".$nameOhneWS."').val('Ja');
+										 
+                                        $.ajax({ url: 'setBuchTrue.php',
+                                                 data: {name: '$name', genre: '$genre', autor: '$autor'},
+                                                 type: 'POST',
+                                                 success: function(output) {
+                                                              //alert(output.abc);
+                                                 }
+                                        });										
 									}
 									else {
 										$('#text_".$nameOhneWS."').val('Nein');
 										
-										//setAusgewaehltFalse($name, $genre, $autor);
+                                        $.ajax({ url: 'setBuchFalse.php',
+                                                 data: {name: '$name', genre: '$genre', autor: '$autor'},
+                                                 type: 'POST',
+                                                 success: function(output) {
+                                                              //alert(output.abc);
+                                                 }
+                                        });										
 									}
 								});
 							</script>
@@ -179,17 +198,6 @@ function showBuecher(){
     }
 }
 
-function setAusgewaehltTrue($name, $genre, $autor){
-    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
-    $set = "UPDATE buch SET ausgewaehlt = true WHERE name = '$name' and genre = '$genre' and author = '$autor';";
-    pg_query($dbconn, $set);
-}
-
-function setAusgewaehltFalse($name, $genre, $autor){
-    $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
-    $set = "UPDATE buch SET ausgewaehlt = false WHERE name = '$name' and genre = '$genre' and author = '$autor';";
-    pg_query($dbconn, $set);
-}
 
 class Notfallkontakt{
     function __construct(){}
