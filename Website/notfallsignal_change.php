@@ -162,7 +162,7 @@ $kn = new Kuscheltiernutzer();
 						<tr>
 							<th>Telefonnummer</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="<?php $kn->getTel(); ?>" pattern="[0-9]{11}" placeholder="Telefonnummer" name="nrNutzer" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $kn->getTel(); ?>" pattern="[0-9]{11,12}" placeholder="Telefonnummer" name="nrNutzer" required />
 							</td>
 						</tr>
 					</tbody>
