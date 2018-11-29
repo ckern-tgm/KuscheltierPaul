@@ -104,8 +104,11 @@
 			<u>Was ist Paul?</u>
 			Paul ist ein interaktives Kuscheltier, das Senioren in ihrem Alltag unterstützen, aber auch unterhalten soll. Dafür hat Paul verschiedene Taster, 
 			Sensoren und bietet zielgruppenorientierte Funktionen.
-			<br />
-			<br />
+		</p>
+		
+		<br />
+		
+		<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: justify; padding: 10px; font-size: 2vw;">
 			<u>Wie funktioniert Paul?</u> 
 			Das Kuscheltier lässt sich über die verbauten Knöpfe bedienen und über eine seniorenfreundliche Website steuern. Das Kuscheltier hat verschiedenste
 			Funktionen um den Senioren den Alltag zu erleichtern, wie eine <a href="medikamente_index.php">Medikamentenerinnerung</a> oder einen <a href="termine_index.php">Terminplaner</a>. 
@@ -128,16 +131,7 @@
 			Geht man zunächst auf die Hinsicht der Unterhaltung ein, gibt es am Markt eine riesige Menge  an  Unterhaltungsgeräten.  Diese  sind  aber  
 			Großteiles  sehr  teuer,  unhandlich und  für  die  ältere  Generation  schlichtweg  unverständlich.  Es  gibt  jedoch  bereits spezielle  
 			Produkte  zur  Unterhaltung  von  Pensionisten,  wie  zum  Beispiel  einen Katzenroboter  der Firma  Hasbro  oder  einen  Hunderoboter.  
-			Diese  dienen  aber ausschließlich zur Unterhaltung und Beschäftigung der Rentner.Roboter  für  Haushaltstätigkeiten  wie  Saugen,  Rasenmähen
-			oder Fensterputzen  gibt es  nun  seit  einigen  Jahren  und  sind  heute  weit  verbreitet.  Diese  Geräte  sind  aber oftmals   schwierig   
-			zu   konfigurieren   und   bieten   eben   nur   in   ihren   jeweiligen Einsatzgebieten Hilfe. Aber auch in der Altenpflege wird Robotik 
-			bereits eingesetzt. Es gibt  einige  Roboter  und  Prototypen,  die  beispielsweise  in  Pflegeheimen  eingesetzt werden   und   mit   
-			umfassender   Funktionalität   Pensionisten   unterstützen.   Die entscheidenden Probleme an diesen Assistenten sind, der große Platzbedarf 
-			und die sehr hohen Anschaffungskosten von mehreren Hunderttausenden bis Millionen Euro. Kaum ein Pensionist in Österreich könnte solche hohen 
-			Kosten tragen und somit bleibt der  Bedarf  eines  kompakten und  preiswertem  interaktiven  Alltagshelfer  offen,  der sowohl Unterhaltung
-			als    auch    Unterstützung    bietet.    Zusätzlich    fallen    die Verständnisprobleme mit der zuvor genannten Technik nicht weg. Hier 
-			bietet sich eine vertraute  Gestalt  wie  ein  Kuscheltier  an,  um  den  Pensionisten  die  Angst  vor  der Technik zu nehmen und ein 
-			Sicherheitsgefühl zu schaffen.
+			Diese  dienen  aber ausschließlich zur Unterhaltung und Beschäftigung der Rentner.
 		</p>
 		
 		<br />
