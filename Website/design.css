@@ -79,6 +79,12 @@ input[type=time]{
 	padding-left: 4%;
 	border-radius: 10px;
 }
+input[type=time]::-webkit-clear-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0; 
+}
 input[type=number]{
 	height: 60px;
 	font-size: 2vw;
