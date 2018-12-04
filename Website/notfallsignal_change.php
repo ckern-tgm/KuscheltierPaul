@@ -150,19 +150,19 @@ $kn = new Kuscheltiernutzer();
 						<tr>
 							<th>Name</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="<?php $kn->getName(); ?>" placeholder="Name" name="nameNutzer" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $kn->getName(); ?>" placeholder="Name" name="nameNutzer" id="nameNutzer" required />
 							</td>
 						</tr>
 						<tr>
 							<th>Adresse</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="<?php $kn->getAdress(); ?>" placeholder="Adresse" name="adresseNutzer" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $kn->getAdress(); ?>" placeholder="Adresse" name="adresseNutzer" id="adresseNutzer" required />
 							</td>
 						</tr>
 						<tr>
 							<th>Telefonnummer</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="<?php $kn->getTel(); ?>" pattern="[0-9]{11,12}" placeholder="Telefonnummer" name="nrNutzer" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $kn->getTel(); ?>" pattern="[0-9]{11,12}" placeholder="Telefonnummer" name="nrNutzer" id="nrNutzer" required />
 							</td>
 						</tr>
 					</tbody>
@@ -182,13 +182,13 @@ $kn = new Kuscheltiernutzer();
 						<tr>
 							<th>Name</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="<?php $nk->getName(); ?>" placeholder="Name" name="nameKontakt" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $nk->getName(); ?>" placeholder="Name" name="nameKontakt" id="nameKontakt" required />
 							</td>
 						</tr>
 						<tr>
 							<th>Telefonnummer</th>
 							<td>
-								<input type="text" class="form-control form-control-lg" value="<?php $nk->getTel(); ?>" pattern="[0-9]{11}" placeholder="Telefonnummer" name="nrKontakt" required />
+								<input type="text" class="form-control form-control-lg" value="<?php $nk->getTel(); ?>" pattern="[0-9]{11}" placeholder="Telefonnummer" name="nrKontakt" id="nrKontakt" required />
 							</td>
 						</tr>
 					</tbody>
