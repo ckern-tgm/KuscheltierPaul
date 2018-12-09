@@ -18,7 +18,6 @@ function addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit)
     pg_prepare($dbconn, "addMedikament", "INSERT INTO medikamente VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)");
     $insertValue = array($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit);
     pg_execute($dbconn, "addMedikament", $insertValue);
-
 }
 
 /**
@@ -49,7 +48,6 @@ function showMedikamente()
                     </tr>";
         echo "</form>";
     }
-
 }
 
 function showDays($name, $zeit, $anz)
@@ -97,32 +95,30 @@ function showDays($name, $zeit, $anz)
 
 function addTermin($name, $datum, $zeit, $ort, $hinweis)
 {
-
     $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
     pg_prepare($dbconn, "addTermin", "INSERT INTO termine VALUES($1,$2,$3,$4,$5)");
     $insertValue = array($name, $datum, $zeit, $ort, $hinweis);
     pg_execute($dbconn, "addTermin", $insertValue);
-
-   
 }
 
-function showTermine(){
+function showTermine()
+{
     $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
     $termine = "SELECT * FROM termine WHERE name is not null;";
     $sql = pg_query($dbconn, $termine);
     $termineArr = pg_fetch_all($sql);
 
-    foreach($termineArr as $termin){
+    foreach ($termineArr as $termin) {
         $name = $termin['name'];
         $datum = $termin['datum'];
         $zeit = $termin['uhrzeit'];
         /*echo "<div class='remodal' data-remodal-id='modalHinz".$name."'>
-			   <button data-remodal-action='close' class='remodal-close'></button>
-			   <h1 style='background-color: transparent; color: red; text-align: center;'>".$name." <br /> löschen?</h1>
-			   <br />
-			   <br />
-			   <a href='delTermin.php?id=$name' data-remodal-action='confirm' class='remodal-confirm'>OK</a>
-		       </div>";
+               <button data-remodal-action='close' class='remodal-close'></button>
+               <h1 style='background-color: transparent; color: red; text-align: center;'>".$name." <br /> löschen?</h1>
+               <br />
+               <br />
+               <a href='delTermin.php?id=$name' data-remodal-action='confirm' class='remodal-confirm'>OK</a>
+               </div>";
            */
         echo '<form action="delTermin.php" method="get">';
         echo   "<tr>
@@ -137,16 +133,16 @@ function showTermine(){
                     </tr>";
         echo '</form>';
     }
-
 }
 
-function showBuecher(){
+function showBuecher()
+{
     $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
     $select = "SELECT name, genre, autor, ausgewaehlt FROM buch WHERE name is not null";
     $sql = pg_query($dbconn, $select);
     $buchArr = pg_fetch_all($sql);
 
-    foreach($buchArr as $buch){
+    foreach ($buchArr as $buch) {
         $name = $buch['name'];
         $nameOhneWS = preg_replace('/\s+/', '', $name);
         $genre = $buch['genre'];
@@ -198,11 +194,14 @@ function showBuecher(){
     }
 }
 
+class Notfallkontakt
+{
+    public function __construct()
+    {
+    }
 
-class Notfallkontakt{
-    function __construct(){}
-
-    function getName(){
+    public function getName()
+    {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $nname = "SELECT name FROM notfallkontakt WHERE name is not null;";
         $sql = pg_query($dbconn, $nname);
@@ -211,7 +210,8 @@ class Notfallkontakt{
         echo "$nname[0]";
     }
 
-    function getTel(){
+    public function getTel()
+    {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $ntel = "SELECT tel FROM notfallkontakt WHERE name is not null;";
         $sql = pg_query($dbconn, $ntel);
@@ -220,23 +220,28 @@ class Notfallkontakt{
         echo "$ntel[0]";
     }
 
-    function update(){
+    public function update()
+    {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
 
-        if(func_num_args() == 2){
+        if (func_num_args() == 2) {
             $del = "DELETE FROM notfallkontakt WHERE name is not null;";
             pg_query($dbconn, $del);
-            pg_prepare($dbconn,"updateKontakt","INSERT INTO notfallkontakt VALUES($1,$2)");
+            pg_prepare($dbconn, "updateKontakt", "INSERT INTO notfallkontakt VALUES($1,$2)");
             $insertValue = array(func_get_arg(0), func_get_arg(1));
-            pg_execute($dbconn,"updateKontakt", $insertValue);
+            pg_execute($dbconn, "updateKontakt", $insertValue);
         }
     }
 }
 
-class Kuscheltiernutzer{
-    function __construct(){}
+class Kuscheltiernutzer
+{
+    public function __construct()
+    {
+    }
 
-    function getName(){
+    public function getName()
+    {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $nname = "SELECT name FROM kuscheltiernutzer WHERE name is not null;";
         $sql = pg_query($dbconn, $nname);
@@ -245,7 +250,8 @@ class Kuscheltiernutzer{
         echo "$nname[0]";
     }
 
-    function getAdress(){
+    public function getAdress()
+    {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $nadress = "SELECT adresse FROM kuscheltiernutzer WHERE name is not null;";
         $sql = pg_query($dbconn, $nadress);
@@ -254,7 +260,8 @@ class Kuscheltiernutzer{
         echo "$nadress[0]";
     }
 
-    function getTel(){
+    public function getTel()
+    {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $ntel = "SELECT tel FROM kuscheltiernutzer WHERE name is not null;";
         $sql = pg_query($dbconn, $ntel);
@@ -263,16 +270,16 @@ class Kuscheltiernutzer{
         echo "$ntel[0]";
     }
 
-    function update(){
+    public function update()
+    {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
 
-        if(func_num_args() == 3){
+        if (func_num_args() == 3) {
             $del = "DELETE FROM kuscheltiernutzer WHERE name is not null;";
             pg_query($dbconn, $del);
-            pg_prepare($dbconn,"updateNutzer","INSERT INTO kuscheltiernutzer VALUES($1,$2,$3)");
+            pg_prepare($dbconn, "updateNutzer", "INSERT INTO kuscheltiernutzer VALUES($1,$2,$3)");
             $insertValue = array(func_get_arg(0), func_get_arg(1),func_get_arg(2));
-            pg_execute($dbconn,"updateNutzer", $insertValue);
+            pg_execute($dbconn, "updateNutzer", $insertValue);
         }
     }
 }
-

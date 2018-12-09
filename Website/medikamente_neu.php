@@ -1,3 +1,6 @@
+<?php
+if (!session_id()) session_start();
+?>
 <html lang="de">
 	<head>
 		<title>Medikament hinzufügen</title>

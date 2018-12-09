@@ -1,6 +1,7 @@
 <?php
 
 require 'functions.php';
+if (!session_id()) session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['submit'])) {
     $name = $_POST['name'];

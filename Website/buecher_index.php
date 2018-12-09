@@ -1,4 +1,7 @@
-<?php require 'functions.php'; ?>
+<?php
+    require 'functions.php';
+    if (!session_id()) session_start();
+?>
 <html lang="de">
 	<head>
 		<title>Bücher vorlesen</title>
