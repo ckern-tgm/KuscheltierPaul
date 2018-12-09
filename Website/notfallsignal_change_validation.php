@@ -1,6 +1,7 @@
 <?php
 
 require 'functions.php';
+if (!session_id()) session_start();
 
 $nk = new Notfallkontakt();
 $kn = new Kuscheltiernutzer();

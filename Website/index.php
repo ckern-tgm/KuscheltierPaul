@@ -1,3 +1,10 @@
+<?php
+    if (!session_id()) {
+        session_start();
+    }
+    $_SESSION["pwd"] = "Paul123";
+    $_SESSION["pwdChecked"] = "false";
+?>
 <html lang="de">
 	<head>
 		<title>Startseite</title>

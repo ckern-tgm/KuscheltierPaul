@@ -1,6 +1,13 @@
 <?php
 
 require 'functions.php';
+if (!session_id()) {
+    session_start();
+}
+
+if (strcmp($_SESSION["pwdChecked"], "false") == 0) {
+    header('location:index.php');
+}
 
 $nk = new Notfallkontakt();
 $kn = new Kuscheltiernutzer();
