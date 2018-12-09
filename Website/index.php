@@ -112,8 +112,8 @@
 			<u>Wie funktioniert Paul?</u> 
 			Das Kuscheltier lässt sich über die verbauten Knöpfe bedienen und über eine seniorenfreundliche Website steuern. Das Kuscheltier hat verschiedenste
 			Funktionen um den Senioren den Alltag zu erleichtern, wie eine <a href="medikamente_index.php">Medikamentenerinnerung</a> oder einen <a href="termine_index.php">Terminplaner</a>. 
-			Aus Unterhaltungszwecken kann man mit dem Kuscheltier Simon says spielen und man kann sich <a href="buecher_index.php">Hörbücher anhören</a>.
-			Des Weiteren kann man seine Herzfrequenz oder eine <a href="notfallsignal_index.php">Notfallnachricht senden</a> messen.
+			Aus Unterhaltungszwecken kann man mit dem Kuscheltier Simon says spielen und sich <a href="buecher_index.php">Hörbücher anhören</a>.
+			Des Weiteren kann man seine Herzfrequenz messen oder eine <a href="notfallsignal_index.php">Notfallnachricht senden</a>.
 		</p>
 		
 		<!--Video-->
