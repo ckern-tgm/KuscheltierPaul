@@ -169,11 +169,11 @@ $kn = new Kuscheltiernutzer();
         <br />
         <br />
         <p>Mit geben Sie im folgenden Feld des Passwort zum Ändern der Notfalldaten ein:</p>
-        <form role="form" id="passwordForm" method="post" action="echo.php">
+        <form role="form" id="passwordForm2" method="post" action="echo.php">
             <input type="password" class="form-control form-control-lg" name="pwd" id="pwd" placeholder="Passwort"
                 required />
             <br />
-            <button type="submit" form="passwordForm" data-remodal-action="confirm" class="remodal-confirm">Prüfen</button>
+            <button type="submit" form="passwordForm2" data-remodal-action="confirm" class="remodal-confirm">Prüfen</button>
             <button data-remodal-action="cancel" class="remodal-cancel">Abbrechen</button>
         </form>
     </div>
@@ -210,7 +210,8 @@ $kn = new Kuscheltiernutzer();
         </div>
     </div>
 
-    <button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#pwdForm" ><!--onclick="location.href='#modalPwd'"-->
+    <button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#pwdForm">
+        <!--onclick="location.href='#modalPwd'"-->
         <svg xmlns="http://www.w3.org/2000/svg" alt="Notfallsignal" style="fill: black; width: 3vw; height: 3vw;"
             viewBox="0 0 24 24">
             <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
