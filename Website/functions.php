@@ -6,14 +6,13 @@
  *
  * @version GIT: $Id$ In development. Very unstable.
  */
-class functions
-{
+
     /**
      * Inserts a new row into table medikamentewecker.
      *
      * @param $name, $mo, $di, $mi, $do, $fr, $sa, $so, $anz, $zeit
      */
-    public function addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit)
+     function addMedikament($name, $anz, $mo, $di, $mi, $do, $fr, $sa, $so, $zeit)
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc"); //change to localhost
         pg_prepare($dbconn, "addMedikament", "INSERT INTO medikamente VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)");
@@ -25,7 +24,7 @@ class functions
      * Liest alle Medikamente aus der Datenbank aus und zeigt sie an
      *
      */
-    public function showMedikamente()
+     function showMedikamente()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $medikament = "SELECT * FROM medikamente WHERE name is not null;";
@@ -51,7 +50,7 @@ class functions
         }
     }
 
-    public function showDays($name, $zeit, $anz)
+     function showDays($name, $zeit, $anz)
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $days = "SELECT montag,dienstag,mittwoch,donnerstag,freitag,samstag,sonntag FROM medikamente WHERE name = '$name' AND zeit = '".$zeit."' AND anz = ".$anz.";";
@@ -94,7 +93,7 @@ class functions
         return $string;
     }
 
-    public function addTermin($name, $datum, $zeit, $ort, $hinweis)
+     function addTermin($name, $datum, $zeit, $ort, $hinweis)
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         pg_prepare($dbconn, "addTermin", "INSERT INTO termine VALUES($1,$2,$3,$4,$5)");
@@ -102,7 +101,7 @@ class functions
         pg_execute($dbconn, "addTermin", $insertValue);
     }
 
-    public function showTermine()
+     function showTermine()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $termine = "SELECT * FROM termine WHERE name is not null;";
@@ -136,7 +135,7 @@ class functions
         }
     }
 
-    public function showBuecher()
+     function showBuecher()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $select = "SELECT name, genre, autor, ausgewaehlt FROM buch WHERE name is not null";
@@ -194,14 +193,14 @@ class functions
             echo '</form>';
         }
     }
-}
+
 class Notfallkontakt
 {
-    public function __construct()
+     function __construct()
     {
     }
 
-    public function getName()
+     function getName()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $nname = "SELECT name FROM notfallkontakt WHERE name is not null;";
@@ -211,7 +210,7 @@ class Notfallkontakt
         echo "$nname[0]";
     }
 
-    public function getTel()
+     function getTel()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $ntel = "SELECT tel FROM notfallkontakt WHERE name is not null;";
@@ -221,7 +220,7 @@ class Notfallkontakt
         echo "$ntel[0]";
     }
 
-    public function update()
+     function update()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
 
@@ -237,11 +236,11 @@ class Notfallkontakt
 
 class Kuscheltiernutzer
 {
-    public function __construct()
+     function __construct()
     {
     }
 
-    public function getName()
+     function getName()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $nname = "SELECT name FROM kuscheltiernutzer WHERE name is not null;";
@@ -251,7 +250,7 @@ class Kuscheltiernutzer
         echo "$nname[0]";
     }
 
-    public function getAdress()
+     function getAdress()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $nadress = "SELECT adresse FROM kuscheltiernutzer WHERE name is not null;";
@@ -261,7 +260,7 @@ class Kuscheltiernutzer
         echo "$nadress[0]";
     }
 
-    public function getTel()
+     function getTel()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         $ntel = "SELECT tel FROM kuscheltiernutzer WHERE name is not null;";
@@ -271,7 +270,7 @@ class Kuscheltiernutzer
         echo "$ntel[0]";
     }
 
-    public function update()
+     function update()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
 
