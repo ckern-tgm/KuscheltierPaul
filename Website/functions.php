@@ -104,7 +104,7 @@
      function showTermine()
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
-        $termine = "SELECT * FROM termine WHERE name is not null;";
+        $termine = "SELECT * FROM termine WHERE name is not null and datum is not null;";
         $sql = pg_query($dbconn, $termine);
         $termineArr = pg_fetch_all($sql);
 
