@@ -93,11 +93,11 @@
         return $string;
     }
 
-     function addTermin($name, $datum, $zeit, $ort, $hinweis)
+     function addTermin($datum, $zeit, $ort, $hinweis, $name)
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
         pg_prepare($dbconn, "addTermin", "INSERT INTO termine VALUES($1,$2,$3,$4,$5)");
-        $insertValue = array($name, $datum, $zeit, $ort, $hinweis);
+        $insertValue = array($datum, $zeit, $ort, $hinweis, $name);
         pg_execute($dbconn, "addTermin", $insertValue);
     }
 
