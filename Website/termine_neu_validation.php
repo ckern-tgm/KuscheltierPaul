@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submit'])) {
     $ort = $_POST['ort'];
     $hinweis = $_POST['hinw'];
 
-    addTermin($name, $datum, $zeit, $ort, $hinweis);
+    addTermin($datum, $zeit, $ort, $hinweis, $name);
 
     header('location:termine_index.php');
 }

@@ -129,10 +129,10 @@ label {
 	font-size: 1.5vw;
 }
 form:invalid {
-	border: 10px solid #ffdddd;
+	border: 2px solid #ffdddd;
 }
 form:valid {
-	border: 10px solid #ddffdd;
+	border: 2px solid #ddffdd;
 }
 input:required {
 	border-width: 5px;

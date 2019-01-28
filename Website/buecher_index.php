@@ -1,6 +1,13 @@
 <?php
     require 'functions.php';
     if (!session_id()) session_start();
+
+    $_SESSION['bname'] = "";
+    if (isset($_POST['submit'])) {
+        $bname = $_POST['buchName'];
+        $_SESSION['bname'] = $bname;
+        header('Location: buecher_index.php');
+    }
 ?>
 <html lang="de">
 	<head>
@@ -98,8 +105,13 @@
 		</div>
 		
 		<br />
-		<br />
-		
+		<div>
+            <form method="POST" style="margin: 40px">
+                <input type="text" id="buchName" name="buchName" placeholder="Titel"/>
+                <input type="submit" class="btn btn-info btn-lg btn-block" value="Suchen"/>
+            </form>
+        </div>
+        <br />
 		<div class="table-responsive table-wrapper-scroll-y" id="scroll">
 			<table class="table table-dark table-bordered table-hover table-striped">
 				<thead class="tablehead">
@@ -113,7 +125,7 @@
 				</thead>
 				<tbody>
 
-                    <?php showBuecher(); ?>
+                    <?php showBuecher($_SESSION['bname']); ?>
 
 				</tbody>
 			</table>
