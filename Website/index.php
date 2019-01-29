@@ -4,6 +4,8 @@
     }
     $_SESSION["pwd"] = password_hash("Paul123", PASSWORD_BCRYPT);
     $_SESSION["pwdChecked"] = "false";
+    $_SESSION['pwdFalse'] = "false";
+
 ?>
 <html lang="de">
 

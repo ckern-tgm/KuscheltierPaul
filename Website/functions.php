@@ -139,9 +139,10 @@
      function showBuecher($bname)
     {
         $dbconn = pg_connect("host=localhost port=5432 dbname=paul user=vinc password=vinc");
-        $select = "SELECT name, genre, autor, ausgewaehlt FROM buch WHERE name = '$bname'";
         if ($bname == "") {
             $select = "SELECT name, genre, autor, ausgewaehlt FROM buch WHERE name is not null";
+        }else{
+            $select = "SELECT name, genre, autor, ausgewaehlt FROM buch WHERE name = '$bname'";
         }
         $sql = pg_query($dbconn, $select);
         $buchArr = pg_fetch_all($sql);

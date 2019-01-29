@@ -8,6 +8,10 @@ if (!session_id()) {
 $nk = new Notfallkontakt();
 $kn = new Kuscheltiernutzer();
 
+if ($_SESSION['pwdFalse'] == "true"){
+    echo "<script language='JavaScript'> alert('Passwort falsch!') </script>";
+}
+
 ?>
 <html lang="de">
 
@@ -160,6 +164,15 @@ $kn = new Kuscheltiernutzer();
             </div>
         </p>
         <button type="button" class="helpBackButton" data-remodal-action="close">Hilfe schließen</button>
+    </div>
+
+    <!-- PW Falsch Modal -->
+    <div class="remodal" data-remodal-id="modalFalse">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1 style="background-color: transparent; color: red; text-align: center;">Passwort <br /> falsch!</h1>
+        <br />
+        <br />
+        <button data-remodal-action="cancel" class="remodal-cancel">OK</button>
     </div>
 
     <!-- Passwort Alert Abfrage -->

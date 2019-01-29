@@ -140,12 +140,12 @@ if (!session_id()) session_start();
 
 	<!-- Abbrechen Alert -->
 	<div class="remodal" data-remodal-id="modalAbr">
-		<button data-remodal-action="close" class="remodal-close"></button>
-		<h1 style="background-color: transparent; color: red; text-align: center;">Hinzufügen <br /> abgebrochen!</h1>
-		<br />
-		<br />
-		<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='medikamente_index.php';">OK</button>
-	</div>
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1 style="background-color: transparent; color: red; text-align: center;">Hinzufügen <br /> abgebrochen!</h1>
+        <br />
+        <br />
+        <button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='medikamente_index.php';">OK</button>
+    </div>
 
 	<form id="scroll" action="medikamente_neu_validation.php" method="post">
 		<br />

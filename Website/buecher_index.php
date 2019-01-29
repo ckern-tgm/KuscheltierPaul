@@ -3,12 +3,12 @@
     if (!session_id()) session_start();
 
     $_SESSION['bname'] = "";
-    if (isset($_POST['submit'])) {
-        $bname = $_POST['buchName'];
-        $_SESSION['bname'] = $bname;
+    if (isset($_GET['submit'])) {
+        $_SESSION['bname'] = $_GET['buchName'];
         header('Location: buecher_index.php');
     }
 ?>
+
 <html lang="de">
 	<head>
 		<title>Bücher vorlesen</title>
@@ -106,7 +106,7 @@
 		
 		<br />
 		<div>
-            <form method="POST" style="margin: 40px">
+            <form method="GET" style="margin: 40px">
                 <input type="text" id="buchName" name="buchName" placeholder="Titel"/>
                 <input type="submit" class="btn btn-info btn-lg btn-block" value="Suchen"/>
             </form>
