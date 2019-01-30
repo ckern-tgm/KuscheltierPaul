@@ -147,7 +147,7 @@ if (!session_id()) session_start();
         <button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='medikamente_index.php';">OK</button>
     </div>
 
-	<form id="scroll" action="medikamente_neu_validation.php" method="post">
+	<form id="scroll" class="inputform" action="medikamente_neu_validation.php" method="post">
 		<br />
 		<div class="form-group">
 			<label for="name" class="headlabel">Medikamentenname:</label>

@@ -130,7 +130,7 @@ if (!session_id()) session_start();
 			<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='termine_index.php';">OK</button>
 		</div>
 		
-		<form action="termine_neu_validation.php" method="post" id="scroll">
+		<form class="inputform" action="termine_neu_validation.php" method="post" id="scroll">
 			<br />
 			<div class="form-group">
 				<label for="name" class="headlabel">Terminname:</label>

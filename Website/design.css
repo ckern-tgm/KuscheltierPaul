@@ -50,7 +50,7 @@ h1{
 
 
 /** Formular: **/
-form{
+.inputform{
 	background-color: #eeeeee;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -128,10 +128,10 @@ label {
 	padding-top: 10px;
 	font-size: 1.5vw;
 }
-form:invalid {
+.inputform:invalid {
 	border: 2px solid #ffdddd;
 }
-form:valid {
+.inputform:valid {
 	border: 2px solid #ddffdd;
 }
 input:required {
