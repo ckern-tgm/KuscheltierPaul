@@ -28,7 +28,6 @@ h1{
 	padding-right: 10px;
 }
 
-
 /** Hilfe **/
 .helpHeadline{
 	background-color: transparent;
@@ -203,7 +202,7 @@ button[type=submit]:hover{
 	text-decoration: none;
 }
 
-/* ??? */
+/* Alerts */
 .alert{
 	width: calc(100% - 80px);
 	margin-left: 40px;
@@ -336,6 +335,16 @@ footer{
 .footer-bottom{
 	background: #203B45;
 	padding: 2em;
+}
+
+/*Startseite-Hintergründe*/
+.indexBackground{
+	background-color: white;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: justify;
+	padding: 10px;
+	font-size: 2vw;
 }
 
 /*

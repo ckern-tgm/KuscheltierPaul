@@ -130,7 +130,7 @@
 
 	<br />
 
-	<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: justify; padding: 10px; font-size: 2vw;">
+	<p class="indexBackground">
 		<u>Was ist Paul?</u>
 		Paul ist ein interaktives Kuscheltier, das Senioren in ihrem Alltag unterstützen, aber auch unterhalten soll. Dafür
 		hat Paul verschiedene Taster,
@@ -139,7 +139,7 @@
 
 	<br />
 
-	<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: justify; padding: 10px; font-size: 2vw;">
+	<p class="indexBackground">
 		<u>Wie funktioniert Paul?</u>
 		Das Kuscheltier lässt sich über die verbauten Knöpfe bedienen und über eine seniorenfreundliche Website steuern. Das
 		Kuscheltier hat verschiedenste
@@ -149,7 +149,16 @@
 			anhören</a>.
 		Des Weiteren kann man seine Herzfrequenz messen oder eine <a href="notfallsignal_index.php">Notfallnachricht senden</a>.
 	</p>
-
+	
+	<br />
+	
+	<p class="indexBackground">
+		<u>Video-Anleitung:</u>
+		Im folgenden Video Tutorial werden die Funktionen des Kuscheltieres erkärt. Eine Textalternative wird 
+		<a href="PDF/AnleitungKuscheltier.pdf" download="kuscheltierAnleitung">hier</a>
+		in Form eines PDF Dokumentes bereitgestellt.
+	</p>
+	
 	<!--Video-->
 	<div class="embed-responsive embed-responsive-16by9" style="margin-left: 40px; margin-right: 40px;">
 		<!--<iframe class="embed-responsive-item" src="Video/Teaser.mp4" allowfullscreen autoplay="0"></iframe>-->
@@ -157,10 +166,11 @@
 			Dies Video kann in Ihrem Browser nicht wiedergegeben werden.<br>
 		</video>
 	</div>
+	
 
 	<br />
-
-	<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: justify; padding: 10px; font-size: 2vw;">
+	
+	<p class="indexBackground">
 		<u>Einzigartigkeit und Innovation:</u>
 		Geht man zunächst auf die Hinsicht der Unterhaltung ein, gibt es am Markt eine riesige Menge an Unterhaltungsgeräten.
 		Diese sind aber
@@ -173,7 +183,7 @@
 
 	<br />
 
-	<p style="background-color: white; margin-left: 40px; margin-right: 40px; text-align: center; padding: 10px; font-size: 2vw;">
+	<p class="indexBackground">
 		<u>Sitemap:</u> <br />
 		<br />
 		<img src="Bilder/Sitemap.png" alt="Sitemap" usemap="#Map" class="img-responsive center-block" />

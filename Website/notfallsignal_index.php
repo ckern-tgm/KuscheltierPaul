@@ -181,7 +181,7 @@ if ($_SESSION['pwdFalse'] == "true"){
         <h1 style="background-color: transparent; color: red; text-align: center;">Passwort <br /> eingeben</h1>
         <br />
         <br />
-        <p>Mit geben Sie im folgenden Feld des Passwort zum Ändern der Notfalldaten ein:</p>
+        <p>Bitte geben Sie im folgenden Feld des Passwort zum Ändern der Notfalldaten ein:</p>
         <form role="form" id="passwordForm2" method="post" action="echo.php">
             <input type="password" class="form-control form-control-lg" name="pwd" id="pwd" placeholder="Passwort"
                 required />
