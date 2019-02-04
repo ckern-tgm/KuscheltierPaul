@@ -124,7 +124,7 @@ if (!session_id()) session_start();
 		
 		<br />
 		
-		<div class="table-responsive table-wrapper-scroll-y" id="scroll">
+		<div class="table-responsive" id="scroll">
 			<table class="table table-dark table-bordered table-hover">
 				<thead class="tablehead">
 					<tr>

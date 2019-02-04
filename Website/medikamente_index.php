@@ -33,9 +33,13 @@
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#modalHelp"><span class="glyphicon glyphicon-question-sign"></span> Hilfe</a></li>
+				<li>
+					<a href="#modalHelp">
+						<span class="glyphicon glyphicon-question-sign"></span>
+						Hilfe
+					</a>
+				</li>
 			</ul>
-			<!--<button onclick="document.location = 'medikamente_index.php#img1'" style="float: right">Hilfe</button>-->
 		</div>
 		
 		<!--Menübar-->
@@ -84,20 +88,21 @@
 			<p class="helpText">
 				<u>Was kann ich hier machen?</u>
 				<br />
-				Ihre bereits eingespeicherten, <b>aktuellen Medikamente</b> einsehen, diese bei Bedarf löschen und zur Seite an dem Sie 
-				<b>neue Medikamente hinzufügen</b> können, navigieren.
+				Ihre bereits eingespeicherten, <b>aktuellen Medikamente</b> einsehen, diese bei Bedarf löschen und 
+				zur Seite an dem Sie <b>neue Medikamente hinzufügen</b> können, navigieren.
 			</p>
 			<p class="helpText">
 				<u>Wie kann ich das machen?</u>
 				<br />
-				- Durch <b>Scrollen</b> auf der aktuellen Seite können Sie alle Ihre <b>aktuellen Medikamente</b> sehen.
-				Sie können durch Klicken auf den <b>roten Button</b> Medikamente <b>löschen</b>.
+				- Durch <b>Scrollen</b> auf der aktuellen Seite können Sie alle Ihre <b>aktuellen Medikamente</b>
+				sehen. Sie können durch Klicken auf den <b>roten Button</b> Medikamente <b>löschen</b>.
 				<div style="text-align: center;">
 					<img src="Bilder/medikamente_tabelle.png" alt="Bild Medikamente Tabelle" style="width: 100%;" />
 				</div>
 			</p>
 			<p class="helpText">
-				- Um <b>Medikamente hinzuzufügen</b> klicken Sie auf den <b>blauen Button</b> auf dem oberen Teil der Seite.
+				- Um <b>Medikamente hinzuzufügen</b> klicken Sie auf den <b>blauen Button</b> auf dem oberen Teil
+				der Seite.
 				<div style="text-align: center;">
 					<img src="Bilder/medikamente_button.png" alt="Button Medikamente hinzufügen" style="width: 100%;" />
 				</div>
@@ -124,7 +129,7 @@
 		
 		<br />
 		
-		<div class="table-responsive table-wrapper-scroll-y" id="scroll">
+		<div class="table-responsive" id="scroll">
 			<table class="table table-dark table-bordered table-hover table-striped">
 				<thead class="tablehead">
 					<tr>

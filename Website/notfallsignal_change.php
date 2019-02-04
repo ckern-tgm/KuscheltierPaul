@@ -146,7 +146,7 @@ $kn = new Kuscheltiernutzer();
 		
 		<form action="notfallsignal_change_validation.php" method="post" id="scroll">
 			<br />
-			<div class="table-responsive table-wrapper-scroll-y" id="scroll">
+			<div class="table-responsive" id="scroll">
 				<table class="table table-dark table-bordered table-hover table-striped">
 					<thead class="tablehead">
 						<tr>
@@ -178,7 +178,7 @@ $kn = new Kuscheltiernutzer();
 			
 			<br />
 			
-			<div class="table-responsive table-wrapper-scroll-y" id="scroll">
+			<div class="table-responsive" id="scroll">
 				<table class="table table-dark table-bordered table-hover table-striped">
 					<thead class="tablehead">
 						<tr>

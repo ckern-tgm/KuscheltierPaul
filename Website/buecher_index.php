@@ -116,7 +116,7 @@
 				</button>
             </form>
         </div>
-		<div class="table-responsive table-wrapper-scroll-y" id="scroll">
+		<div class="table-responsive" id="scroll">
 			<table class="table table-dark table-bordered table-hover table-striped">
 				<thead class="tablehead">
 					<tr>
