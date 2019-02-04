@@ -8,7 +8,6 @@
         header('Location: buecher_index.php');
     }
 ?>
-
 <html lang="de">
 	<head>
 		<title>Bücher vorlesen</title>
@@ -20,7 +19,7 @@
 		<!--JQuery-->
 		<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<!--Icon-->
-		<link rel="icon" type="image/png" href="Bilder/Logo.png" alt="Logo" />
+		<link rel="icon" type="image/png" href="Bilder/Logo.png" />
 		<!--Remodal-->
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css" />
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css" />
@@ -34,7 +33,7 @@
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		
 		<!--Infobar-->
-		<div class="navbar navbarOne">
+		<div class="navbar navbarOne" title="Infobar">
 			<div class="navbar-header">
 				<img src="Bilder/logo_klein.png" class="logo" alt="Logo" />
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
@@ -45,7 +44,7 @@
 		</div>
 		
 		<!--Menübar-->
-		<div class="navbar navbarTwo">
+		<div class="navbar navbarTwo" title="Menubar">
 			<a href="index.php">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" width="35" height="35" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 				<span>Startseite</span>
@@ -69,12 +68,12 @@
 		</div>
 		
 		<!--Aktuelle Seiten-Position-->
-		<ol class="breadcrumb">
+		<ol class="breadcrumb" title="Actual Sideposition List">
 			<li><a href="index.php">Startseite</a></li>
 			<li class="active">Bücher vorlesen</li>
 		</ol>
 		
-		<div>
+		<div title="Headline">
 			<h1>
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Bücher vorlesen" style="fill: white; width: 3vw; height: 3vw;" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><defs><path id="a" d="M0 0h24v24H0V0z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"/></svg>
 				<a href="#scroll" style="color: white;">Bücher vorlesen</a>
@@ -103,7 +102,9 @@
 			</p>
 			<button type="button" class="helpBackButton" data-remodal-action="close">Hilfe schließen</button>
 		</div>
-		<div>
+		
+		<!--Bücher durchsuchen-->
+		<div title="Search a book">
             <form method="GET" style="margin: 40px">
                 <input type="text" id="buchName" name="buchName" placeholder="Buchtitel" style="width: 40%;" />
                 <button type="submit" class="btn btn-info btn-lg btn-block">
@@ -116,7 +117,9 @@
 				</button>
             </form>
         </div>
-		<div class="table-responsive" id="scroll">
+		
+		<!--Bücher anzeigen-->
+		<div class="table-responsive" id="scroll" title="Table of Content">
 			<table class="table table-dark table-bordered table-hover table-striped">
 				<thead class="tablehead">
 					<tr>
@@ -142,7 +145,7 @@
 		<br />
 		<br />
 		
-		<footer class="mainfooter" role="contentinfo">
+		<footer class="mainfooter" role="contentinfo" title="footer">
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row">

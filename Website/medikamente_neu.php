@@ -12,7 +12,7 @@ if (!session_id()) session_start();
 		<!--JQuery-->
 		<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<!--Icon-->
-		<link rel="icon" type="image/png" href="Bilder/Logo.png">
+		<link rel="icon" type="image/png" href="Bilder/Logo.png" />
 		<!--Remodal-->
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css">
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css">
@@ -41,7 +41,7 @@ if (!session_id()) session_start();
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 
 		<!--Infobar-->
-		<div class="navbar navbarOne">
+		<div class="navbar navbarOne" title="Infobar">
 			<div class="navbar-header">
 				<img src="Bilder/logo_klein.png" class="logo">
 				<a href="index.php" clas s="titel">Kuscheltier Paul</a>
@@ -52,7 +52,7 @@ if (!session_id()) session_start();
 		</div>
 
 		<!--Menübar-->
-		<div class="navbar navbarTwo">
+		<div class="navbar navbarTwo" title="Menubar">
 			<a href="index.php">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" width="35" height="35" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" /><path d="M0 0h24v24H0z" fill="none" /></svg>
 				<span>Startseite</span>
@@ -76,13 +76,13 @@ if (!session_id()) session_start();
 		</div>
 
 		<!--Aktuelle Seiten-Position-->
-		<ol class="breadcrumb">
+		<ol class="breadcrumb" title="Actual Sideposition List">
 			<li><a href="index.php">Startseite</a></li>
 			<li><a href="medikamente_index.php">Medikamente erinnern</a></li>
 			<li class="active">Medikament hinzufügen</li>
 		</ol>
 
-		<div>
+		<div title="Headline">
 			<h1>
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Medikament hinzufügen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V9z" /></svg>
 				<a href="#scroll" style="color: white;">Medikament hinzufügen</a>
@@ -147,16 +147,16 @@ if (!session_id()) session_start();
 			<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='medikamente_index.php';">OK</button>
 		</div>
 
-		<form id="scroll" class="inputform" action="medikamente_neu_validation.php" method="post">
+		<form id="scroll" class="inputform" action="medikamente_neu_validation.php" method="post" title="New Drug add Form">
 			<br />
-			<div class="form-group">
+			<div class="form-group" title="Name">
 				<label for="name" class="headlabel">Medikamentenname:</label>
 				<input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Medikamentenname" required />
 				<small id="nameHelp" class="form-text text-muted">
 					Bitte geben Sie den <b>Namen</b> von ihrem Medikament ein. Beispiel: "Parkemed"
 				</small>
 			</div>
-			<div class="form-group">
+			<div class="form-group" title="Time">
 				<label for="zeit" class="headlabel">Uhrzeit:</label>
 				<input type="time" class="form-control form-control-lg" name="zeit" id="zeit" placeholder="Uhrzeit" required />
 				<small id="zeitHelp" class="form-text text-muted">
@@ -164,7 +164,7 @@ if (!session_id()) session_start();
 				</small>
 			</div>
 			<label for="tage" class="headlabel">Einnahmetage:</label>
-			<div class="form-check form-check-inline" id="tage">
+			<div class="form-check form-check-inline" id="tage" title="Days">
 				<input type="checkbox" class="form-check-input tagselect" id="moCheck" name="moCheck"/>
 				<label class="form-check-label" for="moCheck">Montag</label>
 				<input type="checkbox" class="form-check-input tagselect" id="diCheck" name="diCheck"/>
@@ -185,7 +185,7 @@ if (!session_id()) session_start();
 				</small>
 			</div>
 			<br />
-			<div class="form-group">
+			<div class="form-group" title="Count">
 				<label for="anz" class="headlabel">Medikamentenanzahl:</label>
 				<input type="number" class="form-control form-control-lg" name="anz" id="anz" value="0.5" step="0.5" min="0.5" max="10"
 				 required />
@@ -196,19 +196,10 @@ if (!session_id()) session_start();
 
 			<br />
 			<br />
-			
-			<!--
-			<div class="progress">
-				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-					<p class="progress-bar-text">25%</p>
-				</div>
-			</div>
-			-->
-			
 			<br />
 
-			<div class="form-group">
-				<div class="form-group col-md-6">
+			<div class="form-group" title="Add or Cancel">
+				<div class="form-group col-md-6" title="Add">
 					<!--<a href="#modalHinz">-->
 						<button type="submit" name="submit" id="submit" data-toggle="modal" data-target="#modalHinz" class="btn btn-success btn-lg btn-block" onclick="">
 							<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" /></svg>
@@ -216,7 +207,7 @@ if (!session_id()) session_start();
 						</button>
 					<!--</a>-->
 				</div>
-				<div class="form-group col-md-6">
+				<div class="form-group col-md-6" title="cancel">
 					<a href="#modalAbr" class="noUnderline">
 						<button type="button" class="btn btn-warning btn-lg btn-block" onclick="">
 							<svg xmlns="http://www.w3.org/2000/svg" alt="Abbrechen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" /><path d="M0 0h24v24H0z" fill="none" /></svg>
@@ -233,7 +224,7 @@ if (!session_id()) session_start();
 		<br />
 		<br />
 		
-		<footer class="mainfooter" role="contentinfo">
+		<footer class="mainfooter" role="contentinfo" title="footer">
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row">

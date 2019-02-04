@@ -24,7 +24,7 @@ $kn = new Kuscheltiernutzer();
 		<!--JQuery-->
 		<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<!--Icon-->
-		<link rel="icon" type="image/png" href="Bilder/Logo.png" alt="Logo" />
+		<link rel="icon" type="image/png" href="Bilder/Logo.png" />
 		<!--Remodal-->
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css" />
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css" />
@@ -38,7 +38,7 @@ $kn = new Kuscheltiernutzer();
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		
 		<!--Infobar-->
-		<div class="navbar navbarOne">
+		<div class="navbar navbarOne" title="Infobar">
 			<div class="navbar-header">
 				<img src="Bilder/logo_klein.png" class="logo" alt="Logo" />
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
@@ -49,7 +49,7 @@ $kn = new Kuscheltiernutzer();
 		</div>
 		
 		<!--Menübar-->
-		<div class="navbar navbarTwo">
+		<div class="navbar navbarTwo" title="Menubar">
 			<a href="index.php">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" width="35" height="35" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 				<span>Startseite</span>
@@ -73,13 +73,13 @@ $kn = new Kuscheltiernutzer();
 		</div>
 		
 		<!--Aktuelle Seiten-Position-->
-		<ol class="breadcrumb">
+		<ol class="breadcrumb" title="Actual Sideposition List">
 			<li><a href="index.php">Startseite</a></li>
 			<li><a href="notfallsignal_index.php">Aktuelle Notfalldaten</a></li>
 			<li class="active">Notfalldaten ändern</li>
 		</ol>
 		
-		<div>
+		<div title="Headline">
 			<h1>
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Notfallsignal" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 				<a href="#scroll" style="color: white;">Notfalldaten ändern</a>
@@ -144,9 +144,9 @@ $kn = new Kuscheltiernutzer();
 		
 		<br />
 		
-		<form action="notfallsignal_change_validation.php" method="post" id="scroll">
+		<form action="notfallsignal_change_validation.php" method="post" id="scroll" title="Change Notfallinfo Form">
 			<br />
-			<div class="table-responsive" id="scroll">
+			<div class="table-responsive" id="scroll" title="Information von Kuscheltierbesitzers change">
 				<table class="table table-dark table-bordered table-hover table-striped">
 					<thead class="tablehead">
 						<tr>
@@ -178,7 +178,7 @@ $kn = new Kuscheltiernutzer();
 			
 			<br />
 			
-			<div class="table-responsive" id="scroll">
+			<div class="table-responsive" id="scroll" title="Information von Notfallkontakt change>
 				<table class="table table-dark table-bordered table-hover table-striped">
 					<thead class="tablehead">
 						<tr>
@@ -202,8 +202,8 @@ $kn = new Kuscheltiernutzer();
 				</table>
 			</div>
 			
-			<div class="form-group">
-				<div class="form-group col-md-6">
+			<div class="form-group" title="Add or Cancel">
+				<div class="form-group col-md-6" title="Add">
 					<!--<a href="#modalUpd" class="noUnderline">-->
 						<button type="submit" name="submit" id="submit" class="btn btn-success btn-lg btn-block" onclick="">
 							<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
@@ -211,7 +211,7 @@ $kn = new Kuscheltiernutzer();
 						</button>
 					<!--</a>-->
 				</div>
-				<div class="form-group col-md-6">
+				<div class="form-group col-md-6" title="Cancel">
 					<a href="#modalAbr" class="noUnderline">
 						<button type="button" class="btn btn-warning btn-lg btn-block" onclick="">
 							<svg xmlns="http://www.w3.org/2000/svg" alt="Abbrechen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
@@ -230,7 +230,7 @@ $kn = new Kuscheltiernutzer();
 		<br />
 		<br />
 		
-		<footer class="mainfooter" role="contentinfo">
+		<footer class="mainfooter" role="contentinfo" title="footer">
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row">

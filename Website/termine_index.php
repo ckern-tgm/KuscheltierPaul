@@ -13,7 +13,7 @@ if (!session_id()) session_start();
 		<!--JQuery-->
 		<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<!--Icon-->
-		<link rel="icon" type="image/png" href="Bilder/Logo.png" alt="Logo" />
+		<link rel="icon" type="image/png" href="Bilder/Logo.png" />
 		<!--Remodal-->
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css" />
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css" />
@@ -27,7 +27,7 @@ if (!session_id()) session_start();
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		
 		<!--Infobar-->
-		<div class="navbar navbarOne">
+		<div class="navbar navbarOne" title="Infobar">
 			<div class="navbar-header">
 				<img src="Bilder/logo_klein.png" class="logo" alt="Logo" />
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
@@ -38,7 +38,7 @@ if (!session_id()) session_start();
 		</div>
 		
 		<!--Menübar-->
-		<div class="navbar navbarTwo">
+		<div class="navbar navbarTwo" title="Menubar">
 			<a href="index.php">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" width="35" height="35" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 				<span>Startseite</span>
@@ -62,12 +62,12 @@ if (!session_id()) session_start();
 		</div>
 		
 		<!--Aktuelle Seiten-Position-->
-		<ol class="breadcrumb">
+		<ol class="breadcrumb" title="Actual Sideposition List">
 			<li><a href="index.php">Startseite</a></li>
 			<li class="active">Terminplanung</li>
 		</ol>
 		
-		<div>
+		<div title="Headline">
 			<h1>
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Terminplanung" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
 				<a href="#scroll" style="color: white;">Aktuelle Termine</a>
@@ -124,7 +124,7 @@ if (!session_id()) session_start();
 		
 		<br />
 		
-		<div class="table-responsive" id="scroll">
+		<div class="table-responsive" id="scroll" title="Table of Content">
 			<table class="table table-dark table-bordered table-hover">
 				<thead class="tablehead">
 					<tr>
@@ -145,7 +145,7 @@ if (!session_id()) session_start();
 		<br />
 		<br />
 		
-		<footer class="mainfooter" role="contentinfo">
+		<footer class="mainfooter" role="contentinfo" title="footer">
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row">

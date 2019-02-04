@@ -13,7 +13,7 @@
 		<!--JQuery-->
 		<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<!--Icon-->
-		<link rel="icon" type="image/png" href="Bilder/Logo.png" alt="Logo" />
+		<link rel="icon" type="image/png" href="Bilder/Logo.png" />
 		<!--Remodal-->
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css" />
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css" />
@@ -27,7 +27,7 @@
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		
 		<!--Infobar-->
-		<div class="navbar navbarOne">
+		<div class="navbar navbarOne" title="Infobar">
 			<div class="navbar-header">
 				<img src="Bilder/logo_klein.png" class="logo" alt="Logo" />
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
@@ -43,7 +43,7 @@
 		</div>
 		
 		<!--Menübar-->
-		<div class="navbar navbarTwo">
+		<div class="navbar navbarTwo" title="Menubar">
 			<a href="index.php">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" width="35" height="35" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 				<span>Startseite</span>
@@ -67,12 +67,12 @@
 		</div>
 		
 		<!--Aktuelle Seiten-Position-->
-		<ol class="breadcrumb">
+		<ol class="breadcrumb" title="Actual Sideposition List">
 			<li><a href="index.php">Startseite</a></li>
 			<li class="active">Medikamente erinnern</li>
 		</ol>
 		
-		<div>
+		<div title="Headline">
 			<h1>
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Medikamente erinnern" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></svg>
 				<a href="#scroll" style="color: white;">Aktuelle Medikamente</a>
@@ -129,7 +129,7 @@
 		
 		<br />
 		
-		<div class="table-responsive" id="scroll">
+		<div class="table-responsive" id="scroll" title="Table of Content">
 			<table class="table table-dark table-bordered table-hover table-striped">
 				<thead class="tablehead">
 					<tr>
@@ -151,7 +151,7 @@
 		<br />
 		<br />
 		
-		<footer class="mainfooter" role="contentinfo">
+		<footer class="mainfooter" role="contentinfo" title="footer">
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row">

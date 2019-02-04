@@ -18,7 +18,7 @@
 		<!--JQuery-->
 		<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<!--Icon-->
-		<link rel="icon" type="image/png" href="Bilder/Logo.png" alt="Logo" />
+		<link rel="icon" type="image/png" href="Bilder/Logo.png" />
 		<!--Remodal-->
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css" />
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css" />
@@ -32,8 +32,8 @@
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 
 		<!--Infobar-->
-		<div class="navbar navbarOne">
-			<div class="navbar-header">
+		<div class="navbar navbarOne" title="Infobar">
+			<div class="navbar-header" title="Logo and Link to Startside">
 				<img src="Bilder/logo_klein.png" class="logo" alt="Logo" />
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
 			</div>
@@ -43,7 +43,7 @@
 		</div>
 
 		<!--Menübar-->
-		<div class="navbar navbarTwo">
+		<div class="navbar navbarTwo" title="Menubar">
 			<a href="index.php" class="choosen">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" width="35" height="35" viewBox="0 0 24 24">
 					<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
@@ -83,11 +83,11 @@
 			</a>
 		</div>
 
-		<ol class="breadcrumb">
+		<ol class="breadcrumb" title="Actual Sideposition List">
 			<li class="active">Startseite</li>
 		</ol>
 
-		<div>
+		<div title="Headline">
 			<h1>
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24">
 					<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
@@ -128,7 +128,7 @@
 
 		<br />
 
-		<p class="indexBackground">
+		<p class="indexBackground" title="What is Paul?">
 			<u>Was ist Paul?</u>
 			Paul ist ein interaktives Kuscheltier, das Senioren in ihrem Alltag unterstützen, aber auch unterhalten soll. Dafür
 			hat Paul verschiedene Taster,
@@ -137,7 +137,7 @@
 
 		<br />
 
-		<p class="indexBackground">
+		<p class="indexBackground" title="How does Paul work?">
 			<u>Wie funktioniert Paul?</u>
 			Das Kuscheltier lässt sich über die verbauten Knöpfe bedienen und über eine seniorenfreundliche Website steuern. Das
 			Kuscheltier hat verschiedenste
@@ -150,7 +150,7 @@
 		
 		<br />
 		
-		<p class="indexBackground">
+		<p class="indexBackground" title="Video Introduction">
 			<u>Video-Anleitung:</u>
 			Im folgenden Video Tutorial werden die Funktionen des Kuscheltieres erkärt. Eine Textalternative wird 
 			<a href="PDF/AnleitungKuscheltier.pdf" download="kuscheltierAnleitung">hier</a>
@@ -158,7 +158,7 @@
 		</p>
 		
 		<!--Video-->
-		<div class="embed-responsive embed-responsive-16by9" style="margin-left: 40px; margin-right: 40px;">
+		<div class="embed-responsive embed-responsive-16by9" style="margin-left: 40px; margin-right: 40px;" title="Video Tutorial">
 			<!--<iframe class="embed-responsive-item" src="Video/Teaser.mp4" allowfullscreen autoplay="0"></iframe>-->
 			<video src="Video/Teaser.mp4" controls poster="Bilder/poster.png">
 				Dies Video kann in Ihrem Browser nicht wiedergegeben werden.<br />
@@ -168,7 +168,7 @@
 
 		<br />
 		
-		<p class="indexBackground">
+		<p class="indexBackground" title="Einzigartigkeit und Innovation">
 			<u>Einzigartigkeit und Innovation:</u>
 			Geht man zunächst auf die Hinsicht der Unterhaltung ein, gibt es am Markt eine riesige Menge an Unterhaltungsgeräten.
 			Diese sind aber
@@ -181,7 +181,7 @@
 
 		<br />
 
-		<p class="indexBackground">
+		<p class="indexBackground" title="Sitemap">
 			<u>Sitemap:</u> <br />
 			<br />
 			<img src="Bilder/Sitemap.png" alt="Sitemap" usemap="#Map" class="img-responsive center-block" />
@@ -202,7 +202,7 @@
 		<br />
 		<br />
 
-		<footer class="mainfooter" role="contentinfo">
+		<footer class="mainfooter" role="contentinfo" title="footer">
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row">

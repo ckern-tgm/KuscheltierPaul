@@ -13,7 +13,7 @@ if (!session_id()) session_start();
 		<!--JQuery-->
 		<script src="scripts/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<!--Icon-->
-		<link rel="icon" type="image/png" href="Bilder/Logo.png" alt="Logo" />
+		<link rel="icon" type="image/png" href="Bilder/Logo.png" />
 		<!--Remodal-->
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal.css" />
 		<link rel="stylesheet" href="scripts/Remodal-1.1.1/dist/remodal-default-theme.css" />
@@ -27,7 +27,7 @@ if (!session_id()) session_start();
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		
 		<!--Infobar-->
-		<div class="navbar navbarOne">
+		<div class="navbar navbarOne" title="Infobar">
 			<div class="navbar-header">
 				<img src="Bilder/logo_klein.png" class="logo" alt="Logo" />
 				<a href="index.php" class="titel">Kuscheltier Paul</a>
@@ -38,7 +38,7 @@ if (!session_id()) session_start();
 		</div>
 		
 		<!--Menübar-->
-		<div class="navbar navbarTwo">
+		<div class="navbar navbarTwo" title="Menubar">
 			<a href="index.php">
 				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" width="35" height="35" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 				<span>Startseite</span>
@@ -62,13 +62,13 @@ if (!session_id()) session_start();
 		</div>
 		
 		<!--Aktuelle Seiten-Position-->
-		<ol class="breadcrumb">
+		<ol class="breadcrumb" title="Actual Sideposition List">
 			<li><a href="index.php">Startseite</a></li>
 			<li><a href="termine_index.php">Terminplanung</a></li>
 			<li class="active">Termin hinzufügen</li>
 		</ol>
 		
-		<div>
+		<div title="Headline">
 			<h1>
 				<?//xml version="1.0" encoding="utf-8"?>
 				<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -130,37 +130,37 @@ if (!session_id()) session_start();
 			<button data-remodal-action="cancel" class="remodal-cancel" onclick="location.href='termine_index.php';">OK</button>
 		</div>
 		
-		<form class="inputform" action="termine_neu_validation.php" method="post" id="scroll">
+		<form class="inputform" action="termine_neu_validation.php" method="post" id="scroll" title="New Date add Form">
 			<br />
-			<div class="form-group">
+			<div class="form-group" title="Name">
 				<label for="name" class="headlabel">Terminname:</label>
 				<input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Terminname" required />
 				<small id="nameHelp" class="form-text text-muted">
 					Bitte geben Sie den <b>Namen</b> von ihrem Termim ein. Beispiel: "Zahnarzt"
 				</small>
 			</div>
-			<div class="form-group">
+			<div class="form-group" title="Date">
 				<label for="datum" class="headlabel">Datum:</label>
 				<input type="date" class="form-control form-control-lg" id="datum" name="datum" placeholder="Datum" required />
 				<small id="datumHelp" class="form-text text-muted">
 					Bitte geben Sie das <b>Datum</b> ihres Termines ein. Beispiel: "01.01.2020"
 				</small>
 			</div>
-			<div class="form-group">
+			<div class="form-group" title="Time">
 				<label for="zeit" class="headlabel">Uhrzeit:</label>
 				<input type="time" class="form-control form-control-lg" id="zeit" name="zeit" placeholder="Uhrzeit" required />
 				<small id="zeitHelp" class="form-text text-muted">
 					Bitte geben Sie die <b>Uhrzeit</b> ihres Termines ein. Beispiel: "08:00"
 				</small>
 			</div>
-			<div class="form-group">
+			<div class="form-group" title="Place">
 				<label for="ort" class="headlabel">Ort:</label>
 				<input type="text" class="form-control form-control-lg" id="ort" name="ort" placeholder="Ort" required />
 				<small id="ortHelp" class="form-text text-muted">
 					Bitte geben Sie den <b>Ort</b> von ihrem Termin ein. Beispiel: "Wien"
 				</small>
 			</div>
-			<div class="form-group">
+			<div class="form-group" title="Hint">
 				<label for="hinw" class="headlabel">Hinweis:</label>
 				<input type="text" class="form-control form-control-lg" id="hinw" name="hinw" placeholder="Hinweis (optional)" />
 				<small id="hinwHelp" class="form-text text-muted">
@@ -170,19 +170,10 @@ if (!session_id()) session_start();
 			
 			<br />
 			<br />
-			
-			<!--
-			<div class="progress">
-				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-					<p class="progress-bar-text">25%</p>
-				</div>
-			</div>
-			-->
-			
 			<br />
 			
-			<div class="form-group">
-				<div class="form-group col-md-6">
+			<div class="form-group" title="Add or Cancel">
+				<div class="form-group col-md-6" title="add">
 					<!--<a href="#modalHinz">-->
 						<button type="submit" name="submit" id="submit" class="btn btn-success btn-lg btn-block" onclick="">
 							<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
@@ -190,7 +181,7 @@ if (!session_id()) session_start();
 						</button>
 					<!--</a>-->
 				</div>
-				<div class="form-group col-md-6">
+				<div class="form-group col-md-6" title="cancel">
 					<a href="#modalAbr" class="noUnderline">
 						<button type="button" class="btn btn-warning btn-lg btn-block" onclick="">
 							<svg xmlns="http://www.w3.org/2000/svg" alt="Abbrechen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
@@ -207,7 +198,7 @@ if (!session_id()) session_start();
 		<br />
 		<br />
 		
-		<footer class="mainfooter" role="contentinfo">
+		<footer class="mainfooter" role="contentinfo" title="footer">
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row">
