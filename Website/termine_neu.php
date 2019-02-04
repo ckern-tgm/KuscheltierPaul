@@ -73,7 +73,7 @@ if (!session_id()) session_start();
 				<?//xml version="1.0" encoding="utf-8"?>
 				<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 				<!DOCTYPE PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-				<svg version="1.1" alt="Termin hinzufügen" style="fill: white; width: 3vw; height: 3vw;" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path d="M20,3h-1V1h-2v2H7V1H5v2H4C2.9,3,2,3.9,2,5v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5C22,3.9,21.1,3,20,3z M20,21H4V8h16V21z"/><path fill="none" d="M0,0h24v24H0V0z"/><path d="M16.969,15.304H12.71v4.259h-1.419v-4.259H7.031v-1.42h4.259V9.625h1.419v4.259h4.259V15.304z"/></svg>
+				<svg version="1.1" alt="Termin hinzufügen" class="headline_svg" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path d="M20,3h-1V1h-2v2H7V1H5v2H4C2.9,3,2,3.9,2,5v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5C22,3.9,21.1,3,20,3z M20,21H4V8h16V21z"/><path fill="none" d="M0,0h24v24H0V0z"/><path d="M16.969,15.304H12.71v4.259h-1.419v-4.259H7.031v-1.42h4.259V9.625h1.419v4.259h4.259V15.304z"/></svg>
 				<a href="#scroll" style="color: white;">Termin hinzufügen</a>
 			</h1>
 		</div>
@@ -176,7 +176,7 @@ if (!session_id()) session_start();
 				<div class="form-group col-md-6" title="add">
 					<!--<a href="#modalHinz">-->
 						<button type="submit" name="submit" id="submit" class="btn btn-success btn-lg btn-block" onclick="">
-							<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" class="headline_svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
 							Hinzufügen
 						</button>
 					<!--</a>-->
@@ -184,7 +184,7 @@ if (!session_id()) session_start();
 				<div class="form-group col-md-6" title="cancel">
 					<a href="#modalAbr" class="noUnderline">
 						<button type="button" class="btn btn-warning btn-lg btn-block" onclick="">
-							<svg xmlns="http://www.w3.org/2000/svg" alt="Abbrechen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" alt="Abbrechen" class="headline_svg" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 							Abbrechen
 						</button>
 					</a>

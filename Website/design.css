@@ -10,9 +10,11 @@ body{
 	text-align: center;
 }
 
+
+/*Überschriften:*/
 h1{
 	font-family: Gill Sans, sans-serif;
-	font-size: 5vw;
+	font-size: 6rem;
 	display:inline;
     color: white;
 	background-color: #203B45;
@@ -26,6 +28,12 @@ h1{
 	padding-left: 10px;
 	padding-right: 10px;
 }
+.headline_svg{
+	fill: white;
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
 
 /** Hilfe **/
 .helpHeadline{
@@ -34,7 +42,7 @@ h1{
 	text-align: center;
 }
 .helpText{
-	font-size: 2vw;
+	font-size: 3rem;
 	text-align: justify;
 	line-height: 150%;
 }
@@ -43,7 +51,7 @@ h1{
 	color: white;
 	margin-top: 10px;
 	width: 60%;
-	font-size: 3vw;
+	font-size: 4rem;
 }
 
 
@@ -57,21 +65,21 @@ h1{
 	border-radius: 20px;
 }
 input[type=checkbox]{
-	-ms-transform: scale(3); /* IE */
-	-moz-transform: scale(3); /* FF */
-	-webkit-transform: scale(3); /* Safari and Chrome */
-	-o-transform: scale(3); /* Opera */
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
 	padding: 20px;
 }
 input[type=text]{
 	height: 60px;
-	font-size: 2vw;
+	font-size: 2rem;
 	text-align: center;
 	border-radius: 10px;
 }
 input[type=time]{
 	height: 60px;
-	font-size: 2vw;
+	font-size: 3rem;
 	text-align: center;
 	text-align: center;
 	padding-left: 4%;
@@ -85,20 +93,20 @@ input[type=time]::-webkit-clear-button {
 }
 input[type=number]{
 	height: 60px;
-	font-size: 2vw;
+	font-size: 2rem;
 	text-align: center;
 	border-radius: 10px;
 }
 input[type=date]{
 	height: 60px;
-	font-size: 2vw;
+	font-size: 2rem;
 	text-align: center;
 	padding-left: 4%;
 	border-radius: 10px;
 }
 input[type=password]{
 	height: 60px;
-	font-size: 2vw;
+	font-size: 2rem;
 	text-align: center;
 	padding-left: 4%;
 	border-radius: 10px;
@@ -117,14 +125,14 @@ label {
 }
 .headlabel{
 	font-family: Gill Sans, sans-serif;
-	font-size: 2.5vw;
+	font-size: 3rem;
 	text-decoration: underline;
 }
 .form-check-label{
 	padding-left: 10px;
 	padding-right: 30px;
 	padding-top: 10px;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 }
 .inputform:invalid {
 	border: 2px solid #ffdddd;
@@ -160,12 +168,17 @@ input:valid {
 }
 .btn.btn-info{
 	width: 60%;
-	font-size: 3vw;
+	font-size: 4rem;
 	color: black;
 	background: #A1DAF7;
 	margin:0px auto;
 	margin-top: 20px;
 	border-radius: 20px;
+}
+.btn_svg{
+	fill: black;
+	width: 4rem;
+	height: 4rem;
 }
 /*.btn.btn-info:hover{
 	color: white;
@@ -174,7 +187,7 @@ input:valid {
 }*/
 .btn.btn-success{
 	width: 60%;
-	font-size: 3vw;
+	font-size: 3rem;
 	color: white;
 	text-align: center;
 	margin:0px auto;
@@ -182,7 +195,7 @@ input:valid {
 }
 .btn.btn-warning{
 	width: 60%;
-	font-size: 3vw;
+	font-size: 3rem;
 	color: white;
 	background: #d04440;
 	border-color: #d04440;
@@ -206,7 +219,7 @@ button[type=submit]:hover{
 	width: calc(100% - 80px);
 	margin-left: 40px;
 	margin-right: 40px;
-	font-size: 2.5vw;
+	font-size: 2.5rem;
 }
 
 
@@ -217,8 +230,8 @@ button[type=submit]:hover{
 	margin-bottom: 0px;
 }
 .table * {
-	font-size: 250%;
-	font-size: 2.5vw;
+	
+	font-size: 3rem;
 	text-align: center;
 }
 .tablehead{
@@ -345,14 +358,14 @@ footer{
 }*/
 
 
-/*Startseite-Text-Hintergründe*/
+/*Startseite-Text*/
 .indexBackground{
 	background-color: white;
 	margin-left: 40px;
 	margin-right: 40px;
 	text-align: justify;
 	padding: 10px;
-	font-size: 2vw;
+	font-size: 3rem;
 }
 
 
@@ -367,7 +380,6 @@ footer{
 	margin-top: -140px;
 	float: right;
 }
-*/
 /*
 .lightbox {
 	display: none;

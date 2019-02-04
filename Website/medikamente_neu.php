@@ -84,7 +84,7 @@ if (!session_id()) session_start();
 
 		<div title="Headline">
 			<h1>
-				<svg xmlns="http://www.w3.org/2000/svg" alt="Medikament hinzufügen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V9z" /></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" alt="Medikament hinzufügen" class="headline_svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V9z" /></svg>
 				<a href="#scroll" style="color: white;">Medikament hinzufügen</a>
 			</h1>
 		</div>
@@ -202,7 +202,7 @@ if (!session_id()) session_start();
 				<div class="form-group col-md-6" title="Add">
 					<!--<a href="#modalHinz">-->
 						<button type="submit" name="submit" id="submit" data-toggle="modal" data-target="#modalHinz" class="btn btn-success btn-lg btn-block" onclick="">
-							<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" /></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" alt="Hinzufügen" class="headline_svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" /></svg>
 							Hinzufügen
 						</button>
 					<!--</a>-->
@@ -210,7 +210,7 @@ if (!session_id()) session_start();
 				<div class="form-group col-md-6" title="cancel">
 					<a href="#modalAbr" class="noUnderline">
 						<button type="button" class="btn btn-warning btn-lg btn-block" onclick="">
-							<svg xmlns="http://www.w3.org/2000/svg" alt="Abbrechen" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" /><path d="M0 0h24v24H0z" fill="none" /></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" alt="Abbrechen" class="headline_svg" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" /><path d="M0 0h24v24H0z" fill="none" /></svg>
 							Abbrechen
 						</button>
 					</a>

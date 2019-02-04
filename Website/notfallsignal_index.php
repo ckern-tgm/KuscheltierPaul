@@ -125,8 +125,7 @@ if ($_SESSION['pwdFalse'] == "true"){
 
 		<div title="Headline">
 			<h1>
-				<svg xmlns="http://www.w3.org/2000/svg" alt="Notfallsignal" style="fill: white; width: 3vw; height: 3vw;"
-					viewBox="0 0 24 24">
+				<svg xmlns="http://www.w3.org/2000/svg" alt="Notfallsignal" class="headline_svg" viewBox="0 0 24 24">
 					<path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
 					<path d="M0 0h24v24H0z" fill="none" />
 				</svg>
@@ -223,11 +222,10 @@ if ($_SESSION['pwdFalse'] == "true"){
 
 		<button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#pwdForm">
 			<!--onclick="location.href='#modalPwd'"-->
-			<svg xmlns="http://www.w3.org/2000/svg" alt="Notfallsignal" style="fill: black; width: 3vw; height: 3vw;"
-				viewBox="0 0 24 24">
-				<path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
-				<path d="M0 0h24v24H0z" fill="none" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" alt="Notfallsignal" class="btn_svg" viewBox="0 0 24 24">
+					<path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+					<path d="M0 0h24v24H0z" fill="none" />
+				</svg>
 			Notfalldaten ändern
 		</button>
 

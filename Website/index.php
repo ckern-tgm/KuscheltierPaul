@@ -89,7 +89,7 @@
 
 		<div title="Headline">
 			<h1>
-				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" style="fill: white; width: 3vw; height: 3vw;" viewBox="0 0 24 24">
+				<svg xmlns="http://www.w3.org/2000/svg" alt="Startseite" class="headline_svg" viewBox="0 0 24 24">
 					<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
 					<path d="M0 0h24v24H0z" fill="none" /></svg>
 				Startseite
@@ -158,13 +158,14 @@
 		</p>
 		
 		<!--Video-->
-		<div class="embed-responsive embed-responsive-16by9" style="margin-left: 40px; margin-right: 40px;" title="Video Tutorial">
-			<!--<iframe class="embed-responsive-item" src="Video/Teaser.mp4" allowfullscreen autoplay="0"></iframe>-->
-			<video src="Video/Teaser.mp4" controls poster="Bilder/poster.png">
-				Dies Video kann in Ihrem Browser nicht wiedergegeben werden.<br />
-			</video>
+		<div style="text-align: center; margin: 0 auto; width: 800px;">
+			<div class="embed-responsive embed-responsive-16by9" title="Video Tutorial">
+				<!--<iframe class="embed-responsive-item" src="Video/Teaser.mp4" allowfullscreen autoplay="0"></iframe>-->
+				<video src="Video/Teaser.mp4" controls poster="Bilder/poster.png">
+					Dies Video kann in Ihrem Browser nicht wiedergegeben werden.<br />
+				</video>
+			</div>
 		</div>
-		
 
 		<br />
 		
