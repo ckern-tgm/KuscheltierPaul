@@ -43,7 +43,7 @@
                         <td><h3>'.$anz.'</h3></td>
                         <td><h3>'.showDays($name, $zeit, $anz)."</h3></td>
                         <td>
-                            <a href='delMedikament.php?id=$name&zeit=$zeit&anz=$anz;' class='btn btn-danger'>Löschen</a>
+                            <a href='delMedikament.php?id=$name&zeit=$zeit&anz=$anz;' class='btn btn-danger' accesskey='7'>Löschen</a>
                         </td>
                     </tr>";
             echo "</form>";
@@ -128,7 +128,7 @@
                         <td><h3>".$termin['ort']."</h3></td>
                         <td><h3>".$termin['hinweis']."</h3></td>
                         <td>
-                            <a href='delTermin.php?id=$name&datum=$datum&zeit=$zeit' class='btn btn-danger'>Löschen</a>
+                            <a href='delTermin.php?id=$name&datum=$datum&zeit=$zeit' class='btn btn-danger' accesskey='7'>Löschen</a>
                         </td>
                     </tr>";
             echo '</form>';
