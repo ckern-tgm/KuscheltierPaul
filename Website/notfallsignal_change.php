@@ -178,8 +178,8 @@ $kn = new Kuscheltiernutzer();
 			
 			<br />
 			
-			<div class="table-responsive" id="scroll" title="Information von Notfallkontakt change>
-				<table class="table table-dark table-bordered table-hover table-striped">
+			<div class="table-responsive" id="scroll" title="Information von Notfallkontakt change">
+                <table class="table table-dark table-bordered table-hover table-striped">
 					<thead class="tablehead">
 						<tr>
 							<th scope="col" colspan="3">Daten des Notfallkontaktes:</th>
