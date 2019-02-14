@@ -103,7 +103,7 @@
 			<button type="button" class="helpBackButton" data-remodal-action="close">Hilfe schließen</button>
 		</div>
 		
-		<!--Bücher durchsuchen-->
+		<!--Bücher durchsuchen
 		<div title="Search a book">
             <form method="GET" style="margin: 40px">
                 <input type="text" id="buchName" name="buchName" placeholder="Buchtitel" style="width: 40%;" />
@@ -117,7 +117,9 @@
 				</button>
             </form>
         </div>
-		
+        -->
+		<br />
+        
 		<!--Bücher anzeigen-->
 		<div class="table-responsive" id="scroll" title="Table of Content">
 			<table class="table table-dark table-bordered table-hover table-striped">
